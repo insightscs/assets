@@ -3348,7 +3348,7 @@
 			},
 			re = /([\0-\x1f\x7f]|^-?\d)|^-$|[^\0-\x1f\x7f-\uFFFF\w-]/g,
 			se = function (e, t) {
-				return t ? "\0" === e ? "ï¿½" : e.slice(0, -1) + "\\" + e.charCodeAt(e.length - 1).toString(16) + " " : "\\" + e
+				return t ? "\0" === e ? "�" : e.slice(0, -1) + "\\" + e.charCodeAt(e.length - 1).toString(16) + " " : "\\" + e
 			},
 			ce = function () {
 				g()
@@ -4114,10 +4114,10 @@
 				duplicateQueryParameters: r.duplicateQueryParameters,
 				escapeQuerySpace: r.escapeQuerySpace
 			}
-		}, r.preventInvalidHostname = !1, r.duplicateQueryParameters = !1, r.escapeQuerySpace = !0, r.protocol_expression = /^[a-z][a-z0-9.+-]*$/i, r.idn_expression = /[^a-z0-9\._-]/i, r.punycode_expression = /(xn--)/i, r.ip4_expression = /^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$/, r.ip6_expression = /^\s*((([0-9A-Fa-f]{1,4}:){7}([0-9A-Fa-f]{1,4}|:))|(([0-9A-Fa-f]{1,4}:){6}(:[0-9A-Fa-f]{1,4}|((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3})|:))|(([0-9A-Fa-f]{1,4}:){5}(((:[0-9A-Fa-f]{1,4}){1,2})|:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3})|:))|(([0-9A-Fa-f]{1,4}:){4}(((:[0-9A-Fa-f]{1,4}){1,3})|((:[0-9A-Fa-f]{1,4})?:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:))|(([0-9A-Fa-f]{1,4}:){3}(((:[0-9A-Fa-f]{1,4}){1,4})|((:[0-9A-Fa-f]{1,4}){0,2}:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:))|(([0-9A-Fa-f]{1,4}:){2}(((:[0-9A-Fa-f]{1,4}){1,5})|((:[0-9A-Fa-f]{1,4}){0,3}:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:))|(([0-9A-Fa-f]{1,4}:){1}(((:[0-9A-Fa-f]{1,4}){1,6})|((:[0-9A-Fa-f]{1,4}){0,4}:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:))|(:(((:[0-9A-Fa-f]{1,4}){1,7})|((:[0-9A-Fa-f]{1,4}){0,5}:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:)))(%.+)?\s*$/, r.find_uri_expression = /\b((?:[a-z][\w-]+:(?:\/{1,3}|[a-z0-9%])|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}\/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'".,<>?Â«Â»â€œâ€â€˜â€™]))/gi, r.findUri = {
+		}, r.preventInvalidHostname = !1, r.duplicateQueryParameters = !1, r.escapeQuerySpace = !0, r.protocol_expression = /^[a-z][a-z0-9.+-]*$/i, r.idn_expression = /[^a-z0-9\._-]/i, r.punycode_expression = /(xn--)/i, r.ip4_expression = /^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$/, r.ip6_expression = /^\s*((([0-9A-Fa-f]{1,4}:){7}([0-9A-Fa-f]{1,4}|:))|(([0-9A-Fa-f]{1,4}:){6}(:[0-9A-Fa-f]{1,4}|((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3})|:))|(([0-9A-Fa-f]{1,4}:){5}(((:[0-9A-Fa-f]{1,4}){1,2})|:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3})|:))|(([0-9A-Fa-f]{1,4}:){4}(((:[0-9A-Fa-f]{1,4}){1,3})|((:[0-9A-Fa-f]{1,4})?:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:))|(([0-9A-Fa-f]{1,4}:){3}(((:[0-9A-Fa-f]{1,4}){1,4})|((:[0-9A-Fa-f]{1,4}){0,2}:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:))|(([0-9A-Fa-f]{1,4}:){2}(((:[0-9A-Fa-f]{1,4}){1,5})|((:[0-9A-Fa-f]{1,4}){0,3}:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:))|(([0-9A-Fa-f]{1,4}:){1}(((:[0-9A-Fa-f]{1,4}){1,6})|((:[0-9A-Fa-f]{1,4}){0,4}:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:))|(:(((:[0-9A-Fa-f]{1,4}){1,7})|((:[0-9A-Fa-f]{1,4}){0,5}:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:)))(%.+)?\s*$/, r.find_uri_expression = /\b((?:[a-z][\w-]+:(?:\/{1,3}|[a-z0-9%])|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}\/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'".,<>?«»“”‘’]))/gi, r.findUri = {
 			start: /\b(?:([a-z][a-z0-9.+-]*:\/\/)|www\.)/gi,
 			end: /[\s\r\n]|$/,
-			trim: /[`!()\[\]{};:'".,<>?Â«Â»â€œâ€â€žâ€˜â€™]+$/,
+			trim: /[`!()\[\]{};:'".,<>?«»“”„‘’]+$/,
 			parens: /(\([^\)]*\)|\[[^\]]*\]|\{[^}]*\}|<[^>]*>)/g
 		}, r.defaultPorts = {
 			http: "80",
@@ -6140,7 +6140,7 @@
 					c = n.getAttribute("data-dismissible"),
 					f = n.getAttribute("data-delay"),
 					_ = n.getAttribute("data-container"),
-					d = '<button type="button" class="close">Ã—</button>',
+					d = '<button type="button" class="close">×</button>',
 					l = w(o.container),
 					h = w(_),
 					m = k(n, ".modal"),
@@ -7935,10 +7935,10 @@
 				mt = "[\\ufe0e\\ufe0f]?" + ht + ("(?:\\u200d(?:" + [ft, it, ut].join("|") + ")[\\ufe0e\\ufe0f]?" + ht + ")*"),
 				gt = "(?:" + [at, it, ut].join("|") + ")" + mt,
 				pt = "(?:" + [ft + nt + "?", nt, it, ut, et].join("|") + ")",
-				yt = RegExp("['â€™]", "g"),
+				yt = RegExp("['’]", "g"),
 				bt = RegExp(nt, "g"),
 				vt = RegExp(ct + "(?=" + ct + ")|" + pt + mt, "g"),
-				wt = RegExp([_t + "?" + rt + "+(?:['â€™](?:d|ll|m|re|s|t|ve))?(?=" + [tt, _t, "$"].join("|") + ")", lt + "+(?:['â€™](?:D|LL|M|RE|S|T|VE))?(?=" + [tt, _t + dt, "$"].join("|") + ")", _t + "?" + dt + "+(?:['â€™](?:d|ll|m|re|s|t|ve))?", _t + "+(?:['â€™](?:D|LL|M|RE|S|T|VE))?", "\\d*(?:1ST|2ND|3RD|(?![123])\\dTH)(?=\\b|[a-z_])", "\\d*(?:1st|2nd|3rd|(?![123])\\dth)(?=\\b|[A-Z_])", ot, gt].join("|"), "g"),
+				wt = RegExp([_t + "?" + rt + "+(?:['’](?:d|ll|m|re|s|t|ve))?(?=" + [tt, _t, "$"].join("|") + ")", lt + "+(?:['’](?:D|LL|M|RE|S|T|VE))?(?=" + [tt, _t + dt, "$"].join("|") + ")", _t + "?" + dt + "+(?:['’](?:d|ll|m|re|s|t|ve))?", _t + "+(?:['’](?:D|LL|M|RE|S|T|VE))?", "\\d*(?:1ST|2ND|3RD|(?![123])\\dTH)(?=\\b|[a-z_])", "\\d*(?:1st|2nd|3rd|(?![123])\\dth)(?=\\b|[A-Z_])", ot, gt].join("|"), "g"),
 				kt = RegExp("[\\u200d\\ud800-\\udfff" + Ke + "\\ufe0e\\ufe0f]"),
 				xt = /[a-z][A-Z]|[A-Z]{2}[a-z]|[0-9][a-zA-Z]|[a-zA-Z][0-9]|[^a-zA-Z0-9 ]/,
 				St = ["Array", "Buffer", "DataView", "Date", "Error", "Float32Array", "Float64Array", "Function", "Int8Array", "Int16Array", "Int32Array", "Map", "Math", "Object", "Promise", "RegExp", "Set", "String", "Symbol", "TypeError", "Uint8Array", "Uint8ClampedArray", "Uint16Array", "Uint32Array", "WeakMap", "_", "clearTimeout", "isFinite", "parseInt", "setTimeout"],
@@ -8158,196 +8158,196 @@
 				return n
 			}
 			var kn = ln({
-					"Ã€": "A",
-					"Ã": "A",
-					"Ã‚": "A",
-					"Ãƒ": "A",
-					"Ã„": "A",
-					"Ã…": "A",
-					"Ã ": "a",
-					"Ã¡": "a",
-					"Ã¢": "a",
-					"Ã£": "a",
-					"Ã¤": "a",
-					"Ã¥": "a",
-					"Ã‡": "C",
-					"Ã§": "c",
-					"Ã": "D",
-					"Ã°": "d",
-					"Ãˆ": "E",
-					"Ã‰": "E",
-					"ÃŠ": "E",
-					"Ã‹": "E",
-					"Ã¨": "e",
-					"Ã©": "e",
-					"Ãª": "e",
-					"Ã«": "e",
-					"ÃŒ": "I",
-					"Ã": "I",
-					"ÃŽ": "I",
-					"Ã": "I",
-					"Ã¬": "i",
-					"Ã­": "i",
-					"Ã®": "i",
-					"Ã¯": "i",
-					"Ã‘": "N",
-					"Ã±": "n",
-					"Ã’": "O",
-					"Ã“": "O",
-					"Ã”": "O",
-					"Ã•": "O",
-					"Ã–": "O",
-					"Ã˜": "O",
-					"Ã²": "o",
-					"Ã³": "o",
-					"Ã´": "o",
-					"Ãµ": "o",
-					"Ã¶": "o",
-					"Ã¸": "o",
-					"Ã™": "U",
-					"Ãš": "U",
-					"Ã›": "U",
-					"Ãœ": "U",
-					"Ã¹": "u",
-					"Ãº": "u",
-					"Ã»": "u",
-					"Ã¼": "u",
-					"Ã": "Y",
-					"Ã½": "y",
-					"Ã¿": "y",
-					"Ã†": "Ae",
-					"Ã¦": "ae",
-					"Ãž": "Th",
-					"Ã¾": "th",
-					"ÃŸ": "ss",
-					"Ä€": "A",
-					"Ä‚": "A",
-					"Ä„": "A",
-					"Ä": "a",
-					"Äƒ": "a",
-					"Ä…": "a",
-					"Ä†": "C",
-					"Äˆ": "C",
-					"ÄŠ": "C",
-					"ÄŒ": "C",
-					"Ä‡": "c",
-					"Ä‰": "c",
-					"Ä‹": "c",
-					"Ä": "c",
-					"ÄŽ": "D",
-					"Ä": "D",
-					"Ä": "d",
-					"Ä‘": "d",
-					"Ä’": "E",
-					"Ä”": "E",
-					"Ä–": "E",
-					"Ä˜": "E",
-					"Äš": "E",
-					"Ä“": "e",
-					"Ä•": "e",
-					"Ä—": "e",
-					"Ä™": "e",
-					"Ä›": "e",
-					"Äœ": "G",
-					"Äž": "G",
-					"Ä ": "G",
-					"Ä¢": "G",
-					"Ä": "g",
-					"ÄŸ": "g",
-					"Ä¡": "g",
-					"Ä£": "g",
-					"Ä¤": "H",
-					"Ä¦": "H",
-					"Ä¥": "h",
-					"Ä§": "h",
-					"Ä¨": "I",
-					"Äª": "I",
-					"Ä¬": "I",
-					"Ä®": "I",
-					"Ä°": "I",
-					"Ä©": "i",
-					"Ä«": "i",
-					"Ä­": "i",
-					"Ä¯": "i",
-					"Ä±": "i",
-					"Ä´": "J",
-					"Äµ": "j",
-					"Ä¶": "K",
-					"Ä·": "k",
-					"Ä¸": "k",
-					"Ä¹": "L",
-					"Ä»": "L",
-					"Ä½": "L",
-					"Ä¿": "L",
-					"Å": "L",
-					"Äº": "l",
-					"Ä¼": "l",
-					"Ä¾": "l",
-					"Å€": "l",
-					"Å‚": "l",
-					"Åƒ": "N",
-					"Å…": "N",
-					"Å‡": "N",
-					"ÅŠ": "N",
-					"Å„": "n",
-					"Å†": "n",
-					"Åˆ": "n",
-					"Å‹": "n",
-					"ÅŒ": "O",
-					"ÅŽ": "O",
-					"Å": "O",
-					"Å": "o",
-					"Å": "o",
-					"Å‘": "o",
-					"Å”": "R",
-					"Å–": "R",
-					"Å˜": "R",
-					"Å•": "r",
-					"Å—": "r",
-					"Å™": "r",
-					"Åš": "S",
-					"Åœ": "S",
-					"Åž": "S",
-					"Å ": "S",
-					"Å›": "s",
-					"Å": "s",
-					"ÅŸ": "s",
-					"Å¡": "s",
-					"Å¢": "T",
-					"Å¤": "T",
-					"Å¦": "T",
-					"Å£": "t",
-					"Å¥": "t",
-					"Å§": "t",
-					"Å¨": "U",
-					"Åª": "U",
-					"Å¬": "U",
-					"Å®": "U",
-					"Å°": "U",
-					"Å²": "U",
-					"Å©": "u",
-					"Å«": "u",
-					"Å­": "u",
-					"Å¯": "u",
-					"Å±": "u",
-					"Å³": "u",
-					"Å´": "W",
-					"Åµ": "w",
-					"Å¶": "Y",
-					"Å·": "y",
-					"Å¸": "Y",
-					"Å¹": "Z",
-					"Å»": "Z",
-					"Å½": "Z",
-					"Åº": "z",
-					"Å¼": "z",
-					"Å¾": "z",
-					"Ä²": "IJ",
-					"Ä³": "ij",
-					"Å’": "Oe",
-					"Å“": "oe",
-					"Å‰": "'n",
-					"Å¿": "s"
+					"À": "A",
+					"Á": "A",
+					"Â": "A",
+					"Ã": "A",
+					"Ä": "A",
+					"Å": "A",
+					"à": "a",
+					"á": "a",
+					"â": "a",
+					"ã": "a",
+					"ä": "a",
+					"å": "a",
+					"Ç": "C",
+					"ç": "c",
+					"Ð": "D",
+					"ð": "d",
+					"È": "E",
+					"É": "E",
+					"Ê": "E",
+					"Ë": "E",
+					"è": "e",
+					"é": "e",
+					"ê": "e",
+					"ë": "e",
+					"Ì": "I",
+					"Í": "I",
+					"Î": "I",
+					"Ï": "I",
+					"ì": "i",
+					"í": "i",
+					"î": "i",
+					"ï": "i",
+					"Ñ": "N",
+					"ñ": "n",
+					"Ò": "O",
+					"Ó": "O",
+					"Ô": "O",
+					"Õ": "O",
+					"Ö": "O",
+					"Ø": "O",
+					"ò": "o",
+					"ó": "o",
+					"ô": "o",
+					"õ": "o",
+					"ö": "o",
+					"ø": "o",
+					"Ù": "U",
+					"Ú": "U",
+					"Û": "U",
+					"Ü": "U",
+					"ù": "u",
+					"ú": "u",
+					"û": "u",
+					"ü": "u",
+					"Ý": "Y",
+					"ý": "y",
+					"ÿ": "y",
+					"Æ": "Ae",
+					"æ": "ae",
+					"Þ": "Th",
+					"þ": "th",
+					"ß": "ss",
+					"Ā": "A",
+					"Ă": "A",
+					"Ą": "A",
+					"ā": "a",
+					"ă": "a",
+					"ą": "a",
+					"Ć": "C",
+					"Ĉ": "C",
+					"Ċ": "C",
+					"Č": "C",
+					"ć": "c",
+					"ĉ": "c",
+					"ċ": "c",
+					"č": "c",
+					"Ď": "D",
+					"Đ": "D",
+					"ď": "d",
+					"đ": "d",
+					"Ē": "E",
+					"Ĕ": "E",
+					"Ė": "E",
+					"Ę": "E",
+					"Ě": "E",
+					"ē": "e",
+					"ĕ": "e",
+					"ė": "e",
+					"ę": "e",
+					"ě": "e",
+					"Ĝ": "G",
+					"Ğ": "G",
+					"Ġ": "G",
+					"Ģ": "G",
+					"ĝ": "g",
+					"ğ": "g",
+					"ġ": "g",
+					"ģ": "g",
+					"Ĥ": "H",
+					"Ħ": "H",
+					"ĥ": "h",
+					"ħ": "h",
+					"Ĩ": "I",
+					"Ī": "I",
+					"Ĭ": "I",
+					"Į": "I",
+					"İ": "I",
+					"ĩ": "i",
+					"ī": "i",
+					"ĭ": "i",
+					"į": "i",
+					"ı": "i",
+					"Ĵ": "J",
+					"ĵ": "j",
+					"Ķ": "K",
+					"ķ": "k",
+					"ĸ": "k",
+					"Ĺ": "L",
+					"Ļ": "L",
+					"Ľ": "L",
+					"Ŀ": "L",
+					"Ł": "L",
+					"ĺ": "l",
+					"ļ": "l",
+					"ľ": "l",
+					"ŀ": "l",
+					"ł": "l",
+					"Ń": "N",
+					"Ņ": "N",
+					"Ň": "N",
+					"Ŋ": "N",
+					"ń": "n",
+					"ņ": "n",
+					"ň": "n",
+					"ŋ": "n",
+					"Ō": "O",
+					"Ŏ": "O",
+					"Ő": "O",
+					"ō": "o",
+					"ŏ": "o",
+					"ő": "o",
+					"Ŕ": "R",
+					"Ŗ": "R",
+					"Ř": "R",
+					"ŕ": "r",
+					"ŗ": "r",
+					"ř": "r",
+					"Ś": "S",
+					"Ŝ": "S",
+					"Ş": "S",
+					"Š": "S",
+					"ś": "s",
+					"ŝ": "s",
+					"ş": "s",
+					"š": "s",
+					"Ţ": "T",
+					"Ť": "T",
+					"Ŧ": "T",
+					"ţ": "t",
+					"ť": "t",
+					"ŧ": "t",
+					"Ũ": "U",
+					"Ū": "U",
+					"Ŭ": "U",
+					"Ů": "U",
+					"Ű": "U",
+					"Ų": "U",
+					"ũ": "u",
+					"ū": "u",
+					"ŭ": "u",
+					"ů": "u",
+					"ű": "u",
+					"ų": "u",
+					"Ŵ": "W",
+					"ŵ": "w",
+					"Ŷ": "Y",
+					"ŷ": "y",
+					"Ÿ": "Y",
+					"Ź": "Z",
+					"Ż": "Z",
+					"Ž": "Z",
+					"ź": "z",
+					"ż": "z",
+					"ž": "z",
+					"Ĳ": "IJ",
+					"ĳ": "ij",
+					"Œ": "Oe",
+					"œ": "oe",
+					"ŉ": "'n",
+					"ſ": "s"
 				}),
 				xn = ln({
 					"&": "&amp;",
@@ -13106,7 +13106,7 @@
 		var t = "",
 			n = o.escape;
 		Array.prototype.join;
-		return t += '\x3c!-- src/templates/registration_request.html --\x3e\n<span class="spinner login-submit fa fa-spinner"></span>\n<p class="info">' + n(e.__("Hold tight, we're fetching the registration formâ€¦")) + "</p>\n", e.cancel && (t += '\n    <button class="btn btn-secondary button-cancel hor_centered">' + n(e.__("Cancel")) + "</button>\n"), t += "\n"
+		return t += '\x3c!-- src/templates/registration_request.html --\x3e\n<span class="spinner login-submit fa fa-spinner"></span>\n<p class="info">' + n(e.__("Hold tight, we're fetching the registration form…")) + "</p>\n", e.cancel && (t += '\n    <button class="btn btn-secondary button-cancel hor_centered">' + n(e.__("Cancel")) + "</button>\n"), t += "\n"
 	}
 }, function (e, t, n) {
 	var o = {
@@ -13194,7 +13194,7 @@
 		var t = "",
 			n = o.escape;
 		Array.prototype.join;
-		return t += '\x3c!-- src/templates/list_chatrooms_modal.html --\x3e\n<div class="modal fade" id="list-chatrooms-modal" tabindex="-1" role="dialog" aria-labelledby="list-chatrooms-modal-label" aria-hidden="true">\n    <div class="modal-dialog" role="document">\n        <div class="modal-content">\n            <div class="modal-header">\n                <h5 class="modal-title"\n                    id="list-chatrooms-modal-label">' + n(e.heading_list_chatrooms) + '</h5>\n                <button type="button" class="close" data-dismiss="modal" aria-label="Close">\n                    <span aria-hidden="true">Ã—</span>\n                </button>\n            </div>\n            <div class="modal-body d-flex flex-column">\n                ', e.show_form && (t += '\n                <form class="converse-form list-chatrooms">\n                    <div class="form-group">\n                        <label for="chatroom">' + n(e.label_server_address) + ':</label>\n                        <input type="text" value="' + n(e.muc_domain) + '" required="required" name="server" class="form-control" placeholder="' + n(e.server_placeholder) + '"/>\n                    </div>\n                    <input type="submit" class="btn btn-primary" name="list" value="' + n(e.label_query) + '"/>\n                </form>\n                '), t += '\n                <ul class="available-chatrooms list-group"></ul>\n            </div>\n        </div>\n    </div>\n</div>\n'
+		return t += '\x3c!-- src/templates/list_chatrooms_modal.html --\x3e\n<div class="modal fade" id="list-chatrooms-modal" tabindex="-1" role="dialog" aria-labelledby="list-chatrooms-modal-label" aria-hidden="true">\n    <div class="modal-dialog" role="document">\n        <div class="modal-content">\n            <div class="modal-header">\n                <h5 class="modal-title"\n                    id="list-chatrooms-modal-label">' + n(e.heading_list_chatrooms) + '</h5>\n                <button type="button" class="close" data-dismiss="modal" aria-label="Close">\n                    <span aria-hidden="true">×</span>\n                </button>\n            </div>\n            <div class="modal-body d-flex flex-column">\n                ', e.show_form && (t += '\n                <form class="converse-form list-chatrooms">\n                    <div class="form-group">\n                        <label for="chatroom">' + n(e.label_server_address) + ':</label>\n                        <input type="text" value="' + n(e.muc_domain) + '" required="required" name="server" class="form-control" placeholder="' + n(e.server_placeholder) + '"/>\n                    </div>\n                    <input type="submit" class="btn btn-primary" name="list" value="' + n(e.label_query) + '"/>\n                </form>\n                '), t += '\n                <ul class="available-chatrooms list-group"></ul>\n            </div>\n        </div>\n    </div>\n</div>\n'
 	}
 }, function (e, t, n) {
 	var o = {
@@ -13268,7 +13268,7 @@
 		var t, n = "",
 			a = o.escape;
 		Array.prototype.join;
-		return n += '\x3c!-- src/templates/chatroom_details_modal.html --\x3e\n<div class="modal fade" id="room-details-modal" tabindex="-1" role="dialog" aria-labelledby="room-details-modal-label" aria-hidden="true">\n    <div class="modal-dialog" role="document">\n        <div class="modal-content">\n            <div class="modal-header">\n                <h5 class="modal-title" id="room-details-modal-label">' + a(e.display_name) + '</h5>\n                <button type="button" class="close" data-dismiss="modal" aria-label="' + a(e.label_close) + '"><span aria-hidden="true">Ã—</span></button>\n            </div>\n            <div class="modal-body">\n                <div class="room-info">\n                    <p class="room-info"><strong>' + a(e.__("Name")) + "</strong>: " + a(e.name) + '</p>\n                    <p class="room-info"><strong>' + a(e.__("Groupchat address (JID)")) + "</strong>: " + a(e.jid) + '</p>\n                    <p class="room-info"><strong>' + a(e.__("Description")) + "</strong>: " + a(e.description) + "</p>\n                    ", e.subject && (n += '\n                    <p class="room-info"><strong>' + a(e.__("Topic")) + "</strong>: " + (null == (t = e.topic) ? "" : t) + '</p> \x3c!-- Sanitized in converse-muc-views. We want to render links. --\x3e\n                        <p class="room-info"><strong>' + a(e.__("Topic author")) + "</strong>: " + a(e._.get(e.subject, "author")) + "</p>\n                    "), n += '\n                    <p class="room-info"><strong>' + a(e.__("Online users")) + "</strong>: " + a(e.num_occupants) + '</p>\n                    <p class="room-info"><strong>' + a(e.__("Features")) + '</strong>:\n                        <div class="chatroom-features">\n                        <ul class="features-list">\n                        ', e.features.passwordprotected && (n += '\n                        <li class="feature" ><span class="fa fa-lock"></span>' + a(e.__("Password protected")) + " - <em>" + a(e.__("This groupchat requires a password before entry")) + "</em></li>\n                        "), n += "\n                        ", e.features.unsecured && (n += '\n                        <li class="feature" ><span class="fa fa-unlock"></span>' + a(e.__("No password required")) + " - <em>" + a(e.__("This groupchat does not require a password upon entry")) + "</em></li>\n                        "), n += "\n                        ", e.features.hidden && (n += '\n                        <li class="feature" ><span class="fa fa-eye-slash"></span>' + a(e.__("Hidden")) + " - <em>" + a(e.__("This groupchat is not publicly searchable")) + "</em></li>\n                        "), n += "\n                        ", e.features.public_room && (n += '\n                        <li class="feature" ><span class="fa fa-eye"></span>' + a(e.__("Public")) + " - <em>" + a(e.__("This groupchat is publicly searchable")) + "</em></li>\n                        "), n += "\n                        ", e.features.membersonly && (n += '\n                        <li class="feature" ><span class="fa fa-address-book"></span>' + a(e.__("Members only")) + " - <em>" + a(e.__("This groupchat is restricted to members only")) + "</em></li>\n                        "), n += "\n                        ", e.features.open && (n += '\n                        <li class="feature" ><span class="fa fa-globe"></span>' + a(e.__("Open")) + " - <em>" + a(e.__("Anyone can join this groupchat")) + "</em></li>\n                        "), n += "\n                        ", e.features.persistent && (n += '\n                        <li class="feature" ><span class="fa fa-save"></span>' + a(e.__("Persistent")) + " - <em>" + a(e.__("This groupchat persists even if it's unoccupied")) + "</em></li>\n                        "), n += "\n                        ", e.features.temporary && (n += '\n                        <li class="feature" ><span class="fa fa-snowflake-o"></span>' + a(e.__("Temporary")) + " - <em>" + a(e.__("This groupchat will disappear once the last person leaves")) + "</em></li>\n                        "), n += "\n                        ", e.features.nonanonymous && (n += '\n                        <li class="feature" ><span class="fa fa-id-card"></span>' + a(e.__("Not anonymous")) + " - <em>" + a(e.__("All other groupchat participants can see your XMPP address")) + "</em></li>\n                        "), n += "\n                        ", e.features.semianonymous && (n += '\n                        <li class="feature" ><span class="fa fa-user-secret"></span>' + a(e.__("Semi-anonymous")) + " - <em>" + a(e.__("Only moderators can see your XMPP address")) + "</em></li>\n                        "), n += "\n                        ", e.features.moderated && (n += '\n                        <li class="feature" ><span class="fa fa-gavel"></span>' + a(e.__("Moderated")) + " - <em>" + a(e.__("Participants entering this groupchat need to request permission to write")) + "</em></li>\n                        "), n += "\n                        ", e.features.unmoderated && (n += '\n                        <li class="feature" ><span class="fa fa-info-circle"></span>' + a(e.__("Not moderated")) + " - <em>" + a(e.__("Participants entering this groupchat can write right away")) + "</em></li>\n                        "), n += "\n                        ", e.features.mam_enabled && (n += '\n                        <li class="feature" ><span class="fa fa-database"></span>' + a(e.__("Message archiving")) + " - <em>" + a(e.__("Messages are archived on the server")) + "</em></li>\n                        "), n += '\n                        </ul>\n                        </div>\n                    </p>\n                </div>\n            </div>\n            <div class="modal-footer">\n                <button type="button" class="btn btn-warning" data-dismiss="modal">' + a(e.__("Close")) + "</button>\n            </div>\n        </div>\n    </div>\n</div>\n"
+		return n += '\x3c!-- src/templates/chatroom_details_modal.html --\x3e\n<div class="modal fade" id="room-details-modal" tabindex="-1" role="dialog" aria-labelledby="room-details-modal-label" aria-hidden="true">\n    <div class="modal-dialog" role="document">\n        <div class="modal-content">\n            <div class="modal-header">\n                <h5 class="modal-title" id="room-details-modal-label">' + a(e.display_name) + '</h5>\n                <button type="button" class="close" data-dismiss="modal" aria-label="' + a(e.label_close) + '"><span aria-hidden="true">×</span></button>\n            </div>\n            <div class="modal-body">\n                <div class="room-info">\n                    <p class="room-info"><strong>' + a(e.__("Name")) + "</strong>: " + a(e.name) + '</p>\n                    <p class="room-info"><strong>' + a(e.__("Groupchat address (JID)")) + "</strong>: " + a(e.jid) + '</p>\n                    <p class="room-info"><strong>' + a(e.__("Description")) + "</strong>: " + a(e.description) + "</p>\n                    ", e.subject && (n += '\n                    <p class="room-info"><strong>' + a(e.__("Topic")) + "</strong>: " + (null == (t = e.topic) ? "" : t) + '</p> \x3c!-- Sanitized in converse-muc-views. We want to render links. --\x3e\n                        <p class="room-info"><strong>' + a(e.__("Topic author")) + "</strong>: " + a(e._.get(e.subject, "author")) + "</p>\n                    "), n += '\n                    <p class="room-info"><strong>' + a(e.__("Online users")) + "</strong>: " + a(e.num_occupants) + '</p>\n                    <p class="room-info"><strong>' + a(e.__("Features")) + '</strong>:\n                        <div class="chatroom-features">\n                        <ul class="features-list">\n                        ', e.features.passwordprotected && (n += '\n                        <li class="feature" ><span class="fa fa-lock"></span>' + a(e.__("Password protected")) + " - <em>" + a(e.__("This groupchat requires a password before entry")) + "</em></li>\n                        "), n += "\n                        ", e.features.unsecured && (n += '\n                        <li class="feature" ><span class="fa fa-unlock"></span>' + a(e.__("No password required")) + " - <em>" + a(e.__("This groupchat does not require a password upon entry")) + "</em></li>\n                        "), n += "\n                        ", e.features.hidden && (n += '\n                        <li class="feature" ><span class="fa fa-eye-slash"></span>' + a(e.__("Hidden")) + " - <em>" + a(e.__("This groupchat is not publicly searchable")) + "</em></li>\n                        "), n += "\n                        ", e.features.public_room && (n += '\n                        <li class="feature" ><span class="fa fa-eye"></span>' + a(e.__("Public")) + " - <em>" + a(e.__("This groupchat is publicly searchable")) + "</em></li>\n                        "), n += "\n                        ", e.features.membersonly && (n += '\n                        <li class="feature" ><span class="fa fa-address-book"></span>' + a(e.__("Members only")) + " - <em>" + a(e.__("This groupchat is restricted to members only")) + "</em></li>\n                        "), n += "\n                        ", e.features.open && (n += '\n                        <li class="feature" ><span class="fa fa-globe"></span>' + a(e.__("Open")) + " - <em>" + a(e.__("Anyone can join this groupchat")) + "</em></li>\n                        "), n += "\n                        ", e.features.persistent && (n += '\n                        <li class="feature" ><span class="fa fa-save"></span>' + a(e.__("Persistent")) + " - <em>" + a(e.__("This groupchat persists even if it's unoccupied")) + "</em></li>\n                        "), n += "\n                        ", e.features.temporary && (n += '\n                        <li class="feature" ><span class="fa fa-snowflake-o"></span>' + a(e.__("Temporary")) + " - <em>" + a(e.__("This groupchat will disappear once the last person leaves")) + "</em></li>\n                        "), n += "\n                        ", e.features.nonanonymous && (n += '\n                        <li class="feature" ><span class="fa fa-id-card"></span>' + a(e.__("Not anonymous")) + " - <em>" + a(e.__("All other groupchat participants can see your XMPP address")) + "</em></li>\n                        "), n += "\n                        ", e.features.semianonymous && (n += '\n                        <li class="feature" ><span class="fa fa-user-secret"></span>' + a(e.__("Semi-anonymous")) + " - <em>" + a(e.__("Only moderators can see your XMPP address")) + "</em></li>\n                        "), n += "\n                        ", e.features.moderated && (n += '\n                        <li class="feature" ><span class="fa fa-gavel"></span>' + a(e.__("Moderated")) + " - <em>" + a(e.__("Participants entering this groupchat need to request permission to write")) + "</em></li>\n                        "), n += "\n                        ", e.features.unmoderated && (n += '\n                        <li class="feature" ><span class="fa fa-info-circle"></span>' + a(e.__("Not moderated")) + " - <em>" + a(e.__("Participants entering this groupchat can write right away")) + "</em></li>\n                        "), n += "\n                        ", e.features.mam_enabled && (n += '\n                        <li class="feature" ><span class="fa fa-database"></span>' + a(e.__("Message archiving")) + " - <em>" + a(e.__("Messages are archived on the server")) + "</em></li>\n                        "), n += '\n                        </ul>\n                        </div>\n                    </p>\n                </div>\n            </div>\n            <div class="modal-footer">\n                <button type="button" class="btn btn-warning" data-dismiss="modal">' + a(e.__("Close")) + "</button>\n            </div>\n        </div>\n    </div>\n</div>\n"
 	}
 }, function (e, t, n) {
 	var o = {
@@ -13301,7 +13301,7 @@
 		var t = "",
 			n = o.escape;
 		Array.prototype.join;
-		return t += '\x3c!-- src/templates/add_chatroom_modal.html --\x3e\n<div class="modal fade" id="add-chatroom-modal" tabindex="-1" role="dialog" aria-labelledby="add-chatroom-modal-label" aria-hidden="true">\n    <div class="modal-dialog" role="document">\n        <div class="modal-content">\n            <div class="modal-header">\n                <h5 class="modal-title"\n                    id="add-chatroom-modal-label">' + n(e.__("Enter a new Groupchat")) + '</h5>\n                <button type="button" class="close" data-dismiss="modal" aria-label="Close">\n                    <span aria-hidden="true">Ã—</span>\n                </button>\n            </div>\n            <div class="modal-body">\n                <form class="converse-form add-chatroom">\n                    <div class="form-group">\n                        <label for="chatroom">' + n(e.label_room_address) + ':</label>\n                        <input type="text" required="required" name="chatroom" class="form-control" placeholder="' + n(e.chatroom_placeholder) + '"/>\n                    </div>\n                    ', e._converse.locked_muc_nickname || (t += '\n                    <div class="form-group" >\n                        <label for="nickname">' + n(e.__("Nickname")) + ':</label>\n                        <input type="text" pattern=".*\\S+.*" title="' + n(e.__("This field is required")) + '" required="required" name="nickname" value="' + n(e.nick) + '" class="form-control"/>\n                    </div>\n                    '), t += '\n                    <input type="submit" class="btn btn-primary" name="join" value="' + n(e.__("Join")) + '"/>\n                </form>\n            </div>\n        </div>\n    </div>\n</div>\n'
+		return t += '\x3c!-- src/templates/add_chatroom_modal.html --\x3e\n<div class="modal fade" id="add-chatroom-modal" tabindex="-1" role="dialog" aria-labelledby="add-chatroom-modal-label" aria-hidden="true">\n    <div class="modal-dialog" role="document">\n        <div class="modal-content">\n            <div class="modal-header">\n                <h5 class="modal-title"\n                    id="add-chatroom-modal-label">' + n(e.__("Enter a new Groupchat")) + '</h5>\n                <button type="button" class="close" data-dismiss="modal" aria-label="Close">\n                    <span aria-hidden="true">×</span>\n                </button>\n            </div>\n            <div class="modal-body">\n                <form class="converse-form add-chatroom">\n                    <div class="form-group">\n                        <label for="chatroom">' + n(e.label_room_address) + ':</label>\n                        <input type="text" required="required" name="chatroom" class="form-control" placeholder="' + n(e.chatroom_placeholder) + '"/>\n                    </div>\n                    ', e._converse.locked_muc_nickname || (t += '\n                    <div class="form-group" >\n                        <label for="nickname">' + n(e.__("Nickname")) + ':</label>\n                        <input type="text" pattern=".*\\S+.*" title="' + n(e.__("This field is required")) + '" required="required" name="nickname" value="' + n(e.nick) + '" class="form-control"/>\n                    </div>\n                    '), t += '\n                    <input type="submit" class="btn btn-primary" name="join" value="' + n(e.__("Join")) + '"/>\n                </form>\n            </div>\n        </div>\n    </div>\n</div>\n'
 	}
 }, function (e, t, n) {
 	var o = {
@@ -13416,7 +13416,7 @@
 		var t = "",
 			n = o.escape;
 		Array.prototype.join;
-		return t += '\x3c!-- src/templates/add_contact_modal.html --\x3e\n\x3c!-- Add contact Modal --\x3e\n<div class="modal fade" id="add-contact-modal" tabindex="-1" role="dialog" aria-labelledby="addContactModalLabel" aria-hidden="true">\n    <div class="modal-dialog" role="document">\n        <div class="modal-content">\n            <div class="modal-header">\n                <h5 class="modal-title" id="addContactModalLabel">' + n(e.heading_new_contact) + '</h5>\n                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">Ã—</span></button>\n            </div>\n            <form class="converse-form add-xmpp-contact">\n                <div class="modal-body">\n                    <div class="form-group add-xmpp-contact__jid">\n                        <label class="clearfix" for="jid">' + n(e.label_xmpp_address) + ':</label>\n                        <div class="suggestion-box suggestion-box__jid">\n                            <ul class="suggestion-box__results suggestion-box__results--above" hidden=""></ul>\n                            <input type="text" name="jid"\n                                   ', e._converse.xhr_user_search_url || (t += ' required="required" '), t += '\n                                   value="' + n(e.jid) + '"\n                                   class="form-control suggestion-box__input"\n                                   placeholder="' + n(e.contact_placeholder) + '"/>\n                            <span class="suggestion-box__additions visually-hidden" role="status" aria-live="assertive" aria-relevant="additions"></span>\n                        </div>\n                    </div>\n                    <div class="form-group add-xmpp-contact__name">\n                        <label class="clearfix" for="name">' + n(e.label_nickname) + ':</label>\n                        <div class="suggestion-box suggestion-box__name">\n                            <ul class="suggestion-box__results suggestion-box__results--above" hidden=""></ul>\n                            <input type="text" name="name" value="' + n(e.nickname) + '"\n                                   class="form-control suggestion-box__input"\n                                   placeholder="' + n(e.nickname_placeholder) + '"/>\n                            <span class="suggestion-box__additions visually-hidden" role="status" aria-live="assertive" aria-relevant="additions"></span>\n                        </div>\n                    </div>\n                    <div class="form-group">\n                        <div class="invalid-feedback">' + n(e.error_message) + '</div>\n                    </div>\n                    <button type="submit" class="btn btn-primary">' + n(e.label_add) + "</button>\n                </div>\n            </form>\n        </div>\n    </div>\n</div>\n"
+		return t += '\x3c!-- src/templates/add_contact_modal.html --\x3e\n\x3c!-- Add contact Modal --\x3e\n<div class="modal fade" id="add-contact-modal" tabindex="-1" role="dialog" aria-labelledby="addContactModalLabel" aria-hidden="true">\n    <div class="modal-dialog" role="document">\n        <div class="modal-content">\n            <div class="modal-header">\n                <h5 class="modal-title" id="addContactModalLabel">' + n(e.heading_new_contact) + '</h5>\n                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>\n            </div>\n            <form class="converse-form add-xmpp-contact">\n                <div class="modal-body">\n                    <div class="form-group add-xmpp-contact__jid">\n                        <label class="clearfix" for="jid">' + n(e.label_xmpp_address) + ':</label>\n                        <div class="suggestion-box suggestion-box__jid">\n                            <ul class="suggestion-box__results suggestion-box__results--above" hidden=""></ul>\n                            <input type="text" name="jid"\n                                   ', e._converse.xhr_user_search_url || (t += ' required="required" '), t += '\n                                   value="' + n(e.jid) + '"\n                                   class="form-control suggestion-box__input"\n                                   placeholder="' + n(e.contact_placeholder) + '"/>\n                            <span class="suggestion-box__additions visually-hidden" role="status" aria-live="assertive" aria-relevant="additions"></span>\n                        </div>\n                    </div>\n                    <div class="form-group add-xmpp-contact__name">\n                        <label class="clearfix" for="name">' + n(e.label_nickname) + ':</label>\n                        <div class="suggestion-box suggestion-box__name">\n                            <ul class="suggestion-box__results suggestion-box__results--above" hidden=""></ul>\n                            <input type="text" name="name" value="' + n(e.nickname) + '"\n                                   class="form-control suggestion-box__input"\n                                   placeholder="' + n(e.nickname_placeholder) + '"/>\n                            <span class="suggestion-box__additions visually-hidden" role="status" aria-live="assertive" aria-relevant="additions"></span>\n                        </div>\n                    </div>\n                    <div class="form-group">\n                        <div class="invalid-feedback">' + n(e.error_message) + '</div>\n                    </div>\n                    <button type="submit" class="btn btn-primary">' + n(e.label_add) + "</button>\n                </div>\n            </form>\n        </div>\n    </div>\n</div>\n"
 	}
 }, function (e, t, n) {
 	var o = {
@@ -13436,7 +13436,7 @@
 		var t = "",
 			n = o.escape;
 		Array.prototype.join;
-		return t += '\x3c!-- src/templates/profile_modal.html --\x3e\n<div class="modal fade" id="user-profile-modal" tabindex="-1" role="dialog" aria-labelledby="user-profile-modal-label" aria-hidden="true">\n    <div class="modal-dialog" role="document">\n        <div class="modal-content">\n            <div class="modal-header">\n                <h5 class="modal-title" id="user-profile-modal-label">' + n(e.heading_profile) + '</h5>\n                <button type="button" class="close" data-dismiss="modal" aria-label="' + n(e.label_close) + '"><span aria-hidden="true">Ã—</span></button>\n            </div>\n            <div class="modal-body">\n                ', e._converse.pluggable.plugins["converse-omemo"].enabled(e._converse) && (t += '\n                <ul class="nav nav-pills justify-content-center">\n                    <li role="presentation" class="nav-item">\n                        <a class="nav-link active" id="profile-tab" href="#profile-tabpanel" aria-controls="profile-tabpanel" role="tab" data-toggle="tab">Profile</a>\n                    </li>\n                    <li role="presentation" class="nav-item">\n                        <a class="nav-link" id="omemo-tab" href="#omemo-tabpanel" aria-controls="omemo-tabpanel" role="tab" data-toggle="tab">OMEMO</a>\n                    </li>\n                </ul>\n                '), t += '\n                <div class="tab-content">\n                    <div class="tab-pane fade show active" id="profile-tabpanel" role="tabpanel" aria-labelledby="profile-tab">\n                        <form class="converse-form converse-form--modal profile-form" action="#">\n                            <div class="row">\n                                <div class="col-auto">\n                                    <a class="change-avatar" href="#">\n                                        ', e.image && (t += '\n                                            <img alt="' + n(e.alt_avatar) + '" class="img-thumbnail avatar align-self-center" height="100px" width="100px" src="data:' + n(e.image_type) + ";base64," + n(e.image) + '"/>\n                                        '), t += "\n                                        ", e.image || (t += '\n                                            <canvas class="avatar" height="100px" width="100px"></canvas>\n                                        '), t += '\n                                    </a>\n                                    <input class="hidden" name="image" type="file"/>\n                                </div>\n                                <div class="col">\n                                    <div class="form-group">\n                                        <label class="col-form-label">' + n(e.label_jid) + ":</label>\n                                        <div>" + n(e.jid) + '</div>\n                                    </div>\n                                </div>\n                            </div>\n                            <div class="form-group">\n                                <label for="vcard-fullname" class="col-form-label">' + n(e.label_fullname) + ':</label>\n                                <input id="vcard-fullname" type="text" class="form-control" name="fn" value="' + n(e.fullname) + '"/>\n                            </div>\n                            <div class="form-group">\n                                <label for="vcard-nickname" class="col-form-label">' + n(e.label_nickname) + ':</label>\n                                <input id="vcard-nickname" type="text" class="form-control" name="nickname" value="' + n(e.nickname) + '"/>\n                            </div>\n                            <div class="form-group">\n                                <label for="vcard-url" class="col-form-label">' + n(e.label_url) + ':</label>\n                                <input id="vcard-url" type="url" class="form-control" name="url" value="' + n(e.url) + '"/>\n                            </div>\n                            <div class="form-group">\n                                <label for="vcard-email" class="col-form-label">' + n(e.label_email) + ':</label>\n                                <input id="vcard-email" type="email" class="form-control" name="email" value="' + n(e.email) + '"/>\n                            </div>\n                            <div class="form-group">\n                                <label for="vcard-role" class="col-form-label">' + n(e.label_role) + ':</label>\n                                <input id="vcard-role" type="text" class="form-control" name="role" value="' + n(e.role) + '" aria-describedby="vcard-role-help"/>\n                                <small id="vcard-role-help" class="form-text text-muted">' + n(e.label_role_help) + '</small>\n                            </div>\n                            <hr/>\n                            <div class="form-group">\n                                <button type="submit" class="save-form btn btn-primary">' + n(e.__("Save and close")) + "</button>\n                            </div>\n                        </form>\n                    </div>\n                    ", e._converse.pluggable.plugins["converse-omemo"].enabled(e._converse) && (t += '\n                        <div class="tab-pane fade" id="omemo-tabpanel" role="tabpanel" aria-labelledby="omemo-tab">\n                            <form class="converse-form fingerprint-removal">\n                                <ul class="list-group fingerprints">\n                                    <li class="list-group-item active">' + n(e.__("This device's OMEMO fingerprint")) + '</li>\n                                    <li class="list-group-item">\n                                    ', e.view.current_device && e.view.current_device.get("bundle") && e.view.current_device.get("bundle").fingerprint ? t += '\n                                        <span class="fingerprint">' + n(e.utils.formatFingerprint(e.view.current_device.get("bundle").fingerprint)) + "</span>\n                                    " : t += '\n                                        <span class="spinner fa fa-spinner centered"/>\n                                    ', t += '\n                                    </li>\n                                </ul>\n                                <div class="form-group">\n                                    <button type="button" class="generate-bundle btn btn-danger">' + n(e.__("Generate new keys and fingerprint")) + "</button>\n                                </div>\n\n                                ", e.view.other_devices.length && (t += '\n                                    <ul class="list-group fingerprints">\n                                        <li class="list-group-item nopadding active">\n                                            <label>\n                                            <input type="checkbox" class="select-all" title="' + n(e.__("Select all")) + '"\n                                                   aria-label="' + n(e.__("Checkbox to select fingerprints of all other OMEMO devices")) + '"/>\n                                            ' + n(e.__("Other OMEMO-enabled devices")) + "\n                                            </label>\n                                        </li>\n                                        ", e._.forEach(e.view.other_devices, function (o) {
+		return t += '\x3c!-- src/templates/profile_modal.html --\x3e\n<div class="modal fade" id="user-profile-modal" tabindex="-1" role="dialog" aria-labelledby="user-profile-modal-label" aria-hidden="true">\n    <div class="modal-dialog" role="document">\n        <div class="modal-content">\n            <div class="modal-header">\n                <h5 class="modal-title" id="user-profile-modal-label">' + n(e.heading_profile) + '</h5>\n                <button type="button" class="close" data-dismiss="modal" aria-label="' + n(e.label_close) + '"><span aria-hidden="true">×</span></button>\n            </div>\n            <div class="modal-body">\n                ', e._converse.pluggable.plugins["converse-omemo"].enabled(e._converse) && (t += '\n                <ul class="nav nav-pills justify-content-center">\n                    <li role="presentation" class="nav-item">\n                        <a class="nav-link active" id="profile-tab" href="#profile-tabpanel" aria-controls="profile-tabpanel" role="tab" data-toggle="tab">Profile</a>\n                    </li>\n                    <li role="presentation" class="nav-item">\n                        <a class="nav-link" id="omemo-tab" href="#omemo-tabpanel" aria-controls="omemo-tabpanel" role="tab" data-toggle="tab">OMEMO</a>\n                    </li>\n                </ul>\n                '), t += '\n                <div class="tab-content">\n                    <div class="tab-pane fade show active" id="profile-tabpanel" role="tabpanel" aria-labelledby="profile-tab">\n                        <form class="converse-form converse-form--modal profile-form" action="#">\n                            <div class="row">\n                                <div class="col-auto">\n                                    <a class="change-avatar" href="#">\n                                        ', e.image && (t += '\n                                            <img alt="' + n(e.alt_avatar) + '" class="img-thumbnail avatar align-self-center" height="100px" width="100px" src="data:' + n(e.image_type) + ";base64," + n(e.image) + '"/>\n                                        '), t += "\n                                        ", e.image || (t += '\n                                            <canvas class="avatar" height="100px" width="100px"></canvas>\n                                        '), t += '\n                                    </a>\n                                    <input class="hidden" name="image" type="file"/>\n                                </div>\n                                <div class="col">\n                                    <div class="form-group">\n                                        <label class="col-form-label">' + n(e.label_jid) + ":</label>\n                                        <div>" + n(e.jid) + '</div>\n                                    </div>\n                                </div>\n                            </div>\n                            <div class="form-group">\n                                <label for="vcard-fullname" class="col-form-label">' + n(e.label_fullname) + ':</label>\n                                <input id="vcard-fullname" type="text" class="form-control" name="fn" value="' + n(e.fullname) + '"/>\n                            </div>\n                            <div class="form-group">\n                                <label for="vcard-nickname" class="col-form-label">' + n(e.label_nickname) + ':</label>\n                                <input id="vcard-nickname" type="text" class="form-control" name="nickname" value="' + n(e.nickname) + '"/>\n                            </div>\n                            <div class="form-group">\n                                <label for="vcard-url" class="col-form-label">' + n(e.label_url) + ':</label>\n                                <input id="vcard-url" type="url" class="form-control" name="url" value="' + n(e.url) + '"/>\n                            </div>\n                            <div class="form-group">\n                                <label for="vcard-email" class="col-form-label">' + n(e.label_email) + ':</label>\n                                <input id="vcard-email" type="email" class="form-control" name="email" value="' + n(e.email) + '"/>\n                            </div>\n                            <div class="form-group">\n                                <label for="vcard-role" class="col-form-label">' + n(e.label_role) + ':</label>\n                                <input id="vcard-role" type="text" class="form-control" name="role" value="' + n(e.role) + '" aria-describedby="vcard-role-help"/>\n                                <small id="vcard-role-help" class="form-text text-muted">' + n(e.label_role_help) + '</small>\n                            </div>\n                            <hr/>\n                            <div class="form-group">\n                                <button type="submit" class="save-form btn btn-primary">' + n(e.__("Save and close")) + "</button>\n                            </div>\n                        </form>\n                    </div>\n                    ", e._converse.pluggable.plugins["converse-omemo"].enabled(e._converse) && (t += '\n                        <div class="tab-pane fade" id="omemo-tabpanel" role="tabpanel" aria-labelledby="omemo-tab">\n                            <form class="converse-form fingerprint-removal">\n                                <ul class="list-group fingerprints">\n                                    <li class="list-group-item active">' + n(e.__("This device's OMEMO fingerprint")) + '</li>\n                                    <li class="list-group-item">\n                                    ', e.view.current_device && e.view.current_device.get("bundle") && e.view.current_device.get("bundle").fingerprint ? t += '\n                                        <span class="fingerprint">' + n(e.utils.formatFingerprint(e.view.current_device.get("bundle").fingerprint)) + "</span>\n                                    " : t += '\n                                        <span class="spinner fa fa-spinner centered"/>\n                                    ', t += '\n                                    </li>\n                                </ul>\n                                <div class="form-group">\n                                    <button type="button" class="generate-bundle btn btn-danger">' + n(e.__("Generate new keys and fingerprint")) + "</button>\n                                </div>\n\n                                ", e.view.other_devices.length && (t += '\n                                    <ul class="list-group fingerprints">\n                                        <li class="list-group-item nopadding active">\n                                            <label>\n                                            <input type="checkbox" class="select-all" title="' + n(e.__("Select all")) + '"\n                                                   aria-label="' + n(e.__("Checkbox to select fingerprints of all other OMEMO devices")) + '"/>\n                                            ' + n(e.__("Other OMEMO-enabled devices")) + "\n                                            </label>\n                                        </li>\n                                        ", e._.forEach(e.view.other_devices, function (o) {
 			t += "\n                                            ", o.get("bundle") && o.get("bundle").fingerprint ? t += '\n                                            <li class="fingerprint-removal-item list-group-item nopadding">\n                                                <label>\n                                                <input type="checkbox" value="' + n(o.get("id")) + '"\n                                                       aria-label="' + n(e.__("Checkbox for selecting the following fingerprint")) + '"/>\n                                                <span class="fingerprint">' + n(e.utils.formatFingerprint(o.get("bundle").fingerprint)) + "</span>\n                                                </label>\n                                            </li>\n                                            " : t += '\n                                            <li class="fingerprint-removal-item list-group-item nopadding">\n                                                <label>\n                                                <input type="checkbox" value="' + n(o.get("id")) + '"\n                                                       aria-label="' + n(e.__("Checkbox for selecting the following fingerprint")) + '"/>\n                                                <span>' + n(e.__("Device without a fingerprint")) + "</span>\n                                                </label>\n                                            </li>\n                                            ", t += "\n                                        "
 		}), t += '\n                                    </ul>\n                                    <div class="form-group">\n                                        <button type="submit" class="save-form btn btn-primary">' + n(e.__("Remove checked devices and close")) + "</button>\n                                    </div>\n                                "), t += "\n                            </form>\n                        </div>\n                    "), t += "\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n"
 	}
@@ -13447,7 +13447,7 @@
 	e.exports = function (e) {
 		var t, n = "",
 			a = o.escape;
-		return n += '\x3c!-- src/templates/client_info_modal.html --\x3e\n\x3c!-- Change status Modal --\x3e\n<div class="modal fade" id="modal-status-change" tabindex="-1" role="dialog" aria-labelledby="changeStatusModalLabel" aria-hidden="true">\n    <div class="modal-dialog" role="document">\n        <div class="modal-content">\n            <div class="modal-header">\n                <h5 class="modal-title" id="changeStatusModalLabel">' + a(e.modal_title) + '</h5>\n                <button type="button" class="close" data-dismiss="modal" aria-label="' + a(e.label_close) + '">\n                    <span aria-hidden="true">Ã—</span>\n                </button>\n            </div>\n            <div class="modal-body">\n                <div class="container brand-heading-container">\n                    <h6 class="brand-heading">Converse</h6>\n                    <p class="brand-subtitle">' + a(e.version_name) + '</p>\n                    <p class="brand-subtitle">' + (null == (t = e.first_subtitle) ? "" : t) + '</p>\n                    <p class="brand-subtitle">' + (null == (t = e.second_subtitle) ? "" : t) + "</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n"
+		return n += '\x3c!-- src/templates/client_info_modal.html --\x3e\n\x3c!-- Change status Modal --\x3e\n<div class="modal fade" id="modal-status-change" tabindex="-1" role="dialog" aria-labelledby="changeStatusModalLabel" aria-hidden="true">\n    <div class="modal-dialog" role="document">\n        <div class="modal-content">\n            <div class="modal-header">\n                <h5 class="modal-title" id="changeStatusModalLabel">' + a(e.modal_title) + '</h5>\n                <button type="button" class="close" data-dismiss="modal" aria-label="' + a(e.label_close) + '">\n                    <span aria-hidden="true">×</span>\n                </button>\n            </div>\n            <div class="modal-body">\n                <div class="container brand-heading-container">\n                    <h6 class="brand-heading">Converse</h6>\n                    <p class="brand-subtitle">' + a(e.version_name) + '</p>\n                    <p class="brand-subtitle">' + (null == (t = e.first_subtitle) ? "" : t) + '</p>\n                    <p class="brand-subtitle">' + (null == (t = e.second_subtitle) ? "" : t) + "</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n"
 	}
 }, function (e, t, n) {
 	var o = {
@@ -13457,7 +13457,7 @@
 		var t = "",
 			n = o.escape;
 		Array.prototype.join;
-		return t += '\x3c!-- src/templates/chat_status_modal.html --\x3e\n\x3c!-- Change status Modal --\x3e\n<div class="modal fade" id="modal-status-change" tabindex="-1" role="dialog" aria-labelledby="changeStatusModalLabel" aria-hidden="true">\n    <div class="modal-dialog" role="document">\n        <div class="modal-content">\n            <div class="modal-header">\n                <h5 class="modal-title" id="changeStatusModalLabel">' + n(e.modal_title) + '</h5>\n                <button type="button" class="close" data-dismiss="modal" aria-label="' + n(e.label_close) + '">\n                    <span aria-hidden="true">Ã—</span>\n                </button>\n            </div>\n            <div class="modal-body">\n                <form class="converse-form set-xmpp-status" id="set-xmpp-status">\n                    <div class="form-group">\n                        <div class="custom-control custom-radio">\n                            <input ', "online" === e.status && (t += ' checked="checked" '), t += '\n                                   type="radio" id="radio-online" value="online" name="chat_status" class="custom-control-input"/>\n                            <label class="custom-control-label" for="radio-online">\n                                <span class="fa fa-circle chat-status chat-status--online"></span>' + n(e.label_online) + '</label>\n                        </div>\n                        <div class="custom-control custom-radio">\n                            <input ', "busy" === e.status && (t += ' checked="checked" '), t += '\n                                   type="radio" id="radio-busy" value="dnd" name="chat_status" class="custom-control-input"/>\n                            <label class="custom-control-label" for="radio-busy">\n                                <span class="fa fa-minus-circle  chat-status chat-status--busy"></span>' + n(e.label_busy) + '</label>\n                        </div>\n                        <div class="custom-control custom-radio">\n                            <input ', "away" === e.status && (t += ' checked="checked" '), t += '\n                                   type="radio" id="radio-away" value="away" name="chat_status" class="custom-control-input"/>\n                            <label class="custom-control-label" for="radio-away">\n                                <span class="fa fa-circle chat-status chat-status--away"></span>' + n(e.label_away) + '</label>\n                        </div>\n                        <div class="custom-control custom-radio">\n                            <input ', "xa" === e.status && (t += ' checked="checked" '), t += '\n                                   type="radio" id="radio-xa" value="xa" name="chat_status" class="custom-control-input"/>\n                            <label class="custom-control-label" for="radio-xa">\n                                <span class="far fa-circle chat-status chat-status--xa"></span>' + n(e.label_xa) + '</label>\n                        </div>\n                    </div>\n                    <div class="form-group">\n                        <div class="btn-group w-100">\n                            <input name="status_message" type="text" class="form-control" \n                                value="' + n(e.status_message) + '" placeholder="' + n(e.placeholder_status_message) + '"/>\n                            <span class="clear-input fa fa-times ', e.status_message || (t += " hidden "), t += '"></span>\n                        </div>\n                    </div>\n                    <button type="submit" class="btn btn-primary">' + n(e.label_save) + "</button>\n                </form>\n            </div>\n        </div>\n    </div>\n</div>\n"
+		return t += '\x3c!-- src/templates/chat_status_modal.html --\x3e\n\x3c!-- Change status Modal --\x3e\n<div class="modal fade" id="modal-status-change" tabindex="-1" role="dialog" aria-labelledby="changeStatusModalLabel" aria-hidden="true">\n    <div class="modal-dialog" role="document">\n        <div class="modal-content">\n            <div class="modal-header">\n                <h5 class="modal-title" id="changeStatusModalLabel">' + n(e.modal_title) + '</h5>\n                <button type="button" class="close" data-dismiss="modal" aria-label="' + n(e.label_close) + '">\n                    <span aria-hidden="true">×</span>\n                </button>\n            </div>\n            <div class="modal-body">\n                <form class="converse-form set-xmpp-status" id="set-xmpp-status">\n                    <div class="form-group">\n                        <div class="custom-control custom-radio">\n                            <input ', "online" === e.status && (t += ' checked="checked" '), t += '\n                                   type="radio" id="radio-online" value="online" name="chat_status" class="custom-control-input"/>\n                            <label class="custom-control-label" for="radio-online">\n                                <span class="fa fa-circle chat-status chat-status--online"></span>' + n(e.label_online) + '</label>\n                        </div>\n                        <div class="custom-control custom-radio">\n                            <input ', "busy" === e.status && (t += ' checked="checked" '), t += '\n                                   type="radio" id="radio-busy" value="dnd" name="chat_status" class="custom-control-input"/>\n                            <label class="custom-control-label" for="radio-busy">\n                                <span class="fa fa-minus-circle  chat-status chat-status--busy"></span>' + n(e.label_busy) + '</label>\n                        </div>\n                        <div class="custom-control custom-radio">\n                            <input ', "away" === e.status && (t += ' checked="checked" '), t += '\n                                   type="radio" id="radio-away" value="away" name="chat_status" class="custom-control-input"/>\n                            <label class="custom-control-label" for="radio-away">\n                                <span class="fa fa-circle chat-status chat-status--away"></span>' + n(e.label_away) + '</label>\n                        </div>\n                        <div class="custom-control custom-radio">\n                            <input ', "xa" === e.status && (t += ' checked="checked" '), t += '\n                                   type="radio" id="radio-xa" value="xa" name="chat_status" class="custom-control-input"/>\n                            <label class="custom-control-label" for="radio-xa">\n                                <span class="far fa-circle chat-status chat-status--xa"></span>' + n(e.label_xa) + '</label>\n                        </div>\n                    </div>\n                    <div class="form-group">\n                        <div class="btn-group w-100">\n                            <input name="status_message" type="text" class="form-control" \n                                value="' + n(e.status_message) + '" placeholder="' + n(e.placeholder_status_message) + '"/>\n                            <span class="clear-input fa fa-times ', e.status_message || (t += " hidden "), t += '"></span>\n                        </div>\n                    </div>\n                    <button type="submit" class="btn btn-primary">' + n(e.label_save) + "</button>\n                </form>\n            </div>\n        </div>\n    </div>\n</div>\n"
 	}
 }, function (e, t, n) {
 	var o = {
@@ -13467,7 +13467,7 @@
 		var t = "",
 			n = o.escape;
 		Array.prototype.join;
-		return t += '\x3c!-- src/templates/user_details_modal.html --\x3e\n<div class="modal fade" id="user-details-modal" tabindex="-1" role="dialog" aria-labelledby="user-details-modal-label" aria-hidden="true">\n    <div class="modal-dialog" role="document">\n        <div class="modal-content">\n            <div class="modal-header">\n                <h5 class="modal-title" id="user-details-modal-label">' + n(e.display_name) + '</h5>\n                <button type="button" class="close" data-dismiss="modal" aria-label="' + n(e.__("Close")) + '"><span aria-hidden="true">Ã—</span></button>\n            </div>\n            <div class="modal-body">\n                ', e.image && (t += '\n                <img alt="' + n(e.__("The User's Profile Image")) + '"\n                    class="img-thumbnail avatar align-self-center mb-3"\n                    height="100" width="100" src="data:' + n(e.image_type) + ";base64," + n(e.image) + '"/>\n                '), t += "\n                ", e.fullname && (t += "\n                <p><label>" + n(e.__("Full Name:")) + "</label> " + n(e.fullname) + "</p>\n                "), t += "\n                <p><label>" + n(e.__("XMPP Address:")) + '</label> <a href="xmpp:' + n(e.jid) + '">' + n(e.jid) + "</a></p>\n                ", e.nickname && (t += "\n                <p><label>" + n(e.__("Nickname:")) + "</label> " + n(e.nickname) + "</p>\n                "), t += "\n                ", e.url && (t += "\n                <p><label>" + n(e.__("URL:")) + '</label> <a target="_blank" rel="noopener" href="' + n(e.url) + '">' + n(e.url) + "</a></p>\n                "), t += "\n                ", e.email && (t += "\n                <p><label>" + n(e.__("Email:")) + '</label> <a href="mailto:' + n(e.email) + '">' + n(e.email) + "</a></p>\n                "), t += "\n                ", e.role && (t += "\n                <p><label>" + n(e.__("Role:")) + "</label> " + n(e.role) + "</p>\n                "), t += "\n\n                ", e._converse.pluggable.plugins["converse-omemo"].enabled(e._converse) && (t += '\n                    <hr/>\n                    <ul class="list-group fingerprints">\n                        <li class="list-group-item active">' + n(e.__("OMEMO Fingerprints")) + "</li>\n                        ", e.view.devicelist.devices || (t += '\n                            <li class="list-group-item"><span class="spinner fa fa-spinner centered"/></li>\n                        '), t += "\n                        ", e.view.devicelist.devices && (t += "\n                            ", e.view.devicelist.devices.each(function (o) {
+		return t += '\x3c!-- src/templates/user_details_modal.html --\x3e\n<div class="modal fade" id="user-details-modal" tabindex="-1" role="dialog" aria-labelledby="user-details-modal-label" aria-hidden="true">\n    <div class="modal-dialog" role="document">\n        <div class="modal-content">\n            <div class="modal-header">\n                <h5 class="modal-title" id="user-details-modal-label">' + n(e.display_name) + '</h5>\n                <button type="button" class="close" data-dismiss="modal" aria-label="' + n(e.__("Close")) + '"><span aria-hidden="true">×</span></button>\n            </div>\n            <div class="modal-body">\n                ', e.image && (t += '\n                <img alt="' + n(e.__("The User's Profile Image")) + '"\n                    class="img-thumbnail avatar align-self-center mb-3"\n                    height="100" width="100" src="data:' + n(e.image_type) + ";base64," + n(e.image) + '"/>\n                '), t += "\n                ", e.fullname && (t += "\n                <p><label>" + n(e.__("Full Name:")) + "</label> " + n(e.fullname) + "</p>\n                "), t += "\n                <p><label>" + n(e.__("XMPP Address:")) + '</label> <a href="xmpp:' + n(e.jid) + '">' + n(e.jid) + "</a></p>\n                ", e.nickname && (t += "\n                <p><label>" + n(e.__("Nickname:")) + "</label> " + n(e.nickname) + "</p>\n                "), t += "\n                ", e.url && (t += "\n                <p><label>" + n(e.__("URL:")) + '</label> <a target="_blank" rel="noopener" href="' + n(e.url) + '">' + n(e.url) + "</a></p>\n                "), t += "\n                ", e.email && (t += "\n                <p><label>" + n(e.__("Email:")) + '</label> <a href="mailto:' + n(e.email) + '">' + n(e.email) + "</a></p>\n                "), t += "\n                ", e.role && (t += "\n                <p><label>" + n(e.__("Role:")) + "</label> " + n(e.role) + "</p>\n                "), t += "\n\n                ", e._converse.pluggable.plugins["converse-omemo"].enabled(e._converse) && (t += '\n                    <hr/>\n                    <ul class="list-group fingerprints">\n                        <li class="list-group-item active">' + n(e.__("OMEMO Fingerprints")) + "</li>\n                        ", e.view.devicelist.devices || (t += '\n                            <li class="list-group-item"><span class="spinner fa fa-spinner centered"/></li>\n                        '), t += "\n                        ", e.view.devicelist.devices && (t += "\n                            ", e.view.devicelist.devices.each(function (o) {
 			t += "\n                                ", o.get("bundle") && o.get("bundle").fingerprint && (t += '\n                                <li class="list-group-item">\n                                    <form class="fingerprint-trust">\n                                    <div class="btn-group btn-group-toggle">\n                                        <label class="btn btn--small ', -1 !== o.get("trusted") ? t += " btn-primary active " : t += "  btn-secondary ", t += '">\n                                            <input type="radio" name="' + n(o.get("id")) + '" value="1"\n                                                ', -1 !== o.get("trusted") && (t += ' checked="checked" '), t += "/>" + n(e.__("Trusted")) + '\n                                        </label>\n                                        <label class="btn btn--small ', -1 === o.get("trusted") ? t += " btn-primary active " : t += " btn-secondary ", t += '">\n                                            <input type="radio" name="' + n(o.get("id")) + '" value="-1"\n                                                ', -1 === o.get("trusted") && (t += ' checked="checked" '), t += "/>" + n(e.__("Untrusted")) + '\n                                        </label>\n                                    </div>\n                                    <span class="fingerprint">' + n(e.utils.formatFingerprint(o.get("bundle").fingerprint)) + "</span>\n                                    </form>\n                                </li>\n                                "), t += "\n                            "
 		}), t += "\n                        "), t += "\n                    </ul>\n                "), t += '\n            </div>\n            <div class="modal-footer">\n                <button type="button" class="btn btn-warning" data-dismiss="modal">' + n(e.__("Close")) + '</button>\n                <button type="button" class="btn btn-info refresh-contact"><i class="fa fa-refresh"> </i>' + n(e.__("Refresh")) + "</button>\n                ", e.allow_contact_removal && e.is_roster_contact && (t += '\n                    <button type="button" class="btn btn-danger remove-contact"><i class="far fa-trash-alt"> </i>' + n(e.__("Remove as contact")) + "</button>\n                "), t += "\n            </div>\n        </div>\n    </div>\n</div>\n"
 	}
@@ -13559,7 +13559,7 @@
 		var t, n = "",
 			a = o.escape;
 		Array.prototype.join;
-		return n += '\x3c!-- src/templates/chatbox_message_form.html --\x3e\n<div class="message-form-container">\n<div class="new-msgs-indicator hidden">â–¼ ' + a(e.unread_msgs) + ' â–¼</div>\n<form class="sendXMPPMessage">\n    ', e.show_toolbar && (n += '\n        <ul class="chat-toolbar no-text-select"></ul>\n    '), n += '\n    <input type="text" placeholder="' + (null == (t = e.label_spoiler_hint) ? "" : t) + '" value="' + (null == (t = e.hint_value) ? "" : t) + '"\n           class="', e.composing_spoiler || (n += " hidden "), n += ' spoiler-hint"/>\n\n    <div class="suggestion-box">\n        <ul class="suggestion-box__results suggestion-box__results--above" hidden=""></ul>\n        <textarea\n            type="text"\n            class="chat-textarea suggestion-box__input\n                ', e.show_send_button && (n += " chat-textarea-send-button "), n += "\n                ", e.composing_spoiler && (n += " spoiler "), n += '"\n            placeholder="' + a(e.label_message) + '">' + (null == (t = e.message_value) ? "" : t) + '</textarea>\n        <span class="suggestion-box__additions visually-hidden" role="status" aria-live="assertive" aria-relevant="additions"></span>\n\n        ', e.show_send_button && (n += '\n            <button type="submit" class="pure-button send-button">' + a(e.label_send) + "</button>\n        "), n += "\n    </div>\n</form>\n</div>\n"
+		return n += '\x3c!-- src/templates/chatbox_message_form.html --\x3e\n<div class="message-form-container">\n<div class="new-msgs-indicator hidden">▼ ' + a(e.unread_msgs) + ' ▼</div>\n<form class="sendXMPPMessage">\n    ', e.show_toolbar && (n += '\n        <ul class="chat-toolbar no-text-select"></ul>\n    '), n += '\n    <input type="text" placeholder="' + (null == (t = e.label_spoiler_hint) ? "" : t) + '" value="' + (null == (t = e.hint_value) ? "" : t) + '"\n           class="', e.composing_spoiler || (n += " hidden "), n += ' spoiler-hint"/>\n\n    <div class="suggestion-box">\n        <ul class="suggestion-box__results suggestion-box__results--above" hidden=""></ul>\n        <textarea\n            type="text"\n            class="chat-textarea suggestion-box__input\n                ', e.show_send_button && (n += " chat-textarea-send-button "), n += "\n                ", e.composing_spoiler && (n += " spoiler "), n += '"\n            placeholder="' + a(e.label_message) + '">' + (null == (t = e.message_value) ? "" : t) + '</textarea>\n        <span class="suggestion-box__additions visually-hidden" role="status" aria-live="assertive" aria-relevant="additions"></span>\n\n        ', e.show_send_button && (n += '\n            <button type="submit" class="pure-button send-button">' + a(e.label_send) + "</button>\n        "), n += "\n    </div>\n</form>\n</div>\n"
 	}
 }, function (e, t, n) {
 	var o = {
@@ -13588,7 +13588,7 @@
 		var t = "",
 			n = o.escape;
 		Array.prototype.join;
-		return t += '\x3c!-- src/templates/alert_modal.html --\x3e\n<div class="modal" tabindex="-1" role="dialog">\n  <div class="modal-dialog" role="document">\n    <div class="modal-content">\n      <div class="modal-header ' + n(e.type) + '">\n        <h5 class="modal-title">' + n(e.title) + '</h5>\n        <button type="button" class="close" data-dismiss="modal" aria-label="Close">\n          <span aria-hidden="true">Ã—</span>\n        </button>\n      </div>\n      <div class="modal-body">', e.messages.forEach(function (e) {
+		return t += '\x3c!-- src/templates/alert_modal.html --\x3e\n<div class="modal" tabindex="-1" role="dialog">\n  <div class="modal-dialog" role="document">\n    <div class="modal-content">\n      <div class="modal-header ' + n(e.type) + '">\n        <h5 class="modal-title">' + n(e.title) + '</h5>\n        <button type="button" class="close" data-dismiss="modal" aria-label="Close">\n          <span aria-hidden="true">×</span>\n        </button>\n      </div>\n      <div class="modal-body">', e.messages.forEach(function (e) {
 			t += "\n          <p>" + n(e) + "</p>\n      "
 		}), t += "\n      </div>\n    </div>\n  </div>\n</div>\n"
 	}
@@ -13600,7 +13600,7 @@
 		var t = "",
 			n = o.escape;
 		Array.prototype.join;
-		return t += '\x3c!-- src/templates/message_versions_modal.html --\x3e\n<div class="modal fade" id="message-versions-modal" tabindex="-1" role="dialog" aria-labelledby="message-versions-modal-label" aria-hidden="true">\n    <div class="modal-dialog" role="document">\n        <div class="modal-content">\n            <div class="modal-header">\n                <h4 class="modal-title" id="message-versions-modal-label">' + n(e.__("Message versions")) + '</h4>\n                <button type="button" class="close" data-dismiss="modal" aria-label="' + n(e.label_close) + '"><span aria-hidden="true">Ã—</span></button>\n            </div>\n            <div class="modal-body">\n                <h4>Older versions</h4>\n                ', e.older_versions.forEach(function (e) {
+		return t += '\x3c!-- src/templates/message_versions_modal.html --\x3e\n<div class="modal fade" id="message-versions-modal" tabindex="-1" role="dialog" aria-labelledby="message-versions-modal-label" aria-hidden="true">\n    <div class="modal-dialog" role="document">\n        <div class="modal-content">\n            <div class="modal-header">\n                <h4 class="modal-title" id="message-versions-modal-label">' + n(e.__("Message versions")) + '</h4>\n                <button type="button" class="close" data-dismiss="modal" aria-label="' + n(e.label_close) + '"><span aria-hidden="true">×</span></button>\n            </div>\n            <div class="modal-body">\n                <h4>Older versions</h4>\n                ', e.older_versions.forEach(function (e) {
 			t += ' <p class="older-msg">' + n(e) + "</p> "
 		}), t += "\n                <hr/>\n                <h4>Current version</h4>\n                <p>" + n(e.message) + '</p>\n            </div>\n            <div class="modal-footer">\n                <button type="button" class="btn btn-secondary" data-dismiss="modal">' + n(e.__("Close")) + "</button>\n            </div>\n        </div>\n    </div>\n</div>\n"
 	}
@@ -36826,7 +36826,7 @@
 			"0;-)": "1f607",
 			"O:-3": "1f607",
 			"-__-": "1f611",
-			":-Ãž": "1f61b",
+			":-Þ": "1f61b",
 			"</3": "1f494",
 			":')": "1f602",
 			":-D": "1f603",
@@ -36874,7 +36874,7 @@
 			":-/": "1f615",
 			":-.": "1f615",
 			":-P": "1f61b",
-			":Ãž": "1f61b",
+			":Þ": "1f61b",
 			":-b": "1f61b",
 			":-O": "1f62e",
 			O_O: "1f62e",
@@ -36932,7 +36932,7 @@
 		}
 	xe = xe.join("|");
 	const Ae = new RegExp("<object[^>]*>.*?</object>|<span[^>]*>.*?</span>|<(?:object|embed|svg|img|div|span|p|a)[^>]*>|(" + xe + ")", "gi"),
-		Ce = new RegExp("<object[^>]*>.*?</object>|<span[^>]*>.*?</span>|<(?:object|embed|svg|img|div|span|p|a)[^>]*>|((\\s|^)(\\*\\\\0\\/\\*|\\*\\\\O\\/\\*|\\-___\\-|\\:'\\-\\)|'\\:\\-\\)|'\\:\\-D|\\>\\:\\-\\)|>\\:\\-\\)|'\\:\\-\\(|\\>\\:\\-\\(|>\\:\\-\\(|\\:'\\-\\(|O\\:\\-\\)|0\\:\\-3|0\\:\\-\\)|0;\\^\\)|O;\\-\\)|0;\\-\\)|O\\:\\-3|\\-__\\-|\\:\\-Ãž|\\:\\-Ãž|\\<\\/3|<\\/3|\\:'\\)|\\:\\-D|'\\:\\)|'\\=\\)|'\\:D|'\\=D|\\>\\:\\)|>\\:\\)|\\>;\\)|>;\\)|\\>\\=\\)|>\\=\\)|;\\-\\)|\\*\\-\\)|;\\-\\]|;\\^\\)|'\\:\\(|'\\=\\(|\\:\\-\\*|\\:\\^\\*|\\>\\:P|>\\:P|X\\-P|\\>\\:\\[|>\\:\\[|\\:\\-\\(|\\:\\-\\[|\\>\\:\\(|>\\:\\(|\\:'\\(|;\\-\\(|\\>\\.\\<|>\\.<|#\\-\\)|%\\-\\)|X\\-\\)|\\\\0\\/|\\\\O\\/|0\\:3|0\\:\\)|O\\:\\)|O\\=\\)|O\\:3|B\\-\\)|8\\-\\)|B\\-D|8\\-D|\\-_\\-|\\>\\:\\\\|>\\:\\\\|\\>\\:\\/|>\\:\\/|\\:\\-\\/|\\:\\-\\.|\\:\\-P|\\:Ãž|\\:Ãž|\\:\\-b|\\:\\-O|O_O|\\>\\:O|>\\:O|\\:\\-X|\\:\\-#|\\:\\-\\)|\\(y\\)|\\<3|<3|\\:D|\\=D|;\\)|\\*\\)|;\\]|;D|\\:\\*|\\=\\*|\\:\\(|\\:\\[|\\=\\(|\\:@|;\\(|D\\:|\\:\\$|\\=\\$|#\\)|%\\)|X\\)|B\\)|8\\)|\\:\\/|\\:\\\\|\\=\\/|\\=\\\\|\\:L|\\=L|\\:P|\\=P|\\:b|\\:O|\\:X|\\:#|\\=X|\\=#|\\:\\)|\\=\\]|\\=\\)|\\:\\])(?=\\s|$|[!,.?]))", "gi");
+		Ce = new RegExp("<object[^>]*>.*?</object>|<span[^>]*>.*?</span>|<(?:object|embed|svg|img|div|span|p|a)[^>]*>|((\\s|^)(\\*\\\\0\\/\\*|\\*\\\\O\\/\\*|\\-___\\-|\\:'\\-\\)|'\\:\\-\\)|'\\:\\-D|\\>\\:\\-\\)|>\\:\\-\\)|'\\:\\-\\(|\\>\\:\\-\\(|>\\:\\-\\(|\\:'\\-\\(|O\\:\\-\\)|0\\:\\-3|0\\:\\-\\)|0;\\^\\)|O;\\-\\)|0;\\-\\)|O\\:\\-3|\\-__\\-|\\:\\-Þ|\\:\\-Þ|\\<\\/3|<\\/3|\\:'\\)|\\:\\-D|'\\:\\)|'\\=\\)|'\\:D|'\\=D|\\>\\:\\)|>\\:\\)|\\>;\\)|>;\\)|\\>\\=\\)|>\\=\\)|;\\-\\)|\\*\\-\\)|;\\-\\]|;\\^\\)|'\\:\\(|'\\=\\(|\\:\\-\\*|\\:\\^\\*|\\>\\:P|>\\:P|X\\-P|\\>\\:\\[|>\\:\\[|\\:\\-\\(|\\:\\-\\[|\\>\\:\\(|>\\:\\(|\\:'\\(|;\\-\\(|\\>\\.\\<|>\\.<|#\\-\\)|%\\-\\)|X\\-\\)|\\\\0\\/|\\\\O\\/|0\\:3|0\\:\\)|O\\:\\)|O\\=\\)|O\\:3|B\\-\\)|8\\-\\)|B\\-D|8\\-D|\\-_\\-|\\>\\:\\\\|>\\:\\\\|\\>\\:\\/|>\\:\\/|\\:\\-\\/|\\:\\-\\.|\\:\\-P|\\:Þ|\\:Þ|\\:\\-b|\\:\\-O|O_O|\\>\\:O|>\\:O|\\:\\-X|\\:\\-#|\\:\\-\\)|\\(y\\)|\\<3|<3|\\:D|\\=D|;\\)|\\*\\)|;\\]|;D|\\:\\*|\\=\\*|\\:\\(|\\:\\[|\\=\\(|\\:@|;\\(|D\\:|\\:\\$|\\=\\$|#\\)|%\\)|X\\)|B\\)|8\\)|\\:\\/|\\:\\\\|\\=\\/|\\=\\\\|\\:L|\\=L|\\:P|\\=P|\\:b|\\:O|\\:X|\\:#|\\=X|\\=#|\\:\\)|\\=\\]|\\=\\)|\\:\\])(?=\\s|$|[!,.?]))", "gi");
 
 	function Ee(e) {
 		if (e.indexOf("-") > -1) {
@@ -37196,7 +37196,7 @@
 					getReferenceForMention(e, t) {
 						const n = Ie.getLongestSubstring(e, this.occupants.map(e => e.getDisplayName()));
 						if (!n) return null;
-						if ((e[n.length] || "").match(/[A-Za-zÃ¤Ã«Ã¯Ã¶Ã¼Ã¢ÃªÃ®Ã´Ã»Ã¡Ã©Ã­Ã³ÃºÃ Ã¨Ã¬Ã²Ã¹Ã„Ã‹ÃÃ–ÃœÃ‚ÃŠÃŽÃ”Ã›ÃÃ‰ÃÃ“ÃšÃ€ÃˆÃŒÃ’Ã™]/i)) return null;
+						if ((e[n.length] || "").match(/[A-Za-zäëïöüâêîôûáéíóúàèìòùÄËÏÖÜÂÊÎÔÛÁÉÍÓÚÀÈÌÒÙ]/i)) return null;
 						const o = this.occupants.findOccupant({
 							nick: n
 						}) || this.occupants.findOccupant({
@@ -38265,7 +38265,7 @@
 						e.lengthComputable && this.set("progress", e.loaded / e.total)
 					}, !1), n.onerror = (() => {
 						let o;
-						o = n.responseText ? t('Sorry, could not succesfully upload your file. Your serverâ€™s response: "%1$s"', n.responseText) : t("Sorry, could not succesfully upload your file."), this.save({
+						o = n.responseText ? t('Sorry, could not succesfully upload your file. Your server’s response: "%1$s"', n.responseText) : t("Sorry, could not succesfully upload your file."), this.save({
 							type: "error",
 							upload: e.FAILURE,
 							message: o
@@ -43851,7 +43851,7 @@
 				}
 				return await ws.all(r.map(e => e.getBundle())), await ws.all(r.map(e => a(e))), r
 			}, e.createOMEMOMessageStanza = function (t, n, o) {
-				const a = (0, e.__)("This is an OMEMO encrypted message which your client doesnâ€™t seem to support. Find more information on https://conversations.im/omemo");
+				const a = (0, e.__)("This is an OMEMO encrypted message which your client doesn’t seem to support. Find more information on https://conversations.im/omemo");
 				if (!n.get("message")) throw new Error("No message body to encrypt!");
 				const r = As({
 					from: e.connection.jid,
@@ -45762,69 +45762,69 @@
 	! function (e) {
 		"use strict";
 		e.defineLocale("zh-tw", {
-			months: "ä¸€æœˆ_äºŒæœˆ_ä¸‰æœˆ_å››æœˆ_äº”æœˆ_å…­æœˆ_ä¸ƒæœˆ_å…«æœˆ_ä¹æœˆ_åæœˆ_åä¸€æœˆ_åäºŒæœˆ".split("_"),
-			monthsShort: "1æœˆ_2æœˆ_3æœˆ_4æœˆ_5æœˆ_6æœˆ_7æœˆ_8æœˆ_9æœˆ_10æœˆ_11æœˆ_12æœˆ".split("_"),
-			weekdays: "æ˜ŸæœŸæ—¥_æ˜ŸæœŸä¸€_æ˜ŸæœŸäºŒ_æ˜ŸæœŸä¸‰_æ˜ŸæœŸå››_æ˜ŸæœŸäº”_æ˜ŸæœŸå…­".split("_"),
-			weekdaysShort: "é€±æ—¥_é€±ä¸€_é€±äºŒ_é€±ä¸‰_é€±å››_é€±äº”_é€±å…­".split("_"),
-			weekdaysMin: "æ—¥_ä¸€_äºŒ_ä¸‰_å››_äº”_å…­".split("_"),
+			months: "一月_二月_三月_四月_五月_六月_七月_八月_九月_十月_十一月_十二月".split("_"),
+			monthsShort: "1月_2月_3月_4月_5月_6月_7月_8月_9月_10月_11月_12月".split("_"),
+			weekdays: "星期日_星期一_星期二_星期三_星期四_星期五_星期六".split("_"),
+			weekdaysShort: "週日_週一_週二_週三_週四_週五_週六".split("_"),
+			weekdaysMin: "日_一_二_三_四_五_六".split("_"),
 			longDateFormat: {
 				LT: "HH:mm",
 				LTS: "HH:mm:ss",
-				L: "YYYYå¹´MMMDæ—¥",
-				LL: "YYYYå¹´MMMDæ—¥",
-				LLL: "YYYYå¹´MMMDæ—¥ HH:mm",
-				LLLL: "YYYYå¹´MMMDæ—¥dddd HH:mm",
-				l: "YYYYå¹´MMMDæ—¥",
-				ll: "YYYYå¹´MMMDæ—¥",
-				lll: "YYYYå¹´MMMDæ—¥ HH:mm",
-				llll: "YYYYå¹´MMMDæ—¥dddd HH:mm"
+				L: "YYYY年MMMD日",
+				LL: "YYYY年MMMD日",
+				LLL: "YYYY年MMMD日 HH:mm",
+				LLLL: "YYYY年MMMD日dddd HH:mm",
+				l: "YYYY年MMMD日",
+				ll: "YYYY年MMMD日",
+				lll: "YYYY年MMMD日 HH:mm",
+				llll: "YYYY年MMMD日dddd HH:mm"
 			},
-			meridiemParse: /å‡Œæ™¨|æ—©ä¸Š|ä¸Šåˆ|ä¸­åˆ|ä¸‹åˆ|æ™šä¸Š/,
+			meridiemParse: /凌晨|早上|上午|中午|下午|晚上/,
 			meridiemHour: function (e, t) {
-				return 12 === e && (e = 0), "å‡Œæ™¨" === t || "æ—©ä¸Š" === t || "ä¸Šåˆ" === t ? e : "ä¸­åˆ" === t ? e >= 11 ? e : e + 12 : "ä¸‹åˆ" === t || "æ™šä¸Š" === t ? e + 12 : void 0
+				return 12 === e && (e = 0), "凌晨" === t || "早上" === t || "上午" === t ? e : "中午" === t ? e >= 11 ? e : e + 12 : "下午" === t || "晚上" === t ? e + 12 : void 0
 			},
 			meridiem: function (e, t, n) {
 				var o = 100 * e + t;
-				return o < 600 ? "å‡Œæ™¨" : o < 900 ? "æ—©ä¸Š" : o < 1130 ? "ä¸Šåˆ" : o < 1230 ? "ä¸­åˆ" : o < 1800 ? "ä¸‹åˆ" : "æ™šä¸Š"
+				return o < 600 ? "凌晨" : o < 900 ? "早上" : o < 1130 ? "上午" : o < 1230 ? "中午" : o < 1800 ? "下午" : "晚上"
 			},
 			calendar: {
-				sameDay: "[ä»Šå¤©]LT",
-				nextDay: "[æ˜Žå¤©]LT",
-				nextWeek: "[ä¸‹]ddddLT",
-				lastDay: "[æ˜¨å¤©]LT",
-				lastWeek: "[ä¸Š]ddddLT",
+				sameDay: "[今天]LT",
+				nextDay: "[明天]LT",
+				nextWeek: "[下]ddddLT",
+				lastDay: "[昨天]LT",
+				lastWeek: "[上]ddddLT",
 				sameElse: "L"
 			},
-			dayOfMonthOrdinalParse: /\d{1,2}(æ—¥|æœˆ|é€±)/,
+			dayOfMonthOrdinalParse: /\d{1,2}(日|月|週)/,
 			ordinal: function (e, t) {
 				switch (t) {
 					case "d":
 					case "D":
 					case "DDD":
-						return e + "æ—¥";
+						return e + "日";
 					case "M":
-						return e + "æœˆ";
+						return e + "月";
 					case "w":
 					case "W":
-						return e + "é€±";
+						return e + "週";
 					default:
 						return e
 				}
 			},
 			relativeTime: {
-				future: "%så…§",
-				past: "%så‰",
-				s: "å¹¾ç§’",
-				m: "1 åˆ†é˜",
-				mm: "%d åˆ†é˜",
-				h: "1 å°æ™‚",
-				hh: "%d å°æ™‚",
-				d: "1 å¤©",
-				dd: "%d å¤©",
-				M: "1 å€‹æœˆ",
-				MM: "%d å€‹æœˆ",
-				y: "1 å¹´",
-				yy: "%d å¹´"
+				future: "%s內",
+				past: "%s前",
+				s: "幾秒",
+				m: "1 分鐘",
+				mm: "%d 分鐘",
+				h: "1 小時",
+				hh: "%d 小時",
+				d: "1 天",
+				dd: "%d 天",
+				M: "1 個月",
+				MM: "%d 個月",
+				y: "1 年",
+				yy: "%d 年"
 			}
 		})
 	}(n(3))
@@ -45832,69 +45832,69 @@
 	! function (e) {
 		"use strict";
 		e.defineLocale("zh-cn", {
-			months: "ä¸€æœˆ_äºŒæœˆ_ä¸‰æœˆ_å››æœˆ_äº”æœˆ_å…­æœˆ_ä¸ƒæœˆ_å…«æœˆ_ä¹æœˆ_åæœˆ_åä¸€æœˆ_åäºŒæœˆ".split("_"),
-			monthsShort: "1æœˆ_2æœˆ_3æœˆ_4æœˆ_5æœˆ_6æœˆ_7æœˆ_8æœˆ_9æœˆ_10æœˆ_11æœˆ_12æœˆ".split("_"),
-			weekdays: "æ˜ŸæœŸæ—¥_æ˜ŸæœŸä¸€_æ˜ŸæœŸäºŒ_æ˜ŸæœŸä¸‰_æ˜ŸæœŸå››_æ˜ŸæœŸäº”_æ˜ŸæœŸå…­".split("_"),
-			weekdaysShort: "å‘¨æ—¥_å‘¨ä¸€_å‘¨äºŒ_å‘¨ä¸‰_å‘¨å››_å‘¨äº”_å‘¨å…­".split("_"),
-			weekdaysMin: "æ—¥_ä¸€_äºŒ_ä¸‰_å››_äº”_å…­".split("_"),
+			months: "一月_二月_三月_四月_五月_六月_七月_八月_九月_十月_十一月_十二月".split("_"),
+			monthsShort: "1月_2月_3月_4月_5月_6月_7月_8月_9月_10月_11月_12月".split("_"),
+			weekdays: "星期日_星期一_星期二_星期三_星期四_星期五_星期六".split("_"),
+			weekdaysShort: "周日_周一_周二_周三_周四_周五_周六".split("_"),
+			weekdaysMin: "日_一_二_三_四_五_六".split("_"),
 			longDateFormat: {
 				LT: "HH:mm",
 				LTS: "HH:mm:ss",
-				L: "YYYYå¹´MMMDæ—¥",
-				LL: "YYYYå¹´MMMDæ—¥",
-				LLL: "YYYYå¹´MMMDæ—¥Ahç‚¹mmåˆ†",
-				LLLL: "YYYYå¹´MMMDæ—¥ddddAhç‚¹mmåˆ†",
-				l: "YYYYå¹´MMMDæ—¥",
-				ll: "YYYYå¹´MMMDæ—¥",
-				lll: "YYYYå¹´MMMDæ—¥ HH:mm",
-				llll: "YYYYå¹´MMMDæ—¥dddd HH:mm"
+				L: "YYYY年MMMD日",
+				LL: "YYYY年MMMD日",
+				LLL: "YYYY年MMMD日Ah点mm分",
+				LLLL: "YYYY年MMMD日ddddAh点mm分",
+				l: "YYYY年MMMD日",
+				ll: "YYYY年MMMD日",
+				lll: "YYYY年MMMD日 HH:mm",
+				llll: "YYYY年MMMD日dddd HH:mm"
 			},
-			meridiemParse: /å‡Œæ™¨|æ—©ä¸Š|ä¸Šåˆ|ä¸­åˆ|ä¸‹åˆ|æ™šä¸Š/,
+			meridiemParse: /凌晨|早上|上午|中午|下午|晚上/,
 			meridiemHour: function (e, t) {
-				return 12 === e && (e = 0), "å‡Œæ™¨" === t || "æ—©ä¸Š" === t || "ä¸Šåˆ" === t ? e : "ä¸‹åˆ" === t || "æ™šä¸Š" === t ? e + 12 : e >= 11 ? e : e + 12
+				return 12 === e && (e = 0), "凌晨" === t || "早上" === t || "上午" === t ? e : "下午" === t || "晚上" === t ? e + 12 : e >= 11 ? e : e + 12
 			},
 			meridiem: function (e, t, n) {
 				var o = 100 * e + t;
-				return o < 600 ? "å‡Œæ™¨" : o < 900 ? "æ—©ä¸Š" : o < 1130 ? "ä¸Šåˆ" : o < 1230 ? "ä¸­åˆ" : o < 1800 ? "ä¸‹åˆ" : "æ™šä¸Š"
+				return o < 600 ? "凌晨" : o < 900 ? "早上" : o < 1130 ? "上午" : o < 1230 ? "中午" : o < 1800 ? "下午" : "晚上"
 			},
 			calendar: {
-				sameDay: "[ä»Šå¤©]LT",
-				nextDay: "[æ˜Žå¤©]LT",
-				nextWeek: "[ä¸‹]ddddLT",
-				lastDay: "[æ˜¨å¤©]LT",
-				lastWeek: "[ä¸Š]ddddLT",
+				sameDay: "[今天]LT",
+				nextDay: "[明天]LT",
+				nextWeek: "[下]ddddLT",
+				lastDay: "[昨天]LT",
+				lastWeek: "[上]ddddLT",
 				sameElse: "L"
 			},
-			dayOfMonthOrdinalParse: /\d{1,2}(æ—¥|æœˆ|å‘¨)/,
+			dayOfMonthOrdinalParse: /\d{1,2}(日|月|周)/,
 			ordinal: function (e, t) {
 				switch (t) {
 					case "d":
 					case "D":
 					case "DDD":
-						return e + "æ—¥";
+						return e + "日";
 					case "M":
-						return e + "æœˆ";
+						return e + "月";
 					case "w":
 					case "W":
-						return e + "å‘¨";
+						return e + "周";
 					default:
 						return e
 				}
 			},
 			relativeTime: {
-				future: "%så†…",
-				past: "%så‰",
-				s: "å‡ ç§’",
-				m: "1 åˆ†é’Ÿ",
-				mm: "%d åˆ†é’Ÿ",
-				h: "1 å°æ—¶",
-				hh: "%d å°æ—¶",
-				d: "1 å¤©",
-				dd: "%d å¤©",
-				M: "1 ä¸ªæœˆ",
-				MM: "%d ä¸ªæœˆ",
-				y: "1 å¹´",
-				yy: "%d å¹´"
+				future: "%s内",
+				past: "%s前",
+				s: "几秒",
+				m: "1 分钟",
+				mm: "%d 分钟",
+				h: "1 小时",
+				hh: "%d 小时",
+				d: "1 天",
+				dd: "%d 天",
+				M: "1 个月",
+				MM: "%d 个月",
+				y: "1 年",
+				yy: "%d 年"
 			},
 			week: {
 				dow: 1,
@@ -45908,13 +45908,13 @@
 
 		function t(e, t, n) {
 			var o = {
-				mm: t ? "Ñ…Ð²Ð¸Ð»Ð¸Ð½Ð°_Ñ…Ð²Ð¸Ð»Ð¸Ð½Ð¸_Ñ…Ð²Ð¸Ð»Ð¸Ð½" : "Ñ…Ð²Ð¸Ð»Ð¸Ð½Ñƒ_Ñ…Ð²Ð¸Ð»Ð¸Ð½Ð¸_Ñ…Ð²Ð¸Ð»Ð¸Ð½",
-				hh: t ? "Ð³Ð¾Ð´Ð¸Ð½Ð°_Ð³Ð¾Ð´Ð¸Ð½Ð¸_Ð³Ð¾Ð´Ð¸Ð½" : "Ð³Ð¾Ð´Ð¸Ð½Ñƒ_Ð³Ð¾Ð´Ð¸Ð½Ð¸_Ð³Ð¾Ð´Ð¸Ð½",
-				dd: "Ð´ÐµÐ½ÑŒ_Ð´Ð½Ñ–_Ð´Ð½Ñ–Ð²",
-				MM: "Ð¼Ñ–ÑÑÑ†ÑŒ_Ð¼Ñ–ÑÑÑ†Ñ–_Ð¼Ñ–ÑÑÑ†Ñ–Ð²",
-				yy: "Ñ€Ñ–Ðº_Ñ€Ð¾ÐºÐ¸_Ñ€Ð¾ÐºÑ–Ð²"
+				mm: t ? "хвилина_хвилини_хвилин" : "хвилину_хвилини_хвилин",
+				hh: t ? "година_години_годин" : "годину_години_годин",
+				dd: "день_дні_днів",
+				MM: "місяць_місяці_місяців",
+				yy: "рік_роки_років"
 			};
-			return "m" === n ? t ? "Ñ…Ð²Ð¸Ð»Ð¸Ð½Ð°" : "Ñ…Ð²Ð¸Ð»Ð¸Ð½Ñƒ" : "h" === n ? t ? "Ð³Ð¾Ð´Ð¸Ð½Ð°" : "Ð³Ð¾Ð´Ð¸Ð½Ñƒ" : e + " " + function (e, t) {
+			return "m" === n ? t ? "хвилина" : "хвилину" : "h" === n ? t ? "година" : "годину" : e + " " + function (e, t) {
 				var n = e.split("_");
 				return t % 10 == 1 && t % 100 != 11 ? n[0] : t % 10 >= 2 && t % 10 <= 4 && (t % 100 < 10 || t % 100 >= 20) ? n[1] : n[2]
 			}(o[n], +e)
@@ -45922,78 +45922,78 @@
 
 		function n(e) {
 			return function () {
-				return e + "Ð¾" + (11 === this.hours() ? "Ð±" : "") + "] LT"
+				return e + "о" + (11 === this.hours() ? "б" : "") + "] LT"
 			}
 		}
 		e.defineLocale("uk", {
 			months: {
-				format: "ÑÑ–Ñ‡Ð½Ñ_Ð»ÑŽÑ‚Ð¾Ð³Ð¾_Ð±ÐµÑ€ÐµÐ·Ð½Ñ_ÐºÐ²Ñ–Ñ‚Ð½Ñ_Ñ‚Ñ€Ð°Ð²Ð½Ñ_Ñ‡ÐµÑ€Ð²Ð½Ñ_Ð»Ð¸Ð¿Ð½Ñ_ÑÐµÑ€Ð¿Ð½Ñ_Ð²ÐµÑ€ÐµÑÐ½Ñ_Ð¶Ð¾Ð²Ñ‚Ð½Ñ_Ð»Ð¸ÑÑ‚Ð¾Ð¿Ð°Ð´Ð°_Ð³Ñ€ÑƒÐ´Ð½Ñ".split("_"),
-				standalone: "ÑÑ–Ñ‡ÐµÐ½ÑŒ_Ð»ÑŽÑ‚Ð¸Ð¹_Ð±ÐµÑ€ÐµÐ·ÐµÐ½ÑŒ_ÐºÐ²Ñ–Ñ‚ÐµÐ½ÑŒ_Ñ‚Ñ€Ð°Ð²ÐµÐ½ÑŒ_Ñ‡ÐµÑ€Ð²ÐµÐ½ÑŒ_Ð»Ð¸Ð¿ÐµÐ½ÑŒ_ÑÐµÑ€Ð¿ÐµÐ½ÑŒ_Ð²ÐµÑ€ÐµÑÐµÐ½ÑŒ_Ð¶Ð¾Ð²Ñ‚ÐµÐ½ÑŒ_Ð»Ð¸ÑÑ‚Ð¾Ð¿Ð°Ð´_Ð³Ñ€ÑƒÐ´ÐµÐ½ÑŒ".split("_")
+				format: "січня_лютого_березня_квітня_травня_червня_липня_серпня_вересня_жовтня_листопада_грудня".split("_"),
+				standalone: "січень_лютий_березень_квітень_травень_червень_липень_серпень_вересень_жовтень_листопад_грудень".split("_")
 			},
-			monthsShort: "ÑÑ–Ñ‡_Ð»ÑŽÑ‚_Ð±ÐµÑ€_ÐºÐ²Ñ–Ñ‚_Ñ‚Ñ€Ð°Ð²_Ñ‡ÐµÑ€Ð²_Ð»Ð¸Ð¿_ÑÐµÑ€Ð¿_Ð²ÐµÑ€_Ð¶Ð¾Ð²Ñ‚_Ð»Ð¸ÑÑ‚_Ð³Ñ€ÑƒÐ´".split("_"),
+			monthsShort: "січ_лют_бер_квіт_трав_черв_лип_серп_вер_жовт_лист_груд".split("_"),
 			weekdays: function (e, t) {
 				var n = {
-					nominative: "Ð½ÐµÐ´Ñ–Ð»Ñ_Ð¿Ð¾Ð½ÐµÐ´Ñ–Ð»Ð¾Ðº_Ð²Ñ–Ð²Ñ‚Ð¾Ñ€Ð¾Ðº_ÑÐµÑ€ÐµÐ´Ð°_Ñ‡ÐµÑ‚Ð²ÐµÑ€_Ð¿â€™ÑÑ‚Ð½Ð¸Ñ†Ñ_ÑÑƒÐ±Ð¾Ñ‚Ð°".split("_"),
-					accusative: "Ð½ÐµÐ´Ñ–Ð»ÑŽ_Ð¿Ð¾Ð½ÐµÐ´Ñ–Ð»Ð¾Ðº_Ð²Ñ–Ð²Ñ‚Ð¾Ñ€Ð¾Ðº_ÑÐµÑ€ÐµÐ´Ñƒ_Ñ‡ÐµÑ‚Ð²ÐµÑ€_Ð¿â€™ÑÑ‚Ð½Ð¸Ñ†ÑŽ_ÑÑƒÐ±Ð¾Ñ‚Ñƒ".split("_"),
-					genitive: "Ð½ÐµÐ´Ñ–Ð»Ñ–_Ð¿Ð¾Ð½ÐµÐ´Ñ–Ð»ÐºÐ°_Ð²Ñ–Ð²Ñ‚Ð¾Ñ€ÐºÐ°_ÑÐµÑ€ÐµÐ´Ð¸_Ñ‡ÐµÑ‚Ð²ÐµÑ€Ð³Ð°_Ð¿â€™ÑÑ‚Ð½Ð¸Ñ†Ñ–_ÑÑƒÐ±Ð¾Ñ‚Ð¸".split("_")
+					nominative: "неділя_понеділок_вівторок_середа_четвер_п’ятниця_субота".split("_"),
+					accusative: "неділю_понеділок_вівторок_середу_четвер_п’ятницю_суботу".split("_"),
+					genitive: "неділі_понеділка_вівторка_середи_четверга_п’ятниці_суботи".split("_")
 				};
 				if (!e) return n.nominative;
-				var o = /(\[[Ð’Ð²Ð£Ñƒ]\]) ?dddd/.test(t) ? "accusative" : /\[?(?:Ð¼Ð¸Ð½ÑƒÐ»Ð¾Ñ—|Ð½Ð°ÑÑ‚ÑƒÐ¿Ð½Ð¾Ñ—)? ?\] ?dddd/.test(t) ? "genitive" : "nominative";
+				var o = /(\[[ВвУу]\]) ?dddd/.test(t) ? "accusative" : /\[?(?:минулої|наступної)? ?\] ?dddd/.test(t) ? "genitive" : "nominative";
 				return n[o][e.day()]
 			},
-			weekdaysShort: "Ð½Ð´_Ð¿Ð½_Ð²Ñ‚_ÑÑ€_Ñ‡Ñ‚_Ð¿Ñ‚_ÑÐ±".split("_"),
-			weekdaysMin: "Ð½Ð´_Ð¿Ð½_Ð²Ñ‚_ÑÑ€_Ñ‡Ñ‚_Ð¿Ñ‚_ÑÐ±".split("_"),
+			weekdaysShort: "нд_пн_вт_ср_чт_пт_сб".split("_"),
+			weekdaysMin: "нд_пн_вт_ср_чт_пт_сб".split("_"),
 			longDateFormat: {
 				LT: "HH:mm",
 				LTS: "HH:mm:ss",
 				L: "DD.MM.YYYY",
-				LL: "D MMMM YYYY Ñ€.",
-				LLL: "D MMMM YYYY Ñ€., HH:mm",
-				LLLL: "dddd, D MMMM YYYY Ñ€., HH:mm"
+				LL: "D MMMM YYYY р.",
+				LLL: "D MMMM YYYY р., HH:mm",
+				LLLL: "dddd, D MMMM YYYY р., HH:mm"
 			},
 			calendar: {
-				sameDay: n("[Ð¡ÑŒÐ¾Ð³Ð¾Ð´Ð½Ñ– "),
-				nextDay: n("[Ð—Ð°Ð²Ñ‚Ñ€Ð° "),
-				lastDay: n("[Ð’Ñ‡Ð¾Ñ€Ð° "),
-				nextWeek: n("[Ð£] dddd ["),
+				sameDay: n("[Сьогодні "),
+				nextDay: n("[Завтра "),
+				lastDay: n("[Вчора "),
+				nextWeek: n("[У] dddd ["),
 				lastWeek: function () {
 					switch (this.day()) {
 						case 0:
 						case 3:
 						case 5:
 						case 6:
-							return n("[ÐœÐ¸Ð½ÑƒÐ»Ð¾Ñ—] dddd [").call(this);
+							return n("[Минулої] dddd [").call(this);
 						case 1:
 						case 2:
 						case 4:
-							return n("[ÐœÐ¸Ð½ÑƒÐ»Ð¾Ð³Ð¾] dddd [").call(this)
+							return n("[Минулого] dddd [").call(this)
 					}
 				},
 				sameElse: "L"
 			},
 			relativeTime: {
-				future: "Ð·Ð° %s",
-				past: "%s Ñ‚Ð¾Ð¼Ñƒ",
-				s: "Ð´ÐµÐºÑ–Ð»ÑŒÐºÐ° ÑÐµÐºÑƒÐ½Ð´",
+				future: "за %s",
+				past: "%s тому",
+				s: "декілька секунд",
 				m: t,
 				mm: t,
-				h: "Ð³Ð¾Ð´Ð¸Ð½Ñƒ",
+				h: "годину",
 				hh: t,
-				d: "Ð´ÐµÐ½ÑŒ",
+				d: "день",
 				dd: t,
-				M: "Ð¼Ñ–ÑÑÑ†ÑŒ",
+				M: "місяць",
 				MM: t,
-				y: "Ñ€Ñ–Ðº",
+				y: "рік",
 				yy: t
 			},
-			meridiemParse: /Ð½Ð¾Ñ‡Ñ–|Ñ€Ð°Ð½ÐºÑƒ|Ð´Ð½Ñ|Ð²ÐµÑ‡Ð¾Ñ€Ð°/,
+			meridiemParse: /ночі|ранку|дня|вечора/,
 			isPM: function (e) {
-				return /^(Ð´Ð½Ñ|Ð²ÐµÑ‡Ð¾Ñ€Ð°)$/.test(e)
+				return /^(дня|вечора)$/.test(e)
 			},
 			meridiem: function (e, t, n) {
-				return e < 4 ? "Ð½Ð¾Ñ‡Ñ–" : e < 12 ? "Ñ€Ð°Ð½ÐºÑƒ" : e < 17 ? "Ð´Ð½Ñ" : "Ð²ÐµÑ‡Ð¾Ñ€Ð°"
+				return e < 4 ? "ночі" : e < 12 ? "ранку" : e < 17 ? "дня" : "вечора"
 			},
-			dayOfMonthOrdinalParse: /\d{1,2}-(Ð¹|Ð³Ð¾)/,
+			dayOfMonthOrdinalParse: /\d{1,2}-(й|го)/,
 			ordinal: function (e, t) {
 				switch (t) {
 					case "M":
@@ -46001,9 +46001,9 @@
 					case "DDD":
 					case "w":
 					case "W":
-						return e + "-Ð¹";
+						return e + "-й";
 					case "D":
-						return e + "-Ð³Ð¾";
+						return e + "-го";
 					default:
 						return e
 				}
@@ -46027,22 +46027,22 @@
 			7: "'nci",
 			20: "'nci",
 			50: "'nci",
-			3: "'Ã¼ncÃ¼",
-			4: "'Ã¼ncÃ¼",
-			100: "'Ã¼ncÃ¼",
-			6: "'ncÄ±",
+			3: "'üncü",
+			4: "'üncü",
+			100: "'üncü",
+			6: "'ncı",
 			9: "'uncu",
 			10: "'uncu",
 			30: "'uncu",
-			60: "'Ä±ncÄ±",
-			90: "'Ä±ncÄ±"
+			60: "'ıncı",
+			90: "'ıncı"
 		};
 		e.defineLocale("tr", {
-			months: "Ocak_Åžubat_Mart_Nisan_MayÄ±s_Haziran_Temmuz_AÄŸustos_EylÃ¼l_Ekim_KasÄ±m_AralÄ±k".split("_"),
-			monthsShort: "Oca_Åžub_Mar_Nis_May_Haz_Tem_AÄŸu_Eyl_Eki_Kas_Ara".split("_"),
-			weekdays: "Pazar_Pazartesi_SalÄ±_Ã‡arÅŸamba_PerÅŸembe_Cuma_Cumartesi".split("_"),
-			weekdaysShort: "Paz_Pts_Sal_Ã‡ar_Per_Cum_Cts".split("_"),
-			weekdaysMin: "Pz_Pt_Sa_Ã‡a_Pe_Cu_Ct".split("_"),
+			months: "Ocak_Şubat_Mart_Nisan_Mayıs_Haziran_Temmuz_Ağustos_Eylül_Ekim_Kasım_Aralık".split("_"),
+			monthsShort: "Oca_Şub_Mar_Nis_May_Haz_Tem_Ağu_Eyl_Eki_Kas_Ara".split("_"),
+			weekdays: "Pazar_Pazartesi_Salı_Çarşamba_Perşembe_Cuma_Cumartesi".split("_"),
+			weekdaysShort: "Paz_Pts_Sal_Çar_Per_Cum_Cts".split("_"),
+			weekdaysMin: "Pz_Pt_Sa_Ça_Pe_Cu_Ct".split("_"),
 			longDateFormat: {
 				LT: "HH:mm",
 				LTS: "HH:mm:ss",
@@ -46052,31 +46052,31 @@
 				LLLL: "dddd, D MMMM YYYY HH:mm"
 			},
 			calendar: {
-				sameDay: "[bugÃ¼n saat] LT",
-				nextDay: "[yarÄ±n saat] LT",
+				sameDay: "[bugün saat] LT",
+				nextDay: "[yarın saat] LT",
 				nextWeek: "[gelecek] dddd [saat] LT",
-				lastDay: "[dÃ¼n] LT",
-				lastWeek: "[geÃ§en] dddd [saat] LT",
+				lastDay: "[dün] LT",
+				lastWeek: "[geçen] dddd [saat] LT",
 				sameElse: "L"
 			},
 			relativeTime: {
 				future: "%s sonra",
-				past: "%s Ã¶nce",
-				s: "birkaÃ§ saniye",
+				past: "%s önce",
+				s: "birkaç saniye",
 				m: "bir dakika",
 				mm: "%d dakika",
 				h: "bir saat",
 				hh: "%d saat",
-				d: "bir gÃ¼n",
-				dd: "%d gÃ¼n",
+				d: "bir gün",
+				dd: "%d gün",
 				M: "bir ay",
 				MM: "%d ay",
-				y: "bir yÄ±l",
-				yy: "%d yÄ±l"
+				y: "bir yıl",
+				yy: "%d yıl"
 			},
-			dayOfMonthOrdinalParse: /\d{1,2}'(inci|nci|Ã¼ncÃ¼|ncÄ±|uncu|Ä±ncÄ±)/,
+			dayOfMonthOrdinalParse: /\d{1,2}'(inci|nci|üncü|ncı|uncu|ıncı)/,
 			ordinal: function (e) {
-				if (0 === e) return e + "'Ä±ncÄ±";
+				if (0 === e) return e + "'ıncı";
 				var n = e % 10,
 					o = e % 100 - n,
 					a = e >= 100 ? 100 : null;
@@ -46094,119 +46094,119 @@
 
 		function t(e, t, n) {
 			var o = {
-				mm: t ? "Ð¼Ð¸Ð½ÑƒÑ‚Ð°_Ð¼Ð¸Ð½ÑƒÑ‚Ñ‹_Ð¼Ð¸Ð½ÑƒÑ‚" : "Ð¼Ð¸Ð½ÑƒÑ‚Ñƒ_Ð¼Ð¸Ð½ÑƒÑ‚Ñ‹_Ð¼Ð¸Ð½ÑƒÑ‚",
-				hh: "Ñ‡Ð°Ñ_Ñ‡Ð°ÑÐ°_Ñ‡Ð°ÑÐ¾Ð²",
-				dd: "Ð´ÐµÐ½ÑŒ_Ð´Ð½Ñ_Ð´Ð½ÐµÐ¹",
-				MM: "Ð¼ÐµÑÑÑ†_Ð¼ÐµÑÑÑ†Ð°_Ð¼ÐµÑÑÑ†ÐµÐ²",
-				yy: "Ð³Ð¾Ð´_Ð³Ð¾Ð´Ð°_Ð»ÐµÑ‚"
+				mm: t ? "минута_минуты_минут" : "минуту_минуты_минут",
+				hh: "час_часа_часов",
+				dd: "день_дня_дней",
+				MM: "месяц_месяца_месяцев",
+				yy: "год_года_лет"
 			};
-			return "m" === n ? t ? "Ð¼Ð¸Ð½ÑƒÑ‚Ð°" : "Ð¼Ð¸Ð½ÑƒÑ‚Ñƒ" : e + " " + function (e, t) {
+			return "m" === n ? t ? "минута" : "минуту" : e + " " + function (e, t) {
 				var n = e.split("_");
 				return t % 10 == 1 && t % 100 != 11 ? n[0] : t % 10 >= 2 && t % 10 <= 4 && (t % 100 < 10 || t % 100 >= 20) ? n[1] : n[2]
 			}(o[n], +e)
 		}
-		var n = [/^ÑÐ½Ð²/i, /^Ñ„ÐµÐ²/i, /^Ð¼Ð°Ñ€/i, /^Ð°Ð¿Ñ€/i, /^Ð¼Ð°[Ð¹Ñ]/i, /^Ð¸ÑŽÐ½/i, /^Ð¸ÑŽÐ»/i, /^Ð°Ð²Ð³/i, /^ÑÐµÐ½/i, /^Ð¾ÐºÑ‚/i, /^Ð½Ð¾Ñ/i, /^Ð´ÐµÐº/i];
+		var n = [/^янв/i, /^фев/i, /^мар/i, /^апр/i, /^ма[йя]/i, /^июн/i, /^июл/i, /^авг/i, /^сен/i, /^окт/i, /^ноя/i, /^дек/i];
 		e.defineLocale("ru", {
 			months: {
-				format: "ÑÐ½Ð²Ð°Ñ€Ñ_Ñ„ÐµÐ²Ñ€Ð°Ð»Ñ_Ð¼Ð°Ñ€Ñ‚Ð°_Ð°Ð¿Ñ€ÐµÐ»Ñ_Ð¼Ð°Ñ_Ð¸ÑŽÐ½Ñ_Ð¸ÑŽÐ»Ñ_Ð°Ð²Ð³ÑƒÑÑ‚Ð°_ÑÐµÐ½Ñ‚ÑÐ±Ñ€Ñ_Ð¾ÐºÑ‚ÑÐ±Ñ€Ñ_Ð½Ð¾ÑÐ±Ñ€Ñ_Ð´ÐµÐºÐ°Ð±Ñ€Ñ".split("_"),
-				standalone: "ÑÐ½Ð²Ð°Ñ€ÑŒ_Ñ„ÐµÐ²Ñ€Ð°Ð»ÑŒ_Ð¼Ð°Ñ€Ñ‚_Ð°Ð¿Ñ€ÐµÐ»ÑŒ_Ð¼Ð°Ð¹_Ð¸ÑŽÐ½ÑŒ_Ð¸ÑŽÐ»ÑŒ_Ð°Ð²Ð³ÑƒÑÑ‚_ÑÐµÐ½Ñ‚ÑÐ±Ñ€ÑŒ_Ð¾ÐºÑ‚ÑÐ±Ñ€ÑŒ_Ð½Ð¾ÑÐ±Ñ€ÑŒ_Ð´ÐµÐºÐ°Ð±Ñ€ÑŒ".split("_")
+				format: "января_февраля_марта_апреля_мая_июня_июля_августа_сентября_октября_ноября_декабря".split("_"),
+				standalone: "январь_февраль_март_апрель_май_июнь_июль_август_сентябрь_октябрь_ноябрь_декабрь".split("_")
 			},
 			monthsShort: {
-				format: "ÑÐ½Ð²._Ñ„ÐµÐ²Ñ€._Ð¼Ð°Ñ€._Ð°Ð¿Ñ€._Ð¼Ð°Ñ_Ð¸ÑŽÐ½Ñ_Ð¸ÑŽÐ»Ñ_Ð°Ð²Ð³._ÑÐµÐ½Ñ‚._Ð¾ÐºÑ‚._Ð½Ð¾ÑÐ±._Ð´ÐµÐº.".split("_"),
-				standalone: "ÑÐ½Ð²._Ñ„ÐµÐ²Ñ€._Ð¼Ð°Ñ€Ñ‚_Ð°Ð¿Ñ€._Ð¼Ð°Ð¹_Ð¸ÑŽÐ½ÑŒ_Ð¸ÑŽÐ»ÑŒ_Ð°Ð²Ð³._ÑÐµÐ½Ñ‚._Ð¾ÐºÑ‚._Ð½Ð¾ÑÐ±._Ð´ÐµÐº.".split("_")
+				format: "янв._февр._мар._апр._мая_июня_июля_авг._сент._окт._нояб._дек.".split("_"),
+				standalone: "янв._февр._март_апр._май_июнь_июль_авг._сент._окт._нояб._дек.".split("_")
 			},
 			weekdays: {
-				standalone: "Ð²Ð¾ÑÐºÑ€ÐµÑÐµÐ½ÑŒÐµ_Ð¿Ð¾Ð½ÐµÐ´ÐµÐ»ÑŒÐ½Ð¸Ðº_Ð²Ñ‚Ð¾Ñ€Ð½Ð¸Ðº_ÑÑ€ÐµÐ´Ð°_Ñ‡ÐµÑ‚Ð²ÐµÑ€Ð³_Ð¿ÑÑ‚Ð½Ð¸Ñ†Ð°_ÑÑƒÐ±Ð±Ð¾Ñ‚Ð°".split("_"),
-				format: "Ð²Ð¾ÑÐºÑ€ÐµÑÐµÐ½ÑŒÐµ_Ð¿Ð¾Ð½ÐµÐ´ÐµÐ»ÑŒÐ½Ð¸Ðº_Ð²Ñ‚Ð¾Ñ€Ð½Ð¸Ðº_ÑÑ€ÐµÐ´Ñƒ_Ñ‡ÐµÑ‚Ð²ÐµÑ€Ð³_Ð¿ÑÑ‚Ð½Ð¸Ñ†Ñƒ_ÑÑƒÐ±Ð±Ð¾Ñ‚Ñƒ".split("_"),
-				isFormat: /\[ ?[Ð’Ð²] ?(?:Ð¿Ñ€Ð¾ÑˆÐ»ÑƒÑŽ|ÑÐ»ÐµÐ´ÑƒÑŽÑ‰ÑƒÑŽ|ÑÑ‚Ñƒ)? ?\] ?dddd/
+				standalone: "воскресенье_понедельник_вторник_среда_четверг_пятница_суббота".split("_"),
+				format: "воскресенье_понедельник_вторник_среду_четверг_пятницу_субботу".split("_"),
+				isFormat: /\[ ?[Вв] ?(?:прошлую|следующую|эту)? ?\] ?dddd/
 			},
-			weekdaysShort: "Ð²Ñ_Ð¿Ð½_Ð²Ñ‚_ÑÑ€_Ñ‡Ñ‚_Ð¿Ñ‚_ÑÐ±".split("_"),
-			weekdaysMin: "Ð²Ñ_Ð¿Ð½_Ð²Ñ‚_ÑÑ€_Ñ‡Ñ‚_Ð¿Ñ‚_ÑÐ±".split("_"),
+			weekdaysShort: "вс_пн_вт_ср_чт_пт_сб".split("_"),
+			weekdaysMin: "вс_пн_вт_ср_чт_пт_сб".split("_"),
 			monthsParse: n,
 			longMonthsParse: n,
 			shortMonthsParse: n,
-			monthsRegex: /^(ÑÐ½Ð²Ð°Ñ€[ÑŒÑ]|ÑÐ½Ð²\.?|Ñ„ÐµÐ²Ñ€Ð°Ð»[ÑŒÑ]|Ñ„ÐµÐ²Ñ€?\.?|Ð¼Ð°Ñ€Ñ‚Ð°?|Ð¼Ð°Ñ€\.?|Ð°Ð¿Ñ€ÐµÐ»[ÑŒÑ]|Ð°Ð¿Ñ€\.?|Ð¼Ð°[Ð¹Ñ]|Ð¸ÑŽÐ½[ÑŒÑ]|Ð¸ÑŽÐ½\.?|Ð¸ÑŽÐ»[ÑŒÑ]|Ð¸ÑŽÐ»\.?|Ð°Ð²Ð³ÑƒÑÑ‚Ð°?|Ð°Ð²Ð³\.?|ÑÐµÐ½Ñ‚ÑÐ±Ñ€[ÑŒÑ]|ÑÐµÐ½Ñ‚?\.?|Ð¾ÐºÑ‚ÑÐ±Ñ€[ÑŒÑ]|Ð¾ÐºÑ‚\.?|Ð½Ð¾ÑÐ±Ñ€[ÑŒÑ]|Ð½Ð¾ÑÐ±?\.?|Ð´ÐµÐºÐ°Ð±Ñ€[ÑŒÑ]|Ð´ÐµÐº\.?)/i,
-			monthsShortRegex: /^(ÑÐ½Ð²Ð°Ñ€[ÑŒÑ]|ÑÐ½Ð²\.?|Ñ„ÐµÐ²Ñ€Ð°Ð»[ÑŒÑ]|Ñ„ÐµÐ²Ñ€?\.?|Ð¼Ð°Ñ€Ñ‚Ð°?|Ð¼Ð°Ñ€\.?|Ð°Ð¿Ñ€ÐµÐ»[ÑŒÑ]|Ð°Ð¿Ñ€\.?|Ð¼Ð°[Ð¹Ñ]|Ð¸ÑŽÐ½[ÑŒÑ]|Ð¸ÑŽÐ½\.?|Ð¸ÑŽÐ»[ÑŒÑ]|Ð¸ÑŽÐ»\.?|Ð°Ð²Ð³ÑƒÑÑ‚Ð°?|Ð°Ð²Ð³\.?|ÑÐµÐ½Ñ‚ÑÐ±Ñ€[ÑŒÑ]|ÑÐµÐ½Ñ‚?\.?|Ð¾ÐºÑ‚ÑÐ±Ñ€[ÑŒÑ]|Ð¾ÐºÑ‚\.?|Ð½Ð¾ÑÐ±Ñ€[ÑŒÑ]|Ð½Ð¾ÑÐ±?\.?|Ð´ÐµÐºÐ°Ð±Ñ€[ÑŒÑ]|Ð´ÐµÐº\.?)/i,
-			monthsStrictRegex: /^(ÑÐ½Ð²Ð°Ñ€[ÑÑŒ]|Ñ„ÐµÐ²Ñ€Ð°Ð»[ÑÑŒ]|Ð¼Ð°Ñ€Ñ‚Ð°?|Ð°Ð¿Ñ€ÐµÐ»[ÑÑŒ]|Ð¼Ð°[ÑÐ¹]|Ð¸ÑŽÐ½[ÑÑŒ]|Ð¸ÑŽÐ»[ÑÑŒ]|Ð°Ð²Ð³ÑƒÑÑ‚Ð°?|ÑÐµÐ½Ñ‚ÑÐ±Ñ€[ÑÑŒ]|Ð¾ÐºÑ‚ÑÐ±Ñ€[ÑÑŒ]|Ð½Ð¾ÑÐ±Ñ€[ÑÑŒ]|Ð´ÐµÐºÐ°Ð±Ñ€[ÑÑŒ])/i,
-			monthsShortStrictRegex: /^(ÑÐ½Ð²\.|Ñ„ÐµÐ²Ñ€?\.|Ð¼Ð°Ñ€[Ñ‚.]|Ð°Ð¿Ñ€\.|Ð¼Ð°[ÑÐ¹]|Ð¸ÑŽÐ½[ÑŒÑ.]|Ð¸ÑŽÐ»[ÑŒÑ.]|Ð°Ð²Ð³\.|ÑÐµÐ½Ñ‚?\.|Ð¾ÐºÑ‚\.|Ð½Ð¾ÑÐ±?\.|Ð´ÐµÐº\.)/i,
+			monthsRegex: /^(январ[ья]|янв\.?|феврал[ья]|февр?\.?|марта?|мар\.?|апрел[ья]|апр\.?|ма[йя]|июн[ья]|июн\.?|июл[ья]|июл\.?|августа?|авг\.?|сентябр[ья]|сент?\.?|октябр[ья]|окт\.?|ноябр[ья]|нояб?\.?|декабр[ья]|дек\.?)/i,
+			monthsShortRegex: /^(январ[ья]|янв\.?|феврал[ья]|февр?\.?|марта?|мар\.?|апрел[ья]|апр\.?|ма[йя]|июн[ья]|июн\.?|июл[ья]|июл\.?|августа?|авг\.?|сентябр[ья]|сент?\.?|октябр[ья]|окт\.?|ноябр[ья]|нояб?\.?|декабр[ья]|дек\.?)/i,
+			monthsStrictRegex: /^(январ[яь]|феврал[яь]|марта?|апрел[яь]|ма[яй]|июн[яь]|июл[яь]|августа?|сентябр[яь]|октябр[яь]|ноябр[яь]|декабр[яь])/i,
+			monthsShortStrictRegex: /^(янв\.|февр?\.|мар[т.]|апр\.|ма[яй]|июн[ья.]|июл[ья.]|авг\.|сент?\.|окт\.|нояб?\.|дек\.)/i,
 			longDateFormat: {
 				LT: "HH:mm",
 				LTS: "HH:mm:ss",
 				L: "DD.MM.YYYY",
-				LL: "D MMMM YYYY Ð³.",
-				LLL: "D MMMM YYYY Ð³., HH:mm",
-				LLLL: "dddd, D MMMM YYYY Ð³., HH:mm"
+				LL: "D MMMM YYYY г.",
+				LLL: "D MMMM YYYY г., HH:mm",
+				LLLL: "dddd, D MMMM YYYY г., HH:mm"
 			},
 			calendar: {
-				sameDay: "[Ð¡ÐµÐ³Ð¾Ð´Ð½Ñ Ð²] LT",
-				nextDay: "[Ð—Ð°Ð²Ñ‚Ñ€Ð° Ð²] LT",
-				lastDay: "[Ð’Ñ‡ÐµÑ€Ð° Ð²] LT",
+				sameDay: "[Сегодня в] LT",
+				nextDay: "[Завтра в] LT",
+				lastDay: "[Вчера в] LT",
 				nextWeek: function (e) {
-					if (e.week() === this.week()) return 2 === this.day() ? "[Ð’Ð¾] dddd [Ð²] LT" : "[Ð’] dddd [Ð²] LT";
+					if (e.week() === this.week()) return 2 === this.day() ? "[Во] dddd [в] LT" : "[В] dddd [в] LT";
 					switch (this.day()) {
 						case 0:
-							return "[Ð’ ÑÐ»ÐµÐ´ÑƒÑŽÑ‰ÐµÐµ] dddd [Ð²] LT";
+							return "[В следующее] dddd [в] LT";
 						case 1:
 						case 2:
 						case 4:
-							return "[Ð’ ÑÐ»ÐµÐ´ÑƒÑŽÑ‰Ð¸Ð¹] dddd [Ð²] LT";
+							return "[В следующий] dddd [в] LT";
 						case 3:
 						case 5:
 						case 6:
-							return "[Ð’ ÑÐ»ÐµÐ´ÑƒÑŽÑ‰ÑƒÑŽ] dddd [Ð²] LT"
+							return "[В следующую] dddd [в] LT"
 					}
 				},
 				lastWeek: function (e) {
-					if (e.week() === this.week()) return 2 === this.day() ? "[Ð’Ð¾] dddd [Ð²] LT" : "[Ð’] dddd [Ð²] LT";
+					if (e.week() === this.week()) return 2 === this.day() ? "[Во] dddd [в] LT" : "[В] dddd [в] LT";
 					switch (this.day()) {
 						case 0:
-							return "[Ð’ Ð¿Ñ€Ð¾ÑˆÐ»Ð¾Ðµ] dddd [Ð²] LT";
+							return "[В прошлое] dddd [в] LT";
 						case 1:
 						case 2:
 						case 4:
-							return "[Ð’ Ð¿Ñ€Ð¾ÑˆÐ»Ñ‹Ð¹] dddd [Ð²] LT";
+							return "[В прошлый] dddd [в] LT";
 						case 3:
 						case 5:
 						case 6:
-							return "[Ð’ Ð¿Ñ€Ð¾ÑˆÐ»ÑƒÑŽ] dddd [Ð²] LT"
+							return "[В прошлую] dddd [в] LT"
 					}
 				},
 				sameElse: "L"
 			},
 			relativeTime: {
-				future: "Ñ‡ÐµÑ€ÐµÐ· %s",
-				past: "%s Ð½Ð°Ð·Ð°Ð´",
-				s: "Ð½ÐµÑÐºÐ¾Ð»ÑŒÐºÐ¾ ÑÐµÐºÑƒÐ½Ð´",
+				future: "через %s",
+				past: "%s назад",
+				s: "несколько секунд",
 				m: t,
 				mm: t,
-				h: "Ñ‡Ð°Ñ",
+				h: "час",
 				hh: t,
-				d: "Ð´ÐµÐ½ÑŒ",
+				d: "день",
 				dd: t,
-				M: "Ð¼ÐµÑÑÑ†",
+				M: "месяц",
 				MM: t,
-				y: "Ð³Ð¾Ð´",
+				y: "год",
 				yy: t
 			},
-			meridiemParse: /Ð½Ð¾Ñ‡Ð¸|ÑƒÑ‚Ñ€Ð°|Ð´Ð½Ñ|Ð²ÐµÑ‡ÐµÑ€Ð°/i,
+			meridiemParse: /ночи|утра|дня|вечера/i,
 			isPM: function (e) {
-				return /^(Ð´Ð½Ñ|Ð²ÐµÑ‡ÐµÑ€Ð°)$/.test(e)
+				return /^(дня|вечера)$/.test(e)
 			},
 			meridiem: function (e, t, n) {
-				return e < 4 ? "Ð½Ð¾Ñ‡Ð¸" : e < 12 ? "ÑƒÑ‚Ñ€Ð°" : e < 17 ? "Ð´Ð½Ñ" : "Ð²ÐµÑ‡ÐµÑ€Ð°"
+				return e < 4 ? "ночи" : e < 12 ? "утра" : e < 17 ? "дня" : "вечера"
 			},
-			dayOfMonthOrdinalParse: /\d{1,2}-(Ð¹|Ð³Ð¾|Ñ)/,
+			dayOfMonthOrdinalParse: /\d{1,2}-(й|го|я)/,
 			ordinal: function (e, t) {
 				switch (t) {
 					case "M":
 					case "d":
 					case "DDD":
-						return e + "-Ð¹";
+						return e + "-й";
 					case "D":
-						return e + "-Ð³Ð¾";
+						return e + "-го";
 					case "w":
 					case "W":
-						return e + "-Ñ";
+						return e + "-я";
 					default:
 						return e
 				}
@@ -46235,9 +46235,9 @@
 			months: "ianuarie_februarie_martie_aprilie_mai_iunie_iulie_august_septembrie_octombrie_noiembrie_decembrie".split("_"),
 			monthsShort: "ian._febr._mart._apr._mai_iun._iul._aug._sept._oct._nov._dec.".split("_"),
 			monthsParseExact: !0,
-			weekdays: "duminicÄƒ_luni_marÈ›i_miercuri_joi_vineri_sÃ¢mbÄƒtÄƒ".split("_"),
-			weekdaysShort: "Dum_Lun_Mar_Mie_Joi_Vin_SÃ¢m".split("_"),
-			weekdaysMin: "Du_Lu_Ma_Mi_Jo_Vi_SÃ¢".split("_"),
+			weekdays: "duminică_luni_marți_miercuri_joi_vineri_sâmbătă".split("_"),
+			weekdaysShort: "Dum_Lun_Mar_Mie_Joi_Vin_Sâm".split("_"),
+			weekdaysMin: "Du_Lu_Ma_Mi_Jo_Vi_Sâ".split("_"),
 			longDateFormat: {
 				LT: "H:mm",
 				LTS: "H:mm:ss",
@@ -46248,7 +46248,7 @@
 			},
 			calendar: {
 				sameDay: "[azi la] LT",
-				nextDay: "[mÃ¢ine la] LT",
+				nextDay: "[mâine la] LT",
 				nextWeek: "dddd [la] LT",
 				lastDay: "[ieri la] LT",
 				lastWeek: "[fosta] dddd [la] LT",
@@ -46256,15 +46256,15 @@
 			},
 			relativeTime: {
 				future: "peste %s",
-				past: "%s Ã®n urmÄƒ",
-				s: "cÃ¢teva secunde",
+				past: "%s în urmă",
+				s: "câteva secunde",
 				m: "un minut",
 				mm: t,
-				h: "o orÄƒ",
+				h: "o oră",
 				hh: t,
 				d: "o zi",
 				dd: t,
-				M: "o lunÄƒ",
+				M: "o lună",
 				MM: t,
 				y: "un an",
 				yy: t
@@ -46279,33 +46279,33 @@
 	! function (e) {
 		"use strict";
 		e.defineLocale("pt-br", {
-			months: "janeiro_fevereiro_marÃ§o_abril_maio_junho_julho_agosto_setembro_outubro_novembro_dezembro".split("_"),
+			months: "janeiro_fevereiro_março_abril_maio_junho_julho_agosto_setembro_outubro_novembro_dezembro".split("_"),
 			monthsShort: "jan_fev_mar_abr_mai_jun_jul_ago_set_out_nov_dez".split("_"),
-			weekdays: "Domingo_Segunda-feira_TerÃ§a-feira_Quarta-feira_Quinta-feira_Sexta-feira_SÃ¡bado".split("_"),
-			weekdaysShort: "Dom_Seg_Ter_Qua_Qui_Sex_SÃ¡b".split("_"),
-			weekdaysMin: "Do_2Âª_3Âª_4Âª_5Âª_6Âª_SÃ¡".split("_"),
+			weekdays: "Domingo_Segunda-feira_Terça-feira_Quarta-feira_Quinta-feira_Sexta-feira_Sábado".split("_"),
+			weekdaysShort: "Dom_Seg_Ter_Qua_Qui_Sex_Sáb".split("_"),
+			weekdaysMin: "Do_2ª_3ª_4ª_5ª_6ª_Sá".split("_"),
 			weekdaysParseExact: !0,
 			longDateFormat: {
 				LT: "HH:mm",
 				LTS: "HH:mm:ss",
 				L: "DD/MM/YYYY",
 				LL: "D [de] MMMM [de] YYYY",
-				LLL: "D [de] MMMM [de] YYYY [Ã s] HH:mm",
-				LLLL: "dddd, D [de] MMMM [de] YYYY [Ã s] HH:mm"
+				LLL: "D [de] MMMM [de] YYYY [às] HH:mm",
+				LLLL: "dddd, D [de] MMMM [de] YYYY [às] HH:mm"
 			},
 			calendar: {
-				sameDay: "[Hoje Ã s] LT",
-				nextDay: "[AmanhÃ£ Ã s] LT",
-				nextWeek: "dddd [Ã s] LT",
-				lastDay: "[Ontem Ã s] LT",
+				sameDay: "[Hoje às] LT",
+				nextDay: "[Amanhã às] LT",
+				nextWeek: "dddd [às] LT",
+				lastDay: "[Ontem às] LT",
 				lastWeek: function () {
-					return 0 === this.day() || 6 === this.day() ? "[Ãšltimo] dddd [Ã s] LT" : "[Ãšltima] dddd [Ã s] LT"
+					return 0 === this.day() || 6 === this.day() ? "[Último] dddd [às] LT" : "[Última] dddd [às] LT"
 				},
 				sameElse: "L"
 			},
 			relativeTime: {
 				future: "em %s",
-				past: "%s atrÃ¡s",
+				past: "%s atrás",
 				s: "poucos segundos",
 				ss: "%d segundos",
 				m: "um minuto",
@@ -46314,20 +46314,20 @@
 				hh: "%d horas",
 				d: "um dia",
 				dd: "%d dias",
-				M: "um mÃªs",
+				M: "um mês",
 				MM: "%d meses",
 				y: "um ano",
 				yy: "%d anos"
 			},
-			dayOfMonthOrdinalParse: /\d{1,2}Âº/,
-			ordinal: "%dÂº"
+			dayOfMonthOrdinalParse: /\d{1,2}º/,
+			ordinal: "%dº"
 		})
 	}(n(3))
 }, function (e, t, n) {
 	! function (e) {
 		"use strict";
-		var t = "styczeÅ„_luty_marzec_kwiecieÅ„_maj_czerwiec_lipiec_sierpieÅ„_wrzesieÅ„_paÅºdziernik_listopad_grudzieÅ„".split("_"),
-			n = "stycznia_lutego_marca_kwietnia_maja_czerwca_lipca_sierpnia_wrzeÅ›nia_paÅºdziernika_listopada_grudnia".split("_");
+		var t = "styczeń_luty_marzec_kwiecień_maj_czerwiec_lipiec_sierpień_wrzesień_październik_listopad_grudzień".split("_"),
+			n = "stycznia_lutego_marca_kwietnia_maja_czerwca_lipca_sierpnia_września_października_listopada_grudnia".split("_");
 
 		function o(e) {
 			return e % 10 < 5 && e % 10 > 1 && ~~(e / 10) % 10 != 1
@@ -46337,15 +46337,15 @@
 			var a = e + " ";
 			switch (n) {
 				case "m":
-					return t ? "minuta" : "minutÄ™";
+					return t ? "minuta" : "minutę";
 				case "mm":
 					return a + (o(e) ? "minuty" : "minut");
 				case "h":
-					return t ? "godzina" : "godzinÄ™";
+					return t ? "godzina" : "godzinę";
 				case "hh":
 					return a + (o(e) ? "godziny" : "godzin");
 				case "MM":
-					return a + (o(e) ? "miesiÄ…ce" : "miesiÄ™cy");
+					return a + (o(e) ? "miesiące" : "miesięcy");
 				case "yy":
 					return a + (o(e) ? "lata" : "lat")
 			}
@@ -46354,10 +46354,10 @@
 			months: function (e, o) {
 				return e ? "" === o ? "(" + n[e.month()] + "|" + t[e.month()] + ")" : /D MMMM/.test(o) ? n[e.month()] : t[e.month()] : t
 			},
-			monthsShort: "sty_lut_mar_kwi_maj_cze_lip_sie_wrz_paÅº_lis_gru".split("_"),
-			weekdays: "niedziela_poniedziaÅ‚ek_wtorek_Å›roda_czwartek_piÄ…tek_sobota".split("_"),
-			weekdaysShort: "ndz_pon_wt_Å›r_czw_pt_sob".split("_"),
-			weekdaysMin: "Nd_Pn_Wt_Åšr_Cz_Pt_So".split("_"),
+			monthsShort: "sty_lut_mar_kwi_maj_cze_lip_sie_wrz_paź_lis_gru".split("_"),
+			weekdays: "niedziela_poniedziałek_wtorek_środa_czwartek_piątek_sobota".split("_"),
+			weekdaysShort: "ndz_pon_wt_śr_czw_pt_sob".split("_"),
+			weekdaysMin: "Nd_Pn_Wt_Śr_Cz_Pt_So".split("_"),
 			longDateFormat: {
 				LT: "HH:mm",
 				LTS: "HH:mm:ss",
@@ -46367,18 +46367,18 @@
 				LLLL: "dddd, D MMMM YYYY HH:mm"
 			},
 			calendar: {
-				sameDay: "[DziÅ› o] LT",
+				sameDay: "[Dziś o] LT",
 				nextDay: "[Jutro o] LT",
 				nextWeek: function () {
 					switch (this.day()) {
 						case 0:
-							return "[W niedzielÄ™ o] LT";
+							return "[W niedzielę o] LT";
 						case 2:
 							return "[We wtorek o] LT";
 						case 3:
-							return "[W Å›rodÄ™ o] LT";
+							return "[W środę o] LT";
 						case 6:
-							return "[W sobotÄ™ o] LT";
+							return "[W sobotę o] LT";
 						default:
 							return "[W] dddd [o] LT"
 					}
@@ -46387,13 +46387,13 @@
 				lastWeek: function () {
 					switch (this.day()) {
 						case 0:
-							return "[W zeszÅ‚Ä… niedzielÄ™ o] LT";
+							return "[W zeszłą niedzielę o] LT";
 						case 3:
-							return "[W zeszÅ‚Ä… Å›rodÄ™ o] LT";
+							return "[W zeszłą środę o] LT";
 						case 6:
-							return "[W zeszÅ‚Ä… sobotÄ™ o] LT";
+							return "[W zeszłą sobotę o] LT";
 						default:
-							return "[W zeszÅ‚y] dddd [o] LT"
+							return "[W zeszły] dddd [o] LT"
 					}
 				},
 				sameElse: "L"
@@ -46406,9 +46406,9 @@
 				mm: a,
 				h: a,
 				hh: a,
-				d: "1 dzieÅ„",
+				d: "1 dzień",
 				dd: "%d dni",
-				M: "miesiÄ…c",
+				M: "miesiąc",
 				MM: a,
 				y: "rok",
 				yy: a
@@ -46464,15 +46464,15 @@
 				future: "over %s",
 				past: "%s geleden",
 				s: "een paar seconden",
-				m: "Ã©Ã©n minuut",
+				m: "één minuut",
 				mm: "%d minuten",
-				h: "Ã©Ã©n uur",
+				h: "één uur",
 				hh: "%d uur",
-				d: "Ã©Ã©n dag",
+				d: "één dag",
 				dd: "%d dagen",
-				M: "Ã©Ã©n maand",
+				M: "één maand",
 				MM: "%d maanden",
-				y: "Ã©Ã©n jaar",
+				y: "één jaar",
 				yy: "%d jaar"
 			},
 			dayOfMonthOrdinalParse: /\d{1,2}(ste|de)/,
@@ -46492,9 +46492,9 @@
 			months: "januar_februar_mars_april_mai_juni_juli_august_september_oktober_november_desember".split("_"),
 			monthsShort: "jan._feb._mars_april_mai_juni_juli_aug._sep._okt._nov._des.".split("_"),
 			monthsParseExact: !0,
-			weekdays: "sÃ¸ndag_mandag_tirsdag_onsdag_torsdag_fredag_lÃ¸rdag".split("_"),
-			weekdaysShort: "sÃ¸._ma._ti._on._to._fr._lÃ¸.".split("_"),
-			weekdaysMin: "sÃ¸_ma_ti_on_to_fr_lÃ¸".split("_"),
+			weekdays: "søndag_mandag_tirsdag_onsdag_torsdag_fredag_lørdag".split("_"),
+			weekdaysShort: "sø._ma._ti._on._to._fr._lø.".split("_"),
+			weekdaysMin: "sø_ma_ti_on_to_fr_lø".split("_"),
 			weekdaysParseExact: !0,
 			longDateFormat: {
 				LT: "HH:mm",
@@ -46508,7 +46508,7 @@
 				sameDay: "[i dag kl.] LT",
 				nextDay: "[i morgen kl.] LT",
 				nextWeek: "dddd [kl.] LT",
-				lastDay: "[i gÃ¥r kl.] LT",
+				lastDay: "[i går kl.] LT",
 				lastWeek: "[forrige] dddd [kl.] LT",
 				sameElse: "L"
 			},
@@ -46522,10 +46522,10 @@
 				hh: "%d timer",
 				d: "en dag",
 				dd: "%d dager",
-				M: "en mÃ¥ned",
-				MM: "%d mÃ¥neder",
-				y: "ett Ã¥r",
-				yy: "%d Ã¥r"
+				M: "en måned",
+				MM: "%d måneder",
+				y: "ett år",
+				yy: "%d år"
 			},
 			dayOfMonthOrdinalParse: /\d{1,2}\./,
 			ordinal: "%d.",
@@ -46539,63 +46539,63 @@
 	! function (e) {
 		"use strict";
 		e.defineLocale("ja", {
-			months: "1æœˆ_2æœˆ_3æœˆ_4æœˆ_5æœˆ_6æœˆ_7æœˆ_8æœˆ_9æœˆ_10æœˆ_11æœˆ_12æœˆ".split("_"),
-			monthsShort: "1æœˆ_2æœˆ_3æœˆ_4æœˆ_5æœˆ_6æœˆ_7æœˆ_8æœˆ_9æœˆ_10æœˆ_11æœˆ_12æœˆ".split("_"),
-			weekdays: "æ—¥æ›œæ—¥_æœˆæ›œæ—¥_ç«æ›œæ—¥_æ°´æ›œæ—¥_æœ¨æ›œæ—¥_é‡‘æ›œæ—¥_åœŸæ›œæ—¥".split("_"),
-			weekdaysShort: "æ—¥_æœˆ_ç«_æ°´_æœ¨_é‡‘_åœŸ".split("_"),
-			weekdaysMin: "æ—¥_æœˆ_ç«_æ°´_æœ¨_é‡‘_åœŸ".split("_"),
+			months: "1月_2月_3月_4月_5月_6月_7月_8月_9月_10月_11月_12月".split("_"),
+			monthsShort: "1月_2月_3月_4月_5月_6月_7月_8月_9月_10月_11月_12月".split("_"),
+			weekdays: "日曜日_月曜日_火曜日_水曜日_木曜日_金曜日_土曜日".split("_"),
+			weekdaysShort: "日_月_火_水_木_金_土".split("_"),
+			weekdaysMin: "日_月_火_水_木_金_土".split("_"),
 			longDateFormat: {
 				LT: "HH:mm",
 				LTS: "HH:mm:ss",
 				L: "YYYY/MM/DD",
-				LL: "YYYYå¹´MæœˆDæ—¥",
-				LLL: "YYYYå¹´MæœˆDæ—¥ HH:mm",
-				LLLL: "YYYYå¹´MæœˆDæ—¥ HH:mm dddd",
+				LL: "YYYY年M月D日",
+				LLL: "YYYY年M月D日 HH:mm",
+				LLLL: "YYYY年M月D日 HH:mm dddd",
 				l: "YYYY/MM/DD",
-				ll: "YYYYå¹´MæœˆDæ—¥",
-				lll: "YYYYå¹´MæœˆDæ—¥ HH:mm",
-				llll: "YYYYå¹´MæœˆDæ—¥ HH:mm dddd"
+				ll: "YYYY年M月D日",
+				lll: "YYYY年M月D日 HH:mm",
+				llll: "YYYY年M月D日 HH:mm dddd"
 			},
-			meridiemParse: /åˆå‰|åˆå¾Œ/i,
+			meridiemParse: /午前|午後/i,
 			isPM: function (e) {
-				return "åˆå¾Œ" === e
+				return "午後" === e
 			},
 			meridiem: function (e, t, n) {
-				return e < 12 ? "åˆå‰" : "åˆå¾Œ"
+				return e < 12 ? "午前" : "午後"
 			},
 			calendar: {
-				sameDay: "[ä»Šæ—¥] LT",
-				nextDay: "[æ˜Žæ—¥] LT",
-				nextWeek: "[æ¥é€±]dddd LT",
-				lastDay: "[æ˜¨æ—¥] LT",
-				lastWeek: "[å‰é€±]dddd LT",
+				sameDay: "[今日] LT",
+				nextDay: "[明日] LT",
+				nextWeek: "[来週]dddd LT",
+				lastDay: "[昨日] LT",
+				lastWeek: "[前週]dddd LT",
 				sameElse: "L"
 			},
-			dayOfMonthOrdinalParse: /\d{1,2}æ—¥/,
+			dayOfMonthOrdinalParse: /\d{1,2}日/,
 			ordinal: function (e, t) {
 				switch (t) {
 					case "d":
 					case "D":
 					case "DDD":
-						return e + "æ—¥";
+						return e + "日";
 					default:
 						return e
 				}
 			},
 			relativeTime: {
-				future: "%så¾Œ",
-				past: "%så‰",
-				s: "æ•°ç§’",
-				m: "1åˆ†",
-				mm: "%dåˆ†",
-				h: "1æ™‚é–“",
-				hh: "%dæ™‚é–“",
-				d: "1æ—¥",
-				dd: "%dæ—¥",
-				M: "1ãƒ¶æœˆ",
-				MM: "%dãƒ¶æœˆ",
-				y: "1å¹´",
-				yy: "%då¹´"
+				future: "%s後",
+				past: "%s前",
+				s: "数秒",
+				m: "1分",
+				mm: "%d分",
+				h: "1時間",
+				hh: "%d時間",
+				d: "1日",
+				dd: "%d日",
+				M: "1ヶ月",
+				MM: "%dヶ月",
+				y: "1年",
+				yy: "%d年"
 			}
 		})
 	}(n(3))
@@ -46605,7 +46605,7 @@
 		e.defineLocale("it", {
 			months: "gennaio_febbraio_marzo_aprile_maggio_giugno_luglio_agosto_settembre_ottobre_novembre_dicembre".split("_"),
 			monthsShort: "gen_feb_mar_apr_mag_giu_lug_ago_set_ott_nov_dic".split("_"),
-			weekdays: "domenica_lunedÃ¬_martedÃ¬_mercoledÃ¬_giovedÃ¬_venerdÃ¬_sabato".split("_"),
+			weekdays: "domenica_lunedì_martedì_mercoledì_giovedì_venerdì_sabato".split("_"),
 			weekdaysShort: "dom_lun_mar_mer_gio_ven_sab".split("_"),
 			weekdaysMin: "do_lu_ma_me_gi_ve_sa".split("_"),
 			longDateFormat: {
@@ -46648,8 +46648,8 @@
 				y: "un anno",
 				yy: "%d anni"
 			},
-			dayOfMonthOrdinalParse: /\d{1,2}Âº/,
-			ordinal: "%dÂº",
+			dayOfMonthOrdinalParse: /\d{1,2}º/,
+			ordinal: "%dº",
 			week: {
 				dow: 1,
 				doy: 4
@@ -46712,45 +46712,45 @@
 }, function (e, t, n) {
 	! function (e) {
 		"use strict";
-		var t = "vasÃ¡rnap hÃ©tfÅ‘n kedden szerdÃ¡n csÃ¼tÃ¶rtÃ¶kÃ¶n pÃ©nteken szombaton".split(" ");
+		var t = "vasárnap hétfőn kedden szerdán csütörtökön pénteken szombaton".split(" ");
 
 		function n(e, t, n, o) {
 			var a = e;
 			switch (n) {
 				case "s":
-					return o || t ? "nÃ©hÃ¡ny mÃ¡sodperc" : "nÃ©hÃ¡ny mÃ¡sodperce";
+					return o || t ? "néhány másodperc" : "néhány másodperce";
 				case "m":
 					return "egy" + (o || t ? " perc" : " perce");
 				case "mm":
 					return a + (o || t ? " perc" : " perce");
 				case "h":
-					return "egy" + (o || t ? " Ã³ra" : " Ã³rÃ¡ja");
+					return "egy" + (o || t ? " óra" : " órája");
 				case "hh":
-					return a + (o || t ? " Ã³ra" : " Ã³rÃ¡ja");
+					return a + (o || t ? " óra" : " órája");
 				case "d":
 					return "egy" + (o || t ? " nap" : " napja");
 				case "dd":
 					return a + (o || t ? " nap" : " napja");
 				case "M":
-					return "egy" + (o || t ? " hÃ³nap" : " hÃ³napja");
+					return "egy" + (o || t ? " hónap" : " hónapja");
 				case "MM":
-					return a + (o || t ? " hÃ³nap" : " hÃ³napja");
+					return a + (o || t ? " hónap" : " hónapja");
 				case "y":
-					return "egy" + (o || t ? " Ã©v" : " Ã©ve");
+					return "egy" + (o || t ? " év" : " éve");
 				case "yy":
-					return a + (o || t ? " Ã©v" : " Ã©ve")
+					return a + (o || t ? " év" : " éve")
 			}
 			return ""
 		}
 
 		function o(e) {
-			return (e ? "" : "[mÃºlt] ") + "[" + t[this.day()] + "] LT[-kor]"
+			return (e ? "" : "[múlt] ") + "[" + t[this.day()] + "] LT[-kor]"
 		}
 		e.defineLocale("hu", {
-			months: "januÃ¡r_februÃ¡r_mÃ¡rcius_Ã¡prilis_mÃ¡jus_jÃºnius_jÃºlius_augusztus_szeptember_oktÃ³ber_november_december".split("_"),
-			monthsShort: "jan_feb_mÃ¡rc_Ã¡pr_mÃ¡j_jÃºn_jÃºl_aug_szept_okt_nov_dec".split("_"),
-			weekdays: "vasÃ¡rnap_hÃ©tfÅ‘_kedd_szerda_csÃ¼tÃ¶rtÃ¶k_pÃ©ntek_szombat".split("_"),
-			weekdaysShort: "vas_hÃ©t_kedd_sze_csÃ¼t_pÃ©n_szo".split("_"),
+			months: "január_február_március_április_május_június_július_augusztus_szeptember_október_november_december".split("_"),
+			monthsShort: "jan_feb_márc_ápr_máj_jún_júl_aug_szept_okt_nov_dec".split("_"),
+			weekdays: "vasárnap_hétfő_kedd_szerda_csütörtök_péntek_szombat".split("_"),
+			weekdaysShort: "vas_hét_kedd_sze_csüt_pén_szo".split("_"),
 			weekdaysMin: "v_h_k_sze_cs_p_szo".split("_"),
 			longDateFormat: {
 				LT: "H:mm",
@@ -46780,7 +46780,7 @@
 				sameElse: "L"
 			},
 			relativeTime: {
-				future: "%s mÃºlva",
+				future: "%s múlva",
 				past: "%s",
 				s: n,
 				m: n,
@@ -46806,69 +46806,69 @@
 	! function (e) {
 		"use strict";
 		var t = {
-				1: "à¥§",
-				2: "à¥¨",
-				3: "à¥©",
-				4: "à¥ª",
-				5: "à¥«",
-				6: "à¥¬",
-				7: "à¥­",
-				8: "à¥®",
-				9: "à¥¯",
-				0: "à¥¦"
+				1: "१",
+				2: "२",
+				3: "३",
+				4: "४",
+				5: "५",
+				6: "६",
+				7: "७",
+				8: "८",
+				9: "९",
+				0: "०"
 			},
 			n = {
-				"à¥§": "1",
-				"à¥¨": "2",
-				"à¥©": "3",
-				"à¥ª": "4",
-				"à¥«": "5",
-				"à¥¬": "6",
-				"à¥­": "7",
-				"à¥®": "8",
-				"à¥¯": "9",
-				"à¥¦": "0"
+				"१": "1",
+				"२": "2",
+				"३": "3",
+				"४": "4",
+				"५": "5",
+				"६": "6",
+				"७": "7",
+				"८": "8",
+				"९": "9",
+				"०": "0"
 			};
 		e.defineLocale("hi", {
-			months: "à¤œà¤¨à¤µà¤°à¥€_à¤«à¤¼à¤°à¤µà¤°à¥€_à¤®à¤¾à¤°à¥à¤š_à¤…à¤ªà¥à¤°à¥ˆà¤²_à¤®à¤ˆ_à¤œà¥‚à¤¨_à¤œà¥à¤²à¤¾à¤ˆ_à¤…à¤—à¤¸à¥à¤¤_à¤¸à¤¿à¤¤à¤®à¥à¤¬à¤°_à¤…à¤•à¥à¤Ÿà¥‚à¤¬à¤°_à¤¨à¤µà¤®à¥à¤¬à¤°_à¤¦à¤¿à¤¸à¤®à¥à¤¬à¤°".split("_"),
-			monthsShort: "à¤œà¤¨._à¤«à¤¼à¤°._à¤®à¤¾à¤°à¥à¤š_à¤…à¤ªà¥à¤°à¥ˆ._à¤®à¤ˆ_à¤œà¥‚à¤¨_à¤œà¥à¤²._à¤…à¤—._à¤¸à¤¿à¤¤._à¤…à¤•à¥à¤Ÿà¥‚._à¤¨à¤µ._à¤¦à¤¿à¤¸.".split("_"),
+			months: "जनवरी_फ़रवरी_मार्च_अप्रैल_मई_जून_जुलाई_अगस्त_सितम्बर_अक्टूबर_नवम्बर_दिसम्बर".split("_"),
+			monthsShort: "जन._फ़र._मार्च_अप्रै._मई_जून_जुल._अग._सित._अक्टू._नव._दिस.".split("_"),
 			monthsParseExact: !0,
-			weekdays: "à¤°à¤µà¤¿à¤µà¤¾à¤°_à¤¸à¥‹à¤®à¤µà¤¾à¤°_à¤®à¤‚à¤—à¤²à¤µà¤¾à¤°_à¤¬à¥à¤§à¤µà¤¾à¤°_à¤—à¥à¤°à¥‚à¤µà¤¾à¤°_à¤¶à¥à¤•à¥à¤°à¤µà¤¾à¤°_à¤¶à¤¨à¤¿à¤µà¤¾à¤°".split("_"),
-			weekdaysShort: "à¤°à¤µà¤¿_à¤¸à¥‹à¤®_à¤®à¤‚à¤—à¤²_à¤¬à¥à¤§_à¤—à¥à¤°à¥‚_à¤¶à¥à¤•à¥à¤°_à¤¶à¤¨à¤¿".split("_"),
-			weekdaysMin: "à¤°_à¤¸à¥‹_à¤®à¤‚_à¤¬à¥_à¤—à¥_à¤¶à¥_à¤¶".split("_"),
+			weekdays: "रविवार_सोमवार_मंगलवार_बुधवार_गुरूवार_शुक्रवार_शनिवार".split("_"),
+			weekdaysShort: "रवि_सोम_मंगल_बुध_गुरू_शुक्र_शनि".split("_"),
+			weekdaysMin: "र_सो_मं_बु_गु_शु_श".split("_"),
 			longDateFormat: {
-				LT: "A h:mm à¤¬à¤œà¥‡",
-				LTS: "A h:mm:ss à¤¬à¤œà¥‡",
+				LT: "A h:mm बजे",
+				LTS: "A h:mm:ss बजे",
 				L: "DD/MM/YYYY",
 				LL: "D MMMM YYYY",
-				LLL: "D MMMM YYYY, A h:mm à¤¬à¤œà¥‡",
-				LLLL: "dddd, D MMMM YYYY, A h:mm à¤¬à¤œà¥‡"
+				LLL: "D MMMM YYYY, A h:mm बजे",
+				LLLL: "dddd, D MMMM YYYY, A h:mm बजे"
 			},
 			calendar: {
-				sameDay: "[à¤†à¤œ] LT",
-				nextDay: "[à¤•à¤²] LT",
+				sameDay: "[आज] LT",
+				nextDay: "[कल] LT",
 				nextWeek: "dddd, LT",
-				lastDay: "[à¤•à¤²] LT",
-				lastWeek: "[à¤ªà¤¿à¤›à¤²à¥‡] dddd, LT",
+				lastDay: "[कल] LT",
+				lastWeek: "[पिछले] dddd, LT",
 				sameElse: "L"
 			},
 			relativeTime: {
-				future: "%s à¤®à¥‡à¤‚",
-				past: "%s à¤ªà¤¹à¤²à¥‡",
-				s: "à¤•à¥à¤› à¤¹à¥€ à¤•à¥à¤·à¤£",
-				m: "à¤à¤• à¤®à¤¿à¤¨à¤Ÿ",
-				mm: "%d à¤®à¤¿à¤¨à¤Ÿ",
-				h: "à¤à¤• à¤˜à¤‚à¤Ÿà¤¾",
-				hh: "%d à¤˜à¤‚à¤Ÿà¥‡",
-				d: "à¤à¤• à¤¦à¤¿à¤¨",
-				dd: "%d à¤¦à¤¿à¤¨",
-				M: "à¤à¤• à¤®à¤¹à¥€à¤¨à¥‡",
-				MM: "%d à¤®à¤¹à¥€à¤¨à¥‡",
-				y: "à¤à¤• à¤µà¤°à¥à¤·",
-				yy: "%d à¤µà¤°à¥à¤·"
+				future: "%s में",
+				past: "%s पहले",
+				s: "कुछ ही क्षण",
+				m: "एक मिनट",
+				mm: "%d मिनट",
+				h: "एक घंटा",
+				hh: "%d घंटे",
+				d: "एक दिन",
+				dd: "%d दिन",
+				M: "एक महीने",
+				MM: "%d महीने",
+				y: "एक वर्ष",
+				yy: "%d वर्ष"
 			},
 			preparse: function (e) {
-				return e.replace(/[à¥§à¥¨à¥©à¥ªà¥«à¥¬à¥­à¥®à¥¯à¥¦]/g, function (e) {
+				return e.replace(/[१२३४५६७८९०]/g, function (e) {
 					return n[e]
 				})
 			},
@@ -46877,12 +46877,12 @@
 					return t[e]
 				})
 			},
-			meridiemParse: /à¤°à¤¾à¤¤|à¤¸à¥à¤¬à¤¹|à¤¦à¥‹à¤ªà¤¹à¤°|à¤¶à¤¾à¤®/,
+			meridiemParse: /रात|सुबह|दोपहर|शाम/,
 			meridiemHour: function (e, t) {
-				return 12 === e && (e = 0), "à¤°à¤¾à¤¤" === t ? e < 4 ? e : e + 12 : "à¤¸à¥à¤¬à¤¹" === t ? e : "à¤¦à¥‹à¤ªà¤¹à¤°" === t ? e >= 10 ? e : e + 12 : "à¤¶à¤¾à¤®" === t ? e + 12 : void 0
+				return 12 === e && (e = 0), "रात" === t ? e < 4 ? e : e + 12 : "सुबह" === t ? e : "दोपहर" === t ? e >= 10 ? e : e + 12 : "शाम" === t ? e + 12 : void 0
 			},
 			meridiem: function (e, t, n) {
-				return e < 4 ? "à¤°à¤¾à¤¤" : e < 10 ? "à¤¸à¥à¤¬à¤¹" : e < 17 ? "à¤¦à¥‹à¤ªà¤¹à¤°" : e < 20 ? "à¤¶à¤¾à¤®" : "à¤°à¤¾à¤¤"
+				return e < 4 ? "रात" : e < 10 ? "सुबह" : e < 17 ? "दोपहर" : e < 20 ? "शाम" : "रात"
 			},
 			week: {
 				dow: 0,
@@ -46894,60 +46894,60 @@
 	! function (e) {
 		"use strict";
 		e.defineLocale("he", {
-			months: "×™× ×•××¨_×¤×‘×¨×•××¨_×ž×¨×¥_××¤×¨×™×œ_×ž××™_×™×•× ×™_×™×•×œ×™_××•×’×•×¡×˜_×¡×¤×˜×ž×‘×¨_××•×§×˜×•×‘×¨_× ×•×‘×ž×‘×¨_×“×¦×ž×‘×¨".split("_"),
-			monthsShort: "×™× ×•×³_×¤×‘×¨×³_×ž×¨×¥_××¤×¨×³_×ž××™_×™×•× ×™_×™×•×œ×™_××•×’×³_×¡×¤×˜×³_××•×§×³_× ×•×‘×³_×“×¦×ž×³".split("_"),
-			weekdays: "×¨××©×•×Ÿ_×©× ×™_×©×œ×™×©×™_×¨×‘×™×¢×™_×—×ž×™×©×™_×©×™×©×™_×©×‘×ª".split("_"),
-			weekdaysShort: "××³_×‘×³_×’×³_×“×³_×”×³_×•×³_×©×³".split("_"),
-			weekdaysMin: "×_×‘_×’_×“_×”_×•_×©".split("_"),
+			months: "ינואר_פברואר_מרץ_אפריל_מאי_יוני_יולי_אוגוסט_ספטמבר_אוקטובר_נובמבר_דצמבר".split("_"),
+			monthsShort: "ינו׳_פבר׳_מרץ_אפר׳_מאי_יוני_יולי_אוג׳_ספט׳_אוק׳_נוב׳_דצמ׳".split("_"),
+			weekdays: "ראשון_שני_שלישי_רביעי_חמישי_שישי_שבת".split("_"),
+			weekdaysShort: "א׳_ב׳_ג׳_ד׳_ה׳_ו׳_ש׳".split("_"),
+			weekdaysMin: "א_ב_ג_ד_ה_ו_ש".split("_"),
 			longDateFormat: {
 				LT: "HH:mm",
 				LTS: "HH:mm:ss",
 				L: "DD/MM/YYYY",
-				LL: "D [×‘]MMMM YYYY",
-				LLL: "D [×‘]MMMM YYYY HH:mm",
-				LLLL: "dddd, D [×‘]MMMM YYYY HH:mm",
+				LL: "D [ב]MMMM YYYY",
+				LLL: "D [ב]MMMM YYYY HH:mm",
+				LLLL: "dddd, D [ב]MMMM YYYY HH:mm",
 				l: "D/M/YYYY",
 				ll: "D MMM YYYY",
 				lll: "D MMM YYYY HH:mm",
 				llll: "ddd, D MMM YYYY HH:mm"
 			},
 			calendar: {
-				sameDay: "[×”×™×•× ×‘Ö¾]LT",
-				nextDay: "[×ž×—×¨ ×‘Ö¾]LT",
-				nextWeek: "dddd [×‘×©×¢×”] LT",
-				lastDay: "[××ª×ž×•×œ ×‘Ö¾]LT",
-				lastWeek: "[×‘×™×•×] dddd [×”××—×¨×•×Ÿ ×‘×©×¢×”] LT",
+				sameDay: "[היום ב־]LT",
+				nextDay: "[מחר ב־]LT",
+				nextWeek: "dddd [בשעה] LT",
+				lastDay: "[אתמול ב־]LT",
+				lastWeek: "[ביום] dddd [האחרון בשעה] LT",
 				sameElse: "L"
 			},
 			relativeTime: {
-				future: "×‘×¢×•×“ %s",
-				past: "×œ×¤× ×™ %s",
-				s: "×ž×¡×¤×¨ ×©× ×™×•×ª",
-				m: "×“×§×”",
-				mm: "%d ×“×§×•×ª",
-				h: "×©×¢×”",
+				future: "בעוד %s",
+				past: "לפני %s",
+				s: "מספר שניות",
+				m: "דקה",
+				mm: "%d דקות",
+				h: "שעה",
 				hh: function (e) {
-					return 2 === e ? "×©×¢×ª×™×™×" : e + " ×©×¢×•×ª"
+					return 2 === e ? "שעתיים" : e + " שעות"
 				},
-				d: "×™×•×",
+				d: "יום",
 				dd: function (e) {
-					return 2 === e ? "×™×•×ž×™×™×" : e + " ×™×ž×™×"
+					return 2 === e ? "יומיים" : e + " ימים"
 				},
-				M: "×—×•×“×©",
+				M: "חודש",
 				MM: function (e) {
-					return 2 === e ? "×—×•×“×©×™×™×" : e + " ×—×•×“×©×™×"
+					return 2 === e ? "חודשיים" : e + " חודשים"
 				},
-				y: "×©× ×”",
+				y: "שנה",
 				yy: function (e) {
-					return 2 === e ? "×©× ×ª×™×™×" : e % 10 == 0 && 10 !== e ? e + " ×©× ×”" : e + " ×©× ×™×"
+					return 2 === e ? "שנתיים" : e % 10 == 0 && 10 !== e ? e + " שנה" : e + " שנים"
 				}
 			},
-			meridiemParse: /××—×”"×¦|×œ×¤× ×”"×¦|××—×¨×™ ×”×¦×”×¨×™×™×|×œ×¤× ×™ ×”×¦×”×¨×™×™×|×œ×¤× ×•×ª ×‘×•×§×¨|×‘×‘×•×§×¨|×‘×¢×¨×‘/i,
+			meridiemParse: /אחה"צ|לפנה"צ|אחרי הצהריים|לפני הצהריים|לפנות בוקר|בבוקר|בערב/i,
 			isPM: function (e) {
-				return /^(××—×”"×¦|××—×¨×™ ×”×¦×”×¨×™×™×|×‘×¢×¨×‘)$/.test(e)
+				return /^(אחה"צ|אחרי הצהריים|בערב)$/.test(e)
 			},
 			meridiem: function (e, t, n) {
-				return e < 5 ? "×œ×¤× ×•×ª ×‘×•×§×¨" : e < 10 ? "×‘×‘×•×§×¨" : e < 12 ? n ? '×œ×¤× ×”"×¦' : "×œ×¤× ×™ ×”×¦×”×¨×™×™×" : e < 18 ? n ? '××—×”"×¦' : "××—×¨×™ ×”×¦×”×¨×™×™×" : "×‘×¢×¨×‘"
+				return e < 5 ? "לפנות בוקר" : e < 10 ? "בבוקר" : e < 12 ? n ? 'לפנה"צ' : "לפני הצהריים" : e < 18 ? n ? 'אחה"צ' : "אחרי הצהריים" : "בערב"
 			}
 		})
 	}(n(3))
@@ -46955,12 +46955,12 @@
 	! function (e) {
 		"use strict";
 		e.defineLocale("gl", {
-			months: "xaneiro_febreiro_marzo_abril_maio_xuÃ±o_xullo_agosto_setembro_outubro_novembro_decembro".split("_"),
-			monthsShort: "xan._feb._mar._abr._mai._xuÃ±._xul._ago._set._out._nov._dec.".split("_"),
+			months: "xaneiro_febreiro_marzo_abril_maio_xuño_xullo_agosto_setembro_outubro_novembro_decembro".split("_"),
+			monthsShort: "xan._feb._mar._abr._mai._xuñ._xul._ago._set._out._nov._dec.".split("_"),
 			monthsParseExact: !0,
-			weekdays: "domingo_luns_martes_mÃ©rcores_xoves_venres_sÃ¡bado".split("_"),
-			weekdaysShort: "dom._lun._mar._mÃ©r._xov._ven._sÃ¡b.".split("_"),
-			weekdaysMin: "do_lu_ma_mÃ©_xo_ve_sÃ¡".split("_"),
+			weekdays: "domingo_luns_martes_mércores_xoves_venres_sábado".split("_"),
+			weekdaysShort: "dom._lun._mar._mér._xov._ven._sáb.".split("_"),
+			weekdaysMin: "do_lu_ma_mé_xo_ve_sá".split("_"),
 			weekdaysParseExact: !0,
 			longDateFormat: {
 				LT: "H:mm",
@@ -46972,19 +46972,19 @@
 			},
 			calendar: {
 				sameDay: function () {
-					return "[hoxe " + (1 !== this.hours() ? "Ã¡s" : "Ã¡") + "] LT"
+					return "[hoxe " + (1 !== this.hours() ? "ás" : "á") + "] LT"
 				},
 				nextDay: function () {
-					return "[maÃ±Ã¡ " + (1 !== this.hours() ? "Ã¡s" : "Ã¡") + "] LT"
+					return "[mañá " + (1 !== this.hours() ? "ás" : "á") + "] LT"
 				},
 				nextWeek: function () {
-					return "dddd [" + (1 !== this.hours() ? "Ã¡s" : "a") + "] LT"
+					return "dddd [" + (1 !== this.hours() ? "ás" : "a") + "] LT"
 				},
 				lastDay: function () {
-					return "[onte " + (1 !== this.hours() ? "Ã¡" : "a") + "] LT"
+					return "[onte " + (1 !== this.hours() ? "á" : "a") + "] LT"
 				},
 				lastWeek: function () {
-					return "[o] dddd [pasado " + (1 !== this.hours() ? "Ã¡s" : "a") + "] LT"
+					return "[o] dddd [pasado " + (1 !== this.hours() ? "ás" : "a") + "] LT"
 				},
 				sameElse: "L"
 			},
@@ -46998,15 +46998,15 @@
 				mm: "%d minutos",
 				h: "unha hora",
 				hh: "%d horas",
-				d: "un dÃ­a",
-				dd: "%d dÃ­as",
+				d: "un día",
+				dd: "%d días",
 				M: "un mes",
 				MM: "%d meses",
 				y: "un ano",
 				yy: "%d anos"
 			},
-			dayOfMonthOrdinalParse: /\d{1,2}Âº/,
-			ordinal: "%dÂº",
+			dayOfMonthOrdinalParse: /\d{1,2}º/,
+			ordinal: "%dº",
 			week: {
 				dow: 1,
 				doy: 4
@@ -47017,8 +47017,8 @@
 	! function (e) {
 		"use strict";
 		e.defineLocale("fr", {
-			months: "janvier_fÃ©vrier_mars_avril_mai_juin_juillet_aoÃ»t_septembre_octobre_novembre_dÃ©cembre".split("_"),
-			monthsShort: "janv._fÃ©vr._mars_avr._mai_juin_juil._aoÃ»t_sept._oct._nov._dÃ©c.".split("_"),
+			months: "janvier_février_mars_avril_mai_juin_juillet_août_septembre_octobre_novembre_décembre".split("_"),
+			monthsShort: "janv._févr._mars_avr._mai_juin_juil._août_sept._oct._nov._déc.".split("_"),
 			monthsParseExact: !0,
 			weekdays: "dimanche_lundi_mardi_mercredi_jeudi_vendredi_samedi".split("_"),
 			weekdaysShort: "dim._lun._mar._mer._jeu._ven._sam.".split("_"),
@@ -47033,11 +47033,11 @@
 				LLLL: "dddd D MMMM YYYY HH:mm"
 			},
 			calendar: {
-				sameDay: "[Aujourdâ€™hui Ã ] LT",
-				nextDay: "[Demain Ã ] LT",
-				nextWeek: "dddd [Ã ] LT",
-				lastDay: "[Hier Ã ] LT",
-				lastWeek: "dddd [dernier Ã ] LT",
+				sameDay: "[Aujourd’hui à] LT",
+				nextDay: "[Demain à] LT",
+				nextWeek: "dddd [à] LT",
+				lastDay: "[Hier à] LT",
+				lastWeek: "dddd [dernier à] LT",
 				sameElse: "L"
 			},
 			relativeTime: {
@@ -47150,9 +47150,9 @@
 			monthsParse: o,
 			longMonthsParse: o,
 			shortMonthsParse: o,
-			weekdays: "domingo_lunes_martes_miÃ©rcoles_jueves_viernes_sÃ¡bado".split("_"),
-			weekdaysShort: "dom._lun._mar._miÃ©._jue._vie._sÃ¡b.".split("_"),
-			weekdaysMin: "do_lu_ma_mi_ju_vi_sÃ¡".split("_"),
+			weekdays: "domingo_lunes_martes_miércoles_jueves_viernes_sábado".split("_"),
+			weekdaysShort: "dom._lun._mar._mié._jue._vie._sáb.".split("_"),
+			weekdaysMin: "do_lu_ma_mi_ju_vi_sá".split("_"),
 			weekdaysParseExact: !0,
 			longDateFormat: {
 				LT: "H:mm",
@@ -47167,7 +47167,7 @@
 					return "[hoy a la" + (1 !== this.hours() ? "s" : "") + "] LT"
 				},
 				nextDay: function () {
-					return "[maÃ±ana a la" + (1 !== this.hours() ? "s" : "") + "] LT"
+					return "[mañana a la" + (1 !== this.hours() ? "s" : "") + "] LT"
 				},
 				nextWeek: function () {
 					return "dddd [a la" + (1 !== this.hours() ? "s" : "") + "] LT"
@@ -47188,15 +47188,15 @@
 				mm: "%d minutos",
 				h: "una hora",
 				hh: "%d horas",
-				d: "un dÃ­a",
-				dd: "%d dÃ­as",
+				d: "un día",
+				dd: "%d días",
 				M: "un mes",
 				MM: "%d meses",
-				y: "un aÃ±o",
-				yy: "%d aÃ±os"
+				y: "un año",
+				yy: "%d años"
 			},
-			dayOfMonthOrdinalParse: /\d{1,2}Âº/,
-			ordinal: "%dÂº",
+			dayOfMonthOrdinalParse: /\d{1,2}º/,
+			ordinal: "%dº",
 			week: {
 				dow: 1,
 				doy: 4
@@ -47207,11 +47207,11 @@
 	! function (e) {
 		"use strict";
 		e.defineLocale("eo", {
-			months: "januaro_februaro_marto_aprilo_majo_junio_julio_aÅ­gusto_septembro_oktobro_novembro_decembro".split("_"),
-			monthsShort: "jan_feb_mar_apr_maj_jun_jul_aÅ­g_sep_okt_nov_dec".split("_"),
-			weekdays: "dimanÄ‰o_lundo_mardo_merkredo_ÄµaÅ­do_vendredo_sabato".split("_"),
-			weekdaysShort: "dim_lun_mard_merk_ÄµaÅ­_ven_sab".split("_"),
-			weekdaysMin: "di_lu_ma_me_Äµa_ve_sa".split("_"),
+			months: "januaro_februaro_marto_aprilo_majo_junio_julio_aŭgusto_septembro_oktobro_novembro_decembro".split("_"),
+			monthsShort: "jan_feb_mar_apr_maj_jun_jul_aŭg_sep_okt_nov_dec".split("_"),
+			weekdays: "dimanĉo_lundo_mardo_merkredo_ĵaŭdo_vendredo_sabato".split("_"),
+			weekdaysShort: "dim_lun_mard_merk_ĵaŭ_ven_sab".split("_"),
+			weekdaysMin: "di_lu_ma_me_ĵa_ve_sa".split("_"),
 			longDateFormat: {
 				LT: "HH:mm",
 				LTS: "HH:mm:ss",
@@ -47228,16 +47228,16 @@
 				return e > 11 ? n ? "p.t.m." : "P.T.M." : n ? "a.t.m." : "A.T.M."
 			},
 			calendar: {
-				sameDay: "[HodiaÅ­ je] LT",
-				nextDay: "[MorgaÅ­ je] LT",
+				sameDay: "[Hodiaŭ je] LT",
+				nextDay: "[Morgaŭ je] LT",
 				nextWeek: "dddd [je] LT",
-				lastDay: "[HieraÅ­ je] LT",
+				lastDay: "[Hieraŭ je] LT",
 				lastWeek: "[pasinta] dddd [je] LT",
 				sameElse: "L"
 			},
 			relativeTime: {
 				future: "post %s",
-				past: "antaÅ­ %s",
+				past: "antaŭ %s",
 				s: "sekundoj",
 				m: "minuto",
 				mm: "%d minutoj",
@@ -47276,8 +47276,8 @@
 			return t ? a[n][0] : a[n][1]
 		}
 		e.defineLocale("de", {
-			months: "Januar_Februar_MÃ¤rz_April_Mai_Juni_Juli_August_September_Oktober_November_Dezember".split("_"),
-			monthsShort: "Jan._Feb._MÃ¤rz_Apr._Mai_Juni_Juli_Aug._Sep._Okt._Nov._Dez.".split("_"),
+			months: "Januar_Februar_März_April_Mai_Juni_Juli_August_September_Oktober_November_Dezember".split("_"),
+			monthsShort: "Jan._Feb._März_Apr._Mai_Juni_Juli_Aug._Sep._Okt._Nov._Dez.".split("_"),
 			monthsParseExact: !0,
 			weekdays: "Sonntag_Montag_Dienstag_Mittwoch_Donnerstag_Freitag_Samstag".split("_"),
 			weekdaysShort: "So._Mo._Di._Mi._Do._Fr._Sa.".split("_"),
@@ -47325,8 +47325,8 @@
 }, function (e, t, n) {
 	! function (e) {
 		"use strict";
-		var t = "leden_Ãºnor_bÅ™ezen_duben_kvÄ›ten_Äerven_Äervenec_srpen_zÃ¡Å™Ã­_Å™Ã­jen_listopad_prosinec".split("_"),
-			n = "led_Ãºno_bÅ™e_dub_kvÄ›_Ävn_Ävc_srp_zÃ¡Å™_Å™Ã­j_lis_pro".split("_");
+		var t = "leden_únor_březen_duben_květen_červen_červenec_srpen_září_říjen_listopad_prosinec".split("_"),
+			n = "led_úno_bře_dub_kvě_čvn_čvc_srp_zář_říj_lis_pro".split("_");
 
 		function o(e) {
 			return e > 1 && e < 5 && 1 != ~~(e / 10)
@@ -47336,7 +47336,7 @@
 			var r = e + " ";
 			switch (n) {
 				case "s":
-					return t || a ? "pÃ¡r sekund" : "pÃ¡r sekundami";
+					return t || a ? "pár sekund" : "pár sekundami";
 				case "m":
 					return t ? "minuta" : a ? "minutu" : "minutou";
 				case "mm":
@@ -47348,11 +47348,11 @@
 				case "d":
 					return t || a ? "den" : "dnem";
 				case "dd":
-					return t || a ? r + (o(e) ? "dny" : "dnÃ­") : r + "dny";
+					return t || a ? r + (o(e) ? "dny" : "dní") : r + "dny";
 				case "M":
-					return t || a ? "mÄ›sÃ­c" : "mÄ›sÃ­cem";
+					return t || a ? "měsíc" : "měsícem";
 				case "MM":
-					return t || a ? r + (o(e) ? "mÄ›sÃ­ce" : "mÄ›sÃ­cÅ¯") : r + "mÄ›sÃ­ci";
+					return t || a ? r + (o(e) ? "měsíce" : "měsíců") : r + "měsíci";
 				case "y":
 					return t || a ? "rok" : "rokem";
 				case "yy":
@@ -47377,9 +47377,9 @@
 				for (t = 0; t < 12; t++) n[t] = new RegExp("^" + e[t] + "$", "i");
 				return n
 			}(t),
-			weekdays: "nedÄ›le_pondÄ›lÃ­_ÃºterÃ½_stÅ™eda_Ätvrtek_pÃ¡tek_sobota".split("_"),
-			weekdaysShort: "ne_po_Ãºt_st_Ät_pÃ¡_so".split("_"),
-			weekdaysMin: "ne_po_Ãºt_st_Ät_pÃ¡_so".split("_"),
+			weekdays: "neděle_pondělí_úterý_středa_čtvrtek_pátek_sobota".split("_"),
+			weekdaysShort: "ne_po_út_st_čt_pá_so".split("_"),
+			weekdaysMin: "ne_po_út_st_čt_pá_so".split("_"),
 			longDateFormat: {
 				LT: "H:mm",
 				LTS: "H:mm:ss",
@@ -47391,37 +47391,37 @@
 			},
 			calendar: {
 				sameDay: "[dnes v] LT",
-				nextDay: "[zÃ­tra v] LT",
+				nextDay: "[zítra v] LT",
 				nextWeek: function () {
 					switch (this.day()) {
 						case 0:
-							return "[v nedÄ›li v] LT";
+							return "[v neděli v] LT";
 						case 1:
 						case 2:
 							return "[v] dddd [v] LT";
 						case 3:
-							return "[ve stÅ™edu v] LT";
+							return "[ve středu v] LT";
 						case 4:
-							return "[ve Ätvrtek v] LT";
+							return "[ve čtvrtek v] LT";
 						case 5:
-							return "[v pÃ¡tek v] LT";
+							return "[v pátek v] LT";
 						case 6:
 							return "[v sobotu v] LT"
 					}
 				},
-				lastDay: "[vÄera v] LT",
+				lastDay: "[včera v] LT",
 				lastWeek: function () {
 					switch (this.day()) {
 						case 0:
-							return "[minulou nedÄ›li v] LT";
+							return "[minulou neděli v] LT";
 						case 1:
 						case 2:
-							return "[minulÃ©] dddd [v] LT";
+							return "[minulé] dddd [v] LT";
 						case 3:
-							return "[minulou stÅ™edu v] LT";
+							return "[minulou středu v] LT";
 						case 4:
 						case 5:
-							return "[minulÃ½] dddd [v] LT";
+							return "[minulý] dddd [v] LT";
 						case 6:
 							return "[minulou sobotu v] LT"
 					}
@@ -47430,7 +47430,7 @@
 			},
 			relativeTime: {
 				future: "za %s",
-				past: "pÅ™ed %s",
+				past: "před %s",
 				s: a,
 				m: a,
 				mm: a,
@@ -47456,11 +47456,11 @@
 		"use strict";
 		e.defineLocale("ca", {
 			months: {
-				standalone: "gener_febrer_marÃ§_abril_maig_juny_juliol_agost_setembre_octubre_novembre_desembre".split("_"),
-				format: "de gener_de febrer_de marÃ§_d'abril_de maig_de juny_de juliol_d'agost_de setembre_d'octubre_de novembre_de desembre".split("_"),
+				standalone: "gener_febrer_març_abril_maig_juny_juliol_agost_setembre_octubre_novembre_desembre".split("_"),
+				format: "de gener_de febrer_de març_d'abril_de maig_de juny_de juliol_d'agost_de setembre_d'octubre_de novembre_de desembre".split("_"),
 				isFormat: /D[oD]?(\s)+MMMM/
 			},
-			monthsShort: "gen._febr._marÃ§_abr._maig_juny_jul._ag._set._oct._nov._des.".split("_"),
+			monthsShort: "gen._febr._març_abr._maig_juny_jul._ag._set._oct._nov._des.".split("_"),
 			monthsParseExact: !0,
 			weekdays: "diumenge_dilluns_dimarts_dimecres_dijous_divendres_dissabte".split("_"),
 			weekdaysShort: "dg._dl._dt._dc._dj._dv._ds.".split("_"),
@@ -47482,7 +47482,7 @@
 					return "[avui a " + (1 !== this.hours() ? "les" : "la") + "] LT"
 				},
 				nextDay: function () {
-					return "[demÃ  a " + (1 !== this.hours() ? "les" : "la") + "] LT"
+					return "[demà a " + (1 !== this.hours() ? "les" : "la") + "] LT"
 				},
 				nextWeek: function () {
 					return "dddd [a " + (1 !== this.hours() ? "les" : "la") + "] LT"
@@ -47496,7 +47496,7 @@
 				sameElse: "L"
 			},
 			relativeTime: {
-				future: "d'aquÃ­ %s",
+				future: "d'aquí %s",
 				past: "fa %s",
 				s: "uns segons",
 				m: "un minut",
@@ -47510,9 +47510,9 @@
 				y: "un any",
 				yy: "%d anys"
 			},
-			dayOfMonthOrdinalParse: /\d{1,2}(r|n|t|Ã¨|a)/,
+			dayOfMonthOrdinalParse: /\d{1,2}(r|n|t|è|a)/,
 			ordinal: function (e, t) {
-				var n = 1 === e ? "r" : 2 === e ? "n" : 3 === e ? "r" : 4 === e ? "t" : "Ã¨";
+				var n = 1 === e ? "r" : 2 === e ? "n" : 3 === e ? "r" : 4 === e ? "t" : "è";
 				return "w" !== t && "W" !== t || (n = "a"), e + n
 			},
 			week: {
@@ -47525,11 +47525,11 @@
 	! function (e) {
 		"use strict";
 		e.defineLocale("bg", {
-			months: "ÑÐ½ÑƒÐ°Ñ€Ð¸_Ñ„ÐµÐ²Ñ€ÑƒÐ°Ñ€Ð¸_Ð¼Ð°Ñ€Ñ‚_Ð°Ð¿Ñ€Ð¸Ð»_Ð¼Ð°Ð¹_ÑŽÐ½Ð¸_ÑŽÐ»Ð¸_Ð°Ð²Ð³ÑƒÑÑ‚_ÑÐµÐ¿Ñ‚ÐµÐ¼Ð²Ñ€Ð¸_Ð¾ÐºÑ‚Ð¾Ð¼Ð²Ñ€Ð¸_Ð½Ð¾ÐµÐ¼Ð²Ñ€Ð¸_Ð´ÐµÐºÐµÐ¼Ð²Ñ€Ð¸".split("_"),
-			monthsShort: "ÑÐ½Ñ€_Ñ„ÐµÐ²_Ð¼Ð°Ñ€_Ð°Ð¿Ñ€_Ð¼Ð°Ð¹_ÑŽÐ½Ð¸_ÑŽÐ»Ð¸_Ð°Ð²Ð³_ÑÐµÐ¿_Ð¾ÐºÑ‚_Ð½Ð¾Ðµ_Ð´ÐµÐº".split("_"),
-			weekdays: "Ð½ÐµÐ´ÐµÐ»Ñ_Ð¿Ð¾Ð½ÐµÐ´ÐµÐ»Ð½Ð¸Ðº_Ð²Ñ‚Ð¾Ñ€Ð½Ð¸Ðº_ÑÑ€ÑÐ´Ð°_Ñ‡ÐµÑ‚Ð²ÑŠÑ€Ñ‚ÑŠÐº_Ð¿ÐµÑ‚ÑŠÐº_ÑÑŠÐ±Ð¾Ñ‚Ð°".split("_"),
-			weekdaysShort: "Ð½ÐµÐ´_Ð¿Ð¾Ð½_Ð²Ñ‚Ð¾_ÑÑ€Ñ_Ñ‡ÐµÑ‚_Ð¿ÐµÑ‚_ÑÑŠÐ±".split("_"),
-			weekdaysMin: "Ð½Ð´_Ð¿Ð½_Ð²Ñ‚_ÑÑ€_Ñ‡Ñ‚_Ð¿Ñ‚_ÑÐ±".split("_"),
+			months: "януари_февруари_март_април_май_юни_юли_август_септември_октомври_ноември_декември".split("_"),
+			monthsShort: "янр_фев_мар_апр_май_юни_юли_авг_сеп_окт_ное_дек".split("_"),
+			weekdays: "неделя_понеделник_вторник_сряда_четвъртък_петък_събота".split("_"),
+			weekdaysShort: "нед_пон_вто_сря_чет_пет_съб".split("_"),
+			weekdaysMin: "нд_пн_вт_ср_чт_пт_сб".split("_"),
 			longDateFormat: {
 				LT: "H:mm",
 				LTS: "H:mm:ss",
@@ -47539,45 +47539,45 @@
 				LLLL: "dddd, D MMMM YYYY H:mm"
 			},
 			calendar: {
-				sameDay: "[Ð”Ð½ÐµÑ Ð²] LT",
-				nextDay: "[Ð£Ñ‚Ñ€Ðµ Ð²] LT",
-				nextWeek: "dddd [Ð²] LT",
-				lastDay: "[Ð’Ñ‡ÐµÑ€Ð° Ð²] LT",
+				sameDay: "[Днес в] LT",
+				nextDay: "[Утре в] LT",
+				nextWeek: "dddd [в] LT",
+				lastDay: "[Вчера в] LT",
 				lastWeek: function () {
 					switch (this.day()) {
 						case 0:
 						case 3:
 						case 6:
-							return "[Ð’ Ð¸Ð·Ð¼Ð¸Ð½Ð°Ð»Ð°Ñ‚Ð°] dddd [Ð²] LT";
+							return "[В изминалата] dddd [в] LT";
 						case 1:
 						case 2:
 						case 4:
 						case 5:
-							return "[Ð’ Ð¸Ð·Ð¼Ð¸Ð½Ð°Ð»Ð¸Ñ] dddd [Ð²] LT"
+							return "[В изминалия] dddd [в] LT"
 					}
 				},
 				sameElse: "L"
 			},
 			relativeTime: {
-				future: "ÑÐ»ÐµÐ´ %s",
-				past: "Ð¿Ñ€ÐµÐ´Ð¸ %s",
-				s: "Ð½ÑÐºÐ¾Ð»ÐºÐ¾ ÑÐµÐºÑƒÐ½Ð´Ð¸",
-				m: "Ð¼Ð¸Ð½ÑƒÑ‚Ð°",
-				mm: "%d Ð¼Ð¸Ð½ÑƒÑ‚Ð¸",
-				h: "Ñ‡Ð°Ñ",
-				hh: "%d Ñ‡Ð°ÑÐ°",
-				d: "Ð´ÐµÐ½",
-				dd: "%d Ð´Ð½Ð¸",
-				M: "Ð¼ÐµÑÐµÑ†",
-				MM: "%d Ð¼ÐµÑÐµÑ†Ð°",
-				y: "Ð³Ð¾Ð´Ð¸Ð½Ð°",
-				yy: "%d Ð³Ð¾Ð´Ð¸Ð½Ð¸"
+				future: "след %s",
+				past: "преди %s",
+				s: "няколко секунди",
+				m: "минута",
+				mm: "%d минути",
+				h: "час",
+				hh: "%d часа",
+				d: "ден",
+				dd: "%d дни",
+				M: "месец",
+				MM: "%d месеца",
+				y: "година",
+				yy: "%d години"
 			},
-			dayOfMonthOrdinalParse: /\d{1,2}-(ÐµÐ²|ÐµÐ½|Ñ‚Ð¸|Ð²Ð¸|Ñ€Ð¸|Ð¼Ð¸)/,
+			dayOfMonthOrdinalParse: /\d{1,2}-(ев|ен|ти|ви|ри|ми)/,
 			ordinal: function (e) {
 				var t = e % 10,
 					n = e % 100;
-				return 0 === e ? e + "-ÐµÐ²" : 0 === n ? e + "-ÐµÐ½" : n > 10 && n < 20 ? e + "-Ñ‚Ð¸" : 1 === t ? e + "-Ð²Ð¸" : 2 === t ? e + "-Ñ€Ð¸" : 7 === t || 8 === t ? e + "-Ð¼Ð¸" : e + "-Ñ‚Ð¸"
+				return 0 === e ? e + "-ев" : 0 === n ? e + "-ен" : n > 10 && n < 20 ? e + "-ти" : 1 === t ? e + "-ви" : 2 === t ? e + "-ри" : 7 === t || 8 === t ? e + "-ми" : e + "-ти"
 			},
 			week: {
 				dow: 1,
@@ -47589,39 +47589,39 @@
 	! function (e) {
 		"use strict";
 		var t = {
-				1: "Ù¡",
-				2: "Ù¢",
-				3: "Ù£",
-				4: "Ù¤",
-				5: "Ù¥",
-				6: "Ù¦",
-				7: "Ù§",
-				8: "Ù¨",
-				9: "Ù©",
-				0: "Ù "
+				1: "١",
+				2: "٢",
+				3: "٣",
+				4: "٤",
+				5: "٥",
+				6: "٦",
+				7: "٧",
+				8: "٨",
+				9: "٩",
+				0: "٠"
 			},
 			n = {
-				"Ù¡": "1",
-				"Ù¢": "2",
-				"Ù£": "3",
-				"Ù¤": "4",
-				"Ù¥": "5",
-				"Ù¦": "6",
-				"Ù§": "7",
-				"Ù¨": "8",
-				"Ù©": "9",
-				"Ù ": "0"
+				"١": "1",
+				"٢": "2",
+				"٣": "3",
+				"٤": "4",
+				"٥": "5",
+				"٦": "6",
+				"٧": "7",
+				"٨": "8",
+				"٩": "9",
+				"٠": "0"
 			},
 			o = function (e) {
 				return 0 === e ? 0 : 1 === e ? 1 : 2 === e ? 2 : e % 100 >= 3 && e % 100 <= 10 ? 3 : e % 100 >= 11 ? 4 : 5
 			},
 			a = {
-				s: ["Ø£Ù‚Ù„ Ù…Ù† Ø«Ø§Ù†ÙŠØ©", "Ø«Ø§Ù†ÙŠØ© ÙˆØ§Ø­Ø¯Ø©", ["Ø«Ø§Ù†ÙŠØªØ§Ù†", "Ø«Ø§Ù†ÙŠØªÙŠÙ†"], "%d Ø«ÙˆØ§Ù†", "%d Ø«Ø§Ù†ÙŠØ©", "%d Ø«Ø§Ù†ÙŠØ©"],
-				m: ["Ø£Ù‚Ù„ Ù…Ù† Ø¯Ù‚ÙŠÙ‚Ø©", "Ø¯Ù‚ÙŠÙ‚Ø© ÙˆØ§Ø­Ø¯Ø©", ["Ø¯Ù‚ÙŠÙ‚ØªØ§Ù†", "Ø¯Ù‚ÙŠÙ‚ØªÙŠÙ†"], "%d Ø¯Ù‚Ø§Ø¦Ù‚", "%d Ø¯Ù‚ÙŠÙ‚Ø©", "%d Ø¯Ù‚ÙŠÙ‚Ø©"],
-				h: ["Ø£Ù‚Ù„ Ù…Ù† Ø³Ø§Ø¹Ø©", "Ø³Ø§Ø¹Ø© ÙˆØ§Ø­Ø¯Ø©", ["Ø³Ø§Ø¹ØªØ§Ù†", "Ø³Ø§Ø¹ØªÙŠÙ†"], "%d Ø³Ø§Ø¹Ø§Øª", "%d Ø³Ø§Ø¹Ø©", "%d Ø³Ø§Ø¹Ø©"],
-				d: ["Ø£Ù‚Ù„ Ù…Ù† ÙŠÙˆÙ…", "ÙŠÙˆÙ… ÙˆØ§Ø­Ø¯", ["ÙŠÙˆÙ…Ø§Ù†", "ÙŠÙˆÙ…ÙŠÙ†"], "%d Ø£ÙŠØ§Ù…", "%d ÙŠÙˆÙ…Ù‹Ø§", "%d ÙŠÙˆÙ…"],
-				M: ["Ø£Ù‚Ù„ Ù…Ù† Ø´Ù‡Ø±", "Ø´Ù‡Ø± ÙˆØ§Ø­Ø¯", ["Ø´Ù‡Ø±Ø§Ù†", "Ø´Ù‡Ø±ÙŠÙ†"], "%d Ø£Ø´Ù‡Ø±", "%d Ø´Ù‡Ø±Ø§", "%d Ø´Ù‡Ø±"],
-				y: ["Ø£Ù‚Ù„ Ù…Ù† Ø¹Ø§Ù…", "Ø¹Ø§Ù… ÙˆØ§Ø­Ø¯", ["Ø¹Ø§Ù…Ø§Ù†", "Ø¹Ø§Ù…ÙŠÙ†"], "%d Ø£Ø¹ÙˆØ§Ù…", "%d Ø¹Ø§Ù…Ù‹Ø§", "%d Ø¹Ø§Ù…"]
+				s: ["أقل من ثانية", "ثانية واحدة", ["ثانيتان", "ثانيتين"], "%d ثوان", "%d ثانية", "%d ثانية"],
+				m: ["أقل من دقيقة", "دقيقة واحدة", ["دقيقتان", "دقيقتين"], "%d دقائق", "%d دقيقة", "%d دقيقة"],
+				h: ["أقل من ساعة", "ساعة واحدة", ["ساعتان", "ساعتين"], "%d ساعات", "%d ساعة", "%d ساعة"],
+				d: ["أقل من يوم", "يوم واحد", ["يومان", "يومين"], "%d أيام", "%d يومًا", "%d يوم"],
+				M: ["أقل من شهر", "شهر واحد", ["شهران", "شهرين"], "%d أشهر", "%d شهرا", "%d شهر"],
+				y: ["أقل من عام", "عام واحد", ["عامان", "عامين"], "%d أعوام", "%d عامًا", "%d عام"]
 			},
 			r = function (e) {
 				return function (t, n, r, s) {
@@ -47630,40 +47630,40 @@
 					return 2 === c && (f = f[n ? 0 : 1]), f.replace(/%d/i, t)
 				}
 			},
-			s = ["ÙƒØ§Ù†ÙˆÙ† Ø§Ù„Ø«Ø§Ù†ÙŠ ÙŠÙ†Ø§ÙŠØ±", "Ø´Ø¨Ø§Ø· ÙØ¨Ø±Ø§ÙŠØ±", "Ø¢Ø°Ø§Ø± Ù…Ø§Ø±Ø³", "Ù†ÙŠØ³Ø§Ù† Ø£Ø¨Ø±ÙŠÙ„", "Ø£ÙŠØ§Ø± Ù…Ø§ÙŠÙˆ", "Ø­Ø²ÙŠØ±Ø§Ù† ÙŠÙˆÙ†ÙŠÙˆ", "ØªÙ…ÙˆØ² ÙŠÙˆÙ„ÙŠÙˆ", "Ø¢Ø¨ Ø£ØºØ³Ø·Ø³", "Ø£ÙŠÙ„ÙˆÙ„ Ø³Ø¨ØªÙ…Ø¨Ø±", "ØªØ´Ø±ÙŠÙ† Ø§Ù„Ø£ÙˆÙ„ Ø£ÙƒØªÙˆØ¨Ø±", "ØªØ´Ø±ÙŠÙ† Ø§Ù„Ø«Ø§Ù†ÙŠ Ù†ÙˆÙÙ…Ø¨Ø±", "ÙƒØ§Ù†ÙˆÙ† Ø§Ù„Ø£ÙˆÙ„ Ø¯ÙŠØ³Ù…Ø¨Ø±"];
+			s = ["كانون الثاني يناير", "شباط فبراير", "آذار مارس", "نيسان أبريل", "أيار مايو", "حزيران يونيو", "تموز يوليو", "آب أغسطس", "أيلول سبتمبر", "تشرين الأول أكتوبر", "تشرين الثاني نوفمبر", "كانون الأول ديسمبر"];
 		e.defineLocale("ar", {
 			months: s,
 			monthsShort: s,
-			weekdays: "Ø§Ù„Ø£Ø­Ø¯_Ø§Ù„Ø¥Ø«Ù†ÙŠÙ†_Ø§Ù„Ø«Ù„Ø§Ø«Ø§Ø¡_Ø§Ù„Ø£Ø±Ø¨Ø¹Ø§Ø¡_Ø§Ù„Ø®Ù…ÙŠØ³_Ø§Ù„Ø¬Ù…Ø¹Ø©_Ø§Ù„Ø³Ø¨Øª".split("_"),
-			weekdaysShort: "Ø£Ø­Ø¯_Ø¥Ø«Ù†ÙŠÙ†_Ø«Ù„Ø§Ø«Ø§Ø¡_Ø£Ø±Ø¨Ø¹Ø§Ø¡_Ø®Ù…ÙŠØ³_Ø¬Ù…Ø¹Ø©_Ø³Ø¨Øª".split("_"),
-			weekdaysMin: "Ø­_Ù†_Ø«_Ø±_Ø®_Ø¬_Ø³".split("_"),
+			weekdays: "الأحد_الإثنين_الثلاثاء_الأربعاء_الخميس_الجمعة_السبت".split("_"),
+			weekdaysShort: "أحد_إثنين_ثلاثاء_أربعاء_خميس_جمعة_سبت".split("_"),
+			weekdaysMin: "ح_ن_ث_ر_خ_ج_س".split("_"),
 			weekdaysParseExact: !0,
 			longDateFormat: {
 				LT: "HH:mm",
 				LTS: "HH:mm:ss",
-				L: "D/â€M/â€YYYY",
+				L: "D/‏M/‏YYYY",
 				LL: "D MMMM YYYY",
 				LLL: "D MMMM YYYY HH:mm",
 				LLLL: "dddd D MMMM YYYY HH:mm"
 			},
-			meridiemParse: /Øµ|Ù…/,
+			meridiemParse: /ص|م/,
 			isPM: function (e) {
-				return "Ù…" === e
+				return "م" === e
 			},
 			meridiem: function (e, t, n) {
-				return e < 12 ? "Øµ" : "Ù…"
+				return e < 12 ? "ص" : "م"
 			},
 			calendar: {
-				sameDay: "[Ø§Ù„ÙŠÙˆÙ… Ø¹Ù†Ø¯ Ø§Ù„Ø³Ø§Ø¹Ø©] LT",
-				nextDay: "[ØºØ¯Ù‹Ø§ Ø¹Ù†Ø¯ Ø§Ù„Ø³Ø§Ø¹Ø©] LT",
-				nextWeek: "dddd [Ø¹Ù†Ø¯ Ø§Ù„Ø³Ø§Ø¹Ø©] LT",
-				lastDay: "[Ø£Ù…Ø³ Ø¹Ù†Ø¯ Ø§Ù„Ø³Ø§Ø¹Ø©] LT",
-				lastWeek: "dddd [Ø¹Ù†Ø¯ Ø§Ù„Ø³Ø§Ø¹Ø©] LT",
+				sameDay: "[اليوم عند الساعة] LT",
+				nextDay: "[غدًا عند الساعة] LT",
+				nextWeek: "dddd [عند الساعة] LT",
+				lastDay: "[أمس عند الساعة] LT",
+				lastWeek: "dddd [عند الساعة] LT",
 				sameElse: "L"
 			},
 			relativeTime: {
-				future: "Ø¨Ø¹Ø¯ %s",
-				past: "Ù…Ù†Ø° %s",
+				future: "بعد %s",
+				past: "منذ %s",
 				s: r("s"),
 				m: r("m"),
 				mm: r("m"),
@@ -47677,14 +47677,14 @@
 				yy: r("y")
 			},
 			preparse: function (e) {
-				return e.replace(/[Ù¡Ù¢Ù£Ù¤Ù¥Ù¦Ù§Ù¨Ù©Ù ]/g, function (e) {
+				return e.replace(/[١٢٣٤٥٦٧٨٩٠]/g, function (e) {
 					return n[e]
-				}).replace(/ØŒ/g, ",")
+				}).replace(/،/g, ",")
 			},
 			postformat: function (e) {
 				return e.replace(/\d/g, function (e) {
 					return t[e]
-				}).replace(/,/g, "ØŒ")
+				}).replace(/,/g, "،")
 			},
 			week: {
 				dow: 6,
@@ -47718,7 +47718,7 @@
 			},
 			calendar: {
 				sameDay: "[Vandag om] LT",
-				nextDay: "[MÃ´re om] LT",
+				nextDay: "[Môre om] LT",
 				nextWeek: "dddd [om] LT",
 				lastDay: "[Gister om] LT",
 				lastWeek: "[Laas] dddd [om] LT",
