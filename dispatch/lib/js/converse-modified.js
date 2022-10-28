@@ -48534,4 +48534,3 @@
 		return Object
 	}.apply(t, [])) || (e.exports = o)
 }]);
-//# sourceMappingURL=converse.min.js.map
